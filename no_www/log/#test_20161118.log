@@ -1,0 +1,2317 @@
+[00:00:02] *** Quits: SweetPear (uid144596@example.org) (Quit: Connection closed for inactivity)
+[00:00:17] *** Quits: pingfloyd (~pingfloyd@example.org) (Quit: ☮ out)
+[00:00:45] *** Joins: dogbait (~dogbait@example.org)
+[00:01:07] *** Joins: mrkebab (~mk@example.org)
+[00:01:14] *** Quits: luckman212 (~luckman21@example.org) (Ping timeout: 250 seconds)
+[00:01:35] *** Quits: canopus (~canopus@example.org) (Ping timeout: 258 seconds)
+[00:02:21] *** Quits: kerunaru (~kerunaru@example.org) (Ping timeout: 258 seconds)
+[00:03:30] *** Quits: alexp (~alexp@example.org) (Quit: Leaving)
+[00:05:58] *** Joins: CapsAdmin (~CapsAdmin@example.org)
+[00:06:02] *** Quits: akwiatkowski (~bobik314@example.org) (Ping timeout: 264 seconds)
+[00:06:24] *** Joins: canopus (~canopus@example.org)
+[00:07:38] *** Quits: nidr0x (~z4.30i@example.org) (Ping timeout: 256 seconds)
+[00:08:01] *** debhelper sets mode: +l 1745
+[00:08:55] *** Joins: user2343234 (~kontagiou@example.org)
+[00:08:56] *** Joins: luckman212 (~luckman21@example.org)
+[00:09:16] *** Quits: Poppabear (~Poppabear@example.org) (Ping timeout: 260 seconds)
+[00:09:21] *** Quits: toastedmilk (~toastedmi@example.org) (Ping timeout: 265 seconds)
+[00:09:23] *** Joins: mihaicmn (~mihaicmn@example.org)
+[00:09:25] *** Quits: JPT (~jpt@example.org) (Ping timeout: 248 seconds)
+[00:10:01] *** Quits: fmerges (~fmerges@example.org) (Ping timeout: 244 seconds)
+[00:10:13] *** Quits: resfirestar (~sam@example.org) (Quit: Leaving)
+[00:10:27] *** Quits: l3archos (~Icedove@example.org) (Quit: l3archos)
+[00:11:18] *** Joins: pos (~pos@example.org)
+[00:11:43] *** Joins: l3archos (~Icedove@example.org)
+[00:11:50] *** Joins: PAV (~pav@example.org)
+[00:11:54] *** Joins: fhdrin (~fhdrin@example.org)
+[00:11:55] *** Joins: rhizome (~rhizome@example.org)
+[00:12:28] *** Joins: OS-24269 (~OS-24269@example.org)
+[00:12:40] *** Quits: mihaicmn (~mihaicmn@example.org) (Client Quit)
+[00:13:10] *** Quits: pos (~pos@example.org) (Client Quit)
+[00:13:34] *** Joins: pos (~pos@example.org)
+[00:14:54] *** Joins: JPT (~jpt@example.org)
+[00:15:00] *** Quits: pos (~pos@example.org) (Remote host closed the connection)
+[00:15:51] *** Joins: pos (~pos@example.org)
+[00:16:56] *** Joins: SpaceAce (~SpaceAce@example.org)
+[00:17:55] *** Quits: sudosudosudo (~sudosudos@example.org) (Quit: Leaving)
+[00:18:06] *** Joins: thatoneperson (~cluelessp@example.org)
+[00:18:52] *** Quits: thatoneperson (~cluelessp@example.org) (Remote host closed the connection)
+[00:19:04] *** Quits: Envil (~envil@example.org) (Remote host closed the connection)
+[00:19:25] *** Quits: tvm (~tvm@example.org) (Ping timeout: 260 seconds)
+[00:20:11] *** Joins: oneeyetony (~poorman@example.org)
+[00:20:37] *** Joins: toastedmilk (~toastedmi@example.org)
+[00:20:38] *** Joins: savantgarde_ (~savantgar@example.org)
+[00:21:00] *** Quits: tsuusifros (~kirsis@example.org) (Ping timeout: 260 seconds)
+[00:21:14] *** Quits: keltim (~keltim@example.org) (Ping timeout: 256 seconds)
+[00:22:03] <oneeyetony> Trying to install the appropriate b43 drivers to get wireless working on my mac mini running kernel 4.7. I am attempting to follow this: https://wiki.example.org/wl when I try and modprobe wl I get a fatal error
+[00:22:21] <oneeyetony> Would anyone be willing to help?
+[00:22:34] *** Quits: giricz81 (~quassel@example.org) (Remote host closed the connection)
+[00:23:17] *** Quits: savantgarde (~savantgar@example.org) (Ping timeout: 246 seconds)
+[00:23:23] *** Quits: _0bitcount (~Big_Byte@example.org) (Quit: Leaving)
+[00:23:44] *** Parts: ee2455 (~ee2455@example.org)
+[00:23:59] *** Quits: Alina-malina (~Alina-mal@example.org) (Ping timeout: 246 seconds)
+[00:24:19] <freakyy> how much GBs should i allocated for a /boot/ partition on an SSD?
+[00:25:08] *** Quits: Levure (~quassel@example.org) (Remote host closed the connection)
+[00:26:05] <oneeyetony> freakyy: check this out. https://help.ubuntu.com/community/DiskSpace
+[00:26:23] *** Joins: keltim (~keltim@example.org)
+[00:26:47] <rhizome> <1
+[00:26:49] <missmbob> jesus. 1G /boot? that's insane
+[00:26:59] <missmbob> 150M should be more than sufficient
+[00:27:07] *** Quits: rrehbein (~rrehbein@example.org) (Quit: Leaving)
+[00:27:28] <freakyy> ok ill set it to 150GBs
+[00:27:41] *** Joins: sandeepkr_ (~sandeepkr@example.org)
+[00:27:44] <freakyy> mb
+[00:27:49] <freakyy> sorry ^^
+[00:28:10] <oneeyetony> missmbob: think you could give me a hand with a wireless driver issue
+[00:28:28] *** Joins: alowinz (~lnx@example.org)
+[00:28:43] <missmbob> oneeyetony: probably not
+[00:28:52] <rhizome> oneeyetony: do we already know what you mean by "fatal error?"
+[00:29:09] <oneeyetony> Module wl not found
+[00:29:24] <rhizome> ok, how about dmesg
+[00:29:35] <oneeyetony> im not seeing wlan in ifconfig either
+[00:29:49] *** Quits: InfoTest (~Thunderbi@example.org) (Quit: InfoTest)
+[00:29:58] <missmbob> oneeyetony: oh so you missed a step
+[00:30:14] <missmbob> oneeyetony: step 2 in the wiki
+[00:30:22] <missmbob> that creates the wl module
+[00:30:29] <missmbob> so do that and paste the output in paste.example.net
+[00:30:59] *** Quits: sandeepkr (~sandeepkr@example.org) (Ping timeout: 256 seconds)
+[00:31:03] *** Quits: teclo- (42@example.org) (Quit: Lost terminal)
+[00:31:12] *** Quits: silverhom (~silverhom@example.org) (Quit: Leaving)
+[00:31:42] *** Joins: Alina-malina (~Alina-mal@example.org)
+[00:31:48] *** Joins: teclo- (42@example.org)
+[00:32:11] <oneeyetony> http://paste.example.net/896481/
+[00:32:15] <oneeyetony> looks all good
+[00:32:35] *** Joins: sandeepkr__ (~sandeepkr@example.org)
+[00:32:38] *** Quits: luckman212 (~luckman21@example.org) (Ping timeout: 258 seconds)
+[00:33:57] <missmbob> oneeyetony: when you first did it do you remember it building the driver?
+[00:34:11] *** Joins: disconnecht (~disconnec@example.org)
+[00:34:18] *** Quits: RickXy (~zncadmin@example.org) (Ping timeout: 244 seconds)
+[00:34:20] *** Quits: SCHAAP137 (~SCHAAP137@example.org) (Quit: Leaving)
+[00:34:50] *** Quits: toli (~toli@example.org) (Ping timeout: 256 seconds)
+[00:35:01] *** Joins: kmo (~kmo@example.org)
+[00:35:13] *** Quits: missmbob (~missmbob@example.org) (Quit: leaving)
+[00:35:29] <oneeyetony> missbob: first time through I thought since my kernel was up to date I would just need to run broadcm-sta-dkms so I just did that as opposed to the whole line in step 2
+[00:36:05] *** Joins: CutMeOwnThroat (~k@example.org)
+[00:36:05] *** Quits: CutMeOwnThroat (~k@example.org) (Changing host)
+[00:36:05] *** Joins: CutMeOwnThroat (~k@example.org)
+[00:36:09] *** Joins: RickXy (~zncadmin@example.org)
+[00:36:12] <oneeyetony> missmbob*
+[00:36:22] <oneeyetony> ah quit
+[00:36:46] *** Joins: JagErLessen83 (~JagErLess@example.org)
+[00:36:48] *** Quits: dogbait (~dogbait@example.org) (Quit: dogbait)
+[00:36:54] *** Quits: sandeepkr_ (~sandeepkr@example.org) (Ping timeout: 265 seconds)
+[00:37:23] *** Quits: JagErLessen (~JagErLess@example.org) (Ping timeout: 265 seconds)
+[00:38:01] *** debhelper sets mode: +l 1739
+[00:38:32] *** Joins: sandeepkr_ (~sandeepkr@example.org)
+[00:38:50] *** Quits: kmo (~kmo@example.org) (Client Quit)
+[00:39:01] *** Quits: sandeepkr__ (~sandeepkr@example.org) (Read error: Connection reset by peer)
+[00:39:19] *** Quits: toastedmilk (~toastedmi@example.org) (Ping timeout: 265 seconds)
+[00:39:20] *** Quits: nighty (~nighty@example.org) (Quit: Disappears in a puff of smoke)
+[00:39:22] *** Joins: sandeepkr__ (~sandeepkr@example.org)
+[00:39:38] *** Parts: ADubhlaoich (sid177637@example.org)
+[00:39:55] *** Quits: nikoma (~nikoma@example.org) (Quit: Lost terminal)
+[00:40:18] *** Joins: toli (~toli@example.org)
+[00:40:36] *** Joins: noname (~noname001@example.org)
+[00:40:36] *** Joins: rubas (~rubas@example.org)
+[00:41:11] *** Quits: keltim (~keltim@example.org) (Ping timeout: 252 seconds)
+[00:41:14] <rubas> Hi, how do I make a folder only readable/writeable to owner - and all new files in the folder gets the same chmod?
+[00:41:32] <rubas> I just realized that umask only works for the current process
+[00:42:53] *** Quits: HicksD (~ident@example.org) (Ping timeout: 256 seconds)
+[00:43:11] *** Joins: mylord (~mylord@example.org)
+[00:43:18] *** Quits: tjone270_ (~tjone270@example.org) (Read error: Connection reset by peer)
+[00:43:20] *** Joins: luckman212 (~luckman21@example.org)
+[00:43:29] *** Quits: sandeepkr__ (~sandeepkr@example.org) (Read error: Connection reset by peer)
+[00:43:39] *** Joins: tjone270_ (~tjone270@example.org)
+[00:43:41] *** Quits: sandeepkr_ (~sandeepkr@example.org) (Ping timeout: 268 seconds)
+[00:43:59] *** Joins: sandeepkr__ (~sandeepkr@example.org)
+[00:44:47] *** Quits: savantgarde_ (~savantgar@example.org) (Quit: Leaving...)
+[00:45:46] *** Parts: th0r (~Thor@example.org)
+[00:45:50] *** Quits: CapsAdmin (~CapsAdmin@example.org) (Remote host closed the connection)
+[00:46:11] *** Quits: oneeyetony (~poorman@example.org) (Remote host closed the connection)
+[00:46:49] *** Joins: mag009 (~mag@example.org)
+[00:47:17] *** Quits: cdown (~cdown@example.org) (Ping timeout: 248 seconds)
+[00:47:21] *** Parts: [Saint] (~sinner@example.org)
+[00:48:00] *** debhelper sets mode: +l 1732
+[00:49:26] *** Joins: Guest (~Pi@example.org)
+[00:51:06] *** Quits: Wyzard (~mike@example.org) (Quit: Client exiting)
+[00:51:10] *** Quits: Guest (~Pi@example.org) (Client Quit)
+[00:51:17] *** Joins: ptkrm (~ptkrm@example.org)
+[00:51:20] *** Joins: sikun (~David@example.org)
+[00:51:23] *** Quits: ptkrm (~ptkrm@example.org) (Remote host closed the connection)
+[00:51:46] *** Joins: th0r (~Thor@example.org)
+[00:52:07] *** Joins: ben_roose (~roose@example.org)
+[00:52:58] *** Joins: ptkrm (~ptkrm@example.org)
+[00:52:59] *** Quits: klow (~textual@example.org) (Quit: Textual IRC Client: www.textualapp.com)
+[00:55:37] *** Joins: toastedmilk (~toastedmi@example.org)
+[00:55:43] *** Quits: rypervenche (~rypervenc@example.org) (Quit: kernel update)
+[00:55:53] *** Joins: zanshin_ (~textual@example.org)
+[00:55:55] *** Quits: tugrik (~username@example.org) (Quit: WeeChat 1.6)
+[00:55:55] *** Quits: woshty (~irc@example.org) (Ping timeout: 256 seconds)
+[00:57:18] *** Quits: cerebro_ (~cerebro@example.org) (Remote host closed the connection)
+[00:57:33] *** Quits: gerforce (~gerforce@example.org) (Ping timeout: 244 seconds)
+[00:58:12] *** Joins: cerebro (~cerebro@example.org)
+[00:59:09] *** Quits: dionysus69 (~Thunderbi@example.org) (Ping timeout: 252 seconds)
+[00:59:22] *** Joins: rypervenche (~rypervenc@example.org)
+[01:00:24] *** Parts: th0r (~Thor@example.org)
+[01:00:46] *** Quits: disconnecht (~disconnec@example.org) (Quit: ..)
+[01:01:30] *** Joins: th0r (~Thor@example.org)
+[01:01:34] *** Joins: missmbob (~missmbob@example.org)
+[01:01:36] *** Quits: th0r (~Thor@example.org) (Max SendQ exceeded)
+[01:01:59] *** Joins: th0r (~Thor@example.org)
+[01:02:01] *** Quits: l3archos (~Icedove@example.org) (Quit: l3archos)
+[01:02:23] *** Joins: l3archos (~Icedove@example.org)
+[01:04:03] *** Joins: Specialist (~tg@example.org)
+[01:04:15] *** Quits: careta (~botto@example.org) (Ping timeout: 246 seconds)
+[01:04:15] *** Joins: daltonx (~daltonx@example.org)
+[01:04:57] *** Quits: fooctrl (~havoc@example.org) (Ping timeout: 240 seconds)
+[01:05:07] *** Parts: bit1 (~joseanton@example.org)
+[01:05:18] *** Quits: TvL2386 (~tom@example.org) (Ping timeout: 244 seconds)
+[01:06:20] *** Joins: [ElliotAlderson] (~sinner@example.org)
+[01:06:41] *** Quits: l3archos (~Icedove@example.org) (Client Quit)
+[01:06:47] *** Quits: zoolook (~zoolook@example.org) (Quit: Konversation terminated!)
+[01:07:36] *** Quits: Brigo (~Brigo@example.org) (Ping timeout: 260 seconds)
+[01:07:42] *** Quits: ben_roose (~roose@example.org) (Remote host closed the connection)
+[01:07:46] *** Quits: [ElliotAlderson] (~sinner@example.org) (Quit: Quit.)
+[01:07:53] *** Quits: user2343234 (~kontagiou@example.org) (Quit: Leaving)
+[01:08:00] *** debhelper sets mode: +l 1725
+[01:08:47] *** Joins: Butt3rfly (~Butt3rfly@example.org)
+[01:08:53] *** Quits: Darcidride (~Darcidrid@example.org) (Ping timeout: 260 seconds)
+[01:09:40] *** Joins: [Saint] (~sinner@example.org)
+[01:12:07] *** Quits: toastedmilk (~toastedmi@example.org) (Ping timeout: 258 seconds)
+[01:12:11] *** [Saint] is now known as sinner
+[01:12:48] *** sinner is now known as [Saint]
+[01:12:57] *** Quits: Scourje (uid63311@example.org) (Ping timeout: 240 seconds)
+[01:12:57] *** Quits: wyre (wyre@example.org) (Ping timeout: 240 seconds)
+[01:13:33] *** Quits: SpeccyMan (~nick@example.org) (Quit: 'Goodbye')
+[01:13:37] *** Quits: Yugidude1 (Yugidude1@example.org) (Ping timeout: 240 seconds)
+[01:13:57] *** Quits: screedo (~screedo@example.org) (Ping timeout: 240 seconds)
+[01:13:57] *** Quits: tannercollin (~tanner@example.org) (Ping timeout: 240 seconds)
+[01:14:06] *** Joins: Scourje (uid63311@example.org)
+[01:14:17] *** Quits: beencubed (~beencubed@example.org) (Ping timeout: 240 seconds)
+[01:14:17] *** Quits: adapter (~adapter@example.org) (Ping timeout: 240 seconds)
+[01:14:17] *** Quits: James_T (james@example.org) (Ping timeout: 240 seconds)
+[01:14:41] *** Joins: fooctrl (~havoc@example.org)
+[01:15:46] *** Quits: acos (~acos@example.org) (Read error: Connection reset by peer)
+[01:16:01] *** Joins: tannercollin (~tanner@example.org)
+[01:16:12] *** Quits: jemadux (~jemadux@example.org) (Ping timeout: 256 seconds)
+[01:16:22] *** Quits: SpacyTime (JeDa@example.org) (Quit: whee.)
+[01:16:29] *** Joins: adapter (~adapter@example.org)
+[01:16:32] *** Joins: ivo_ (~Ivo@example.org)
+[01:16:53] *** Joins: screedoz (~screedo@example.org)
+[01:17:09] *** screedoz is now known as screedo
+[01:17:27] *** Quits: pos (~pos@example.org) (Quit: pos)
+[01:17:29] <th0r> man cp
+[01:17:33] *** Joins: SpacyTime (JeDa@example.org)
+[01:18:01] *** debhelper sets mode: +l 1719
+[01:18:31] *** Joins: James_T (james@example.org)
+[01:18:37] *** Quits: Schmantinski (~cmantsch@example.org) (Ping timeout: 240 seconds)
+[01:18:38] *** Quits: jak2013 (~jak2000@example.org) (Ping timeout: 258 seconds)
+[01:19:21] *** Joins: TvL2386 (~tom@example.org)
+[01:19:47] *** Joins: cdown (~cdown@example.org)
+[01:19:57] *** Joins: beencubed (~beencubed@example.org)
+[01:20:36] *** Joins: wyre (wyre@example.org)
+[01:21:02] *** Joins: Yugidude1 (Yugidude1@example.org)
+[01:21:06] *** Joins: Schmantinski (~cmantsch@example.org)
+[01:21:11] *** Joins: tsuusifros (~kirsis@example.org)
+[01:21:11] *** Quits: tsuusifros (~kirsis@example.org) (Changing host)
+[01:21:11] *** Joins: tsuusifros (~kirsis@example.org)
+[01:21:50] *** [Saint] is now known as ElliotAlderson
+[01:22:06] *** Quits: Shentino (~Shentino@example.org) (Remote host closed the connection)
+[01:23:15] *** Joins: mtn (~mtn@example.org)
+[01:23:29] *** Quits: kenden (~dsps@example.org) (Ping timeout: 246 seconds)
+[01:23:38] *** Quits: SpaceAce (~SpaceAce@example.org) (Quit: Leaving)
+[01:23:46] *** Joins: shawn (~shawn@example.org)
+[01:23:46] *** shawn is now known as scientes
+[01:24:06] *** Quits: SuperTramp83 (~gnu@example.org) (Quit: Leaving.)
+[01:25:22] *** Quits: SPF|Cloud (uid11755@example.org) (Quit: Connection closed for inactivity)
+[01:27:22] *** Joins: toastedmilk (~toastedmi@example.org)
+[01:28:33] *** Joins: jemadux (~jemadux@example.org)
+[01:29:36] *** Quits: webpigeon (~quassel@example.org) (Read error: Connection reset by peer)
+[01:29:53] *** Quits: simon_q (~simon@example.org) (Ping timeout: 260 seconds)
+[01:30:06] *** Joins: simon_q (~simon@example.org)
+[01:30:45] *** Joins: wronbounce (wrong@example.org)
+[01:30:45] *** Joins: webpigeon (~quassel@example.org)
+[01:31:34] *** Quits: JagErLessen83 (~JagErLess@example.org) ()
+[01:31:37] *** Quits: luckman212 (~luckman21@example.org) (Ping timeout: 256 seconds)
+[01:32:04] *** Quits: wronbounce (wrong@example.org) (Client Quit)
+[01:32:10] *** Joins: wrongbounce (~wrong@example.org)
+[01:32:23] *** Joins: dvs (~hibbard@example.org)
+[01:33:38] *** Joins: Ormm (~ard1t@example.org)
+[01:34:01] *** Quits: alxy (uid115853@example.org) (Quit: Connection closed for inactivity)
+[01:34:04] *** Joins: ken8521 (4439d163@example.org)
+[01:35:25] *** Joins: ancientninja (~ancientni@example.org)
+[01:37:40] *** Joins: luckman212 (~luckman21@example.org)
+[01:37:46] *** Quits: Quatroking (~Quatrokin@example.org) (Read error: Connection reset by peer)
+[01:38:00] *** debhelper sets mode: +l 1726
+[01:38:14] *** andykay_ is now known as andykay
+[01:38:23] *** Quits: dynek (~dynek@example.org) (Ping timeout: 252 seconds)
+[01:38:47] *** Joins: dynek (~dynek@example.org)
+[01:38:47] *** Quits: Dracunos (~Dracunos@example.org) (Max SendQ exceeded)
+[01:38:56] *** Joins: cdown_ (~cdown@example.org)
+[01:39:07] *** Joins: Dracunos (~Dracunos@example.org)
+[01:39:11] *** Quits: Waggie (~Waggie@example.org) (Ping timeout: 268 seconds)
+[01:39:13] *** Quits: Specialist (~tg@example.org) (Ping timeout: 245 seconds)
+[01:39:14] *** Quits: itu (tux@example.org) (Ping timeout: 246 seconds)
+[01:39:43] *** Quits: cdown (~cdown@example.org) (Ping timeout: 258 seconds)
+[01:39:43] *** cdown_ is now known as cdown
+[01:39:57] *** Quits: alowinz (~lnx@example.org) (Quit: Leaving)
+[01:40:06] *** Joins: webdev007 (~webdev007@example.org)
+[01:40:22] *** Joins: sudosudosudo (~sudosudos@example.org)
+[01:41:38] *** Parts: wrongbounce (~wrong@example.org)
+[01:41:41] *** Quits: toastedmilk (~toastedmi@example.org) (Ping timeout: 248 seconds)
+[01:42:08] *** Quits: scientes (~shawn@example.org) (Remote host closed the connection)
+[01:42:13] *** Quits: mtn (~mtn@example.org) (Quit: Konversation terminated!)
+[01:42:16] *** Quits: TvL2386 (~tom@example.org) (Ping timeout: 268 seconds)
+[01:42:33] *** ElliotAlderson is now known as [Saint]
+[01:42:49] *** Quits: daltonx (~daltonx@example.org) (Quit: ChatZilla 0.9.93 [Firefox 50.0/20161104212021])
+[01:43:14] *** Joins: daltonx (~daltonx@example.org)
+[01:43:43] *** Joins: shawn (~shawn@example.org)
+[01:43:49] *** shawn is now known as Guest70152
+[01:43:56] *** Quits: Zyferus (~Zyferus@example.org) (Ping timeout: 250 seconds)
+[01:44:13] *** Quits: Sri_Designer (~Sir_Desig@example.org) (Ping timeout: 245 seconds)
+[01:44:49] *** Joins: TvL2386 (~tom@example.org)
+[01:45:03] *** Joins: Waggie (~Waggie@example.org)
+[01:45:34] *** Joins: zoredache (~zoredache@example.org)
+[01:45:47] *** Joins: l3archos (~Icedove@example.org)
+[01:46:05] *** Quits: l3archos (~Icedove@example.org) (Client Quit)
+[01:46:38] *** Quits: Starky (~Starky@example.org) (Read error: Connection reset by peer)
+[01:47:33] *** Joins: itu (tux@example.org)
+[01:47:51] *** Joins: pingfloyd (~pingfloyd@example.org)
+[01:47:54] *** Joins: sandeepkr (~sandeepkr@example.org)
+[01:47:55] *** Joins: Shentino (~Shentino@example.org)
+[01:48:44] *** Joins: NoteOn (~noteon@example.org)
+[01:49:23] *** Quits: ptkrm (~ptkrm@example.org) (Quit: ~boing boom tschk!)
+[01:50:18] *** Joins: crayon (~user@example.org)
+[01:50:29] *** Joins: SpaceAce (~SpaceAce@example.org)
+[01:51:24] *** Joins: nathanleclaire (~nathanlec@example.org)
+[01:51:29] *** Quits: cdown (~cdown@example.org) (Remote host closed the connection)
+[01:51:36] *** Quits: bazhang (~bazhang@example.org) (Quit: Leaving)
+[01:52:08] *** Quits: fearnothing (~nothing@example.org) (Ping timeout: 268 seconds)
+[01:53:05] *** Quits: SpacePenguin (~SpacePeng@example.org) (Remote host closed the connection)
+[01:53:05] *** Quits: ArchDuke_ (~ArchDuke@example.org) (Read error: Connection reset by peer)
+[01:53:12] *** Quits: Guest70152 (~shawn@example.org) (Remote host closed the connection)
+[01:53:43] *** Joins: ArchDuke_ (~ArchDuke@example.org)
+[01:53:44] *** Quits: Asulil_ (~Asulil@example.org) (Quit: Leaving)
+[01:54:34] *** Joins: mroe (~roe@example.org)
+[01:55:33] *** Joins: nighty (~nighty@example.org)
+[01:55:47] *** Quits: blueness (~blueness@example.org) (Quit: blueness)
+[01:56:34] *** Joins: n4dir (~user@example.org)
+[01:56:41] *** Quits: jemadux (~jemadux@example.org) (Remote host closed the connection)
+[01:56:50] *** Quits: Datapath (ada3f962@example.org) (Ping timeout: 260 seconds)
+[01:57:06] *** Joins: toastedmilk (~toastedmi@example.org)
+[01:57:18] *** Joins: blueness (~blueness@example.org)
+[01:58:30] *** Joins: fearnothing (~nothing@example.org)
+[01:59:51] <zoredache> I am getting some 404s for `Packages`, and `Sources` files when doing an apt-get update with URLs like `http://ftp.us.example.org/example/dists/jessie-updates/non-free/binary-amd64/Packages` I see that the repo, has .gz, and .xz files, isn't Apt supposed to ge using those?
+[01:59:57] *** Quits: fhdrin (~fhdrin@example.org) (Quit: Leaving)
+[02:00:40] *** Joins: fstd_ (~fstd@example.org)
+[02:01:05] *** Quits: de-facto (~de-facto@example.org) (Quit: See you around.)
+[02:01:19] *** Joins: de-facto (~de-facto@example.org)
+[02:01:56] <sudosudosudo> zoredache do you have the repos in your source list in /etc/apt/sources.list?
+[02:02:17] <zoredache> yes
+[02:02:24] *** Quits: crayon (~user@example.org) (Ping timeout: 250 seconds)
+[02:02:35] *** Joins: jack_rip_vim (~mint@example.org)
+[02:03:03] *** Quits: karimb (~karimb@example.org) (Quit: Karim has gone to sleep. ZZZzzz…)
+[02:03:22] <jack_rip_vim> example-live-standar distro didnt have a shutdown command =_=
+[02:03:27] *** Quits: subhead (~subhead@example.org) ()
+[02:03:45] *** Joins: subhead (~subhead@example.org)
+[02:04:06] *** Parts: mag009 (~mag@example.org)
+[02:04:18] *** Quits: fstd (~fstd@example.org) (Ping timeout: 250 seconds)
+[02:04:18] *** fstd_ is now known as fstd
+[02:04:26] *** Quits: CutMeOwnThroat (~k@example.org) (Ping timeout: 246 seconds)
+[02:05:59] *** Quits: itu (tux@example.org) (Changing host)
+[02:05:59] *** Joins: itu (tux@example.org)
+[02:07:56] *** Joins: axisys_ (~axisys@example.org)
+[02:08:11] *** Quits: axisys_ (~axisys@example.org) (Client Quit)
+[02:08:47] *** Joins: ToBeCloud (uid51591@example.org)
+[02:09:20] *** Quits: B[]rG (~tuptidup@example.org) (Ping timeout: 250 seconds)
+[02:10:03] *** Quits: mosene (irc@example.org) (Ping timeout: 245 seconds)
+[02:10:17] *** Joins: Zyferus (Zyferus@example.org)
+[02:10:25] *** Quits: valeech (~valeech@example.org) (Quit: valeech)
+[02:10:39] *** Joins: B[]rG (~tuptidup@example.org)
+[02:12:16] *** Quits: daltonx (~daltonx@example.org) (Ping timeout: 240 seconds)
+[02:12:29] *** Quits: toastedmilk (~toastedmi@example.org) (Ping timeout: 268 seconds)
+[02:15:17] *** Quits: Mazhive (~Mazhive@example.org) (Ping timeout: 248 seconds)
+[02:15:20] *** Joins: angerman (~m@example.org)
+[02:15:44] *** Joins: Mazhive (~Mazhive@example.org)
+[02:15:45] *** Joins: launch (~launch@example.org)
+[02:15:52] *** Quits: jack_rip_vim (~mint@example.org) (Read error: Connection reset by peer)
+[02:16:51] *** Joins: jack_rip_vim (~mint@example.org)
+[02:17:05] *** Joins: daltonx (~daltonx@example.org)
+[02:17:33] *** Quits: ivo_ (~Ivo@example.org) (Ping timeout: 245 seconds)
+[02:18:00] *** debhelper sets mode: +l 1720
+[02:18:49] *** Quits: DeaDSouL (~deadsoul@example.org) ()
+[02:19:32] *** Quits: kooldavi (~kooldavi@example.org) (Ping timeout: 260 seconds)
+[02:19:59] *** Joins: fhdrin (~fhdrin@example.org)
+[02:20:10] *** Quits: dreamon_ (~dreamon@example.org) (Ping timeout: 250 seconds)
+[02:22:18] *** Joins: phila_ (~philamons@example.org)
+[02:22:56] *** Joins: kooldavi (~kooldavi@example.org)
+[02:24:53] *** Quits: hexnewbie (~hexnewbie@example.org) (Ping timeout: 256 seconds)
+[02:25:03] *** Joins: hexnewbie (~hexnewbie@example.org)
+[02:25:20] *** Quits: philamonster (~philamons@example.org) (Ping timeout: 256 seconds)
+[02:25:37] *** Quits: douzer (~douzer@example.org) (Ping timeout: 240 seconds)
+[02:25:52] *** Quits: Tempesta (Tempesta@example.org) (Quit: See ya!)
+[02:26:13] *** Quits: B[]rG (~tuptidup@example.org) (Remote host closed the connection)
+[02:26:59] *** Joins: Guest10429 (irc@example.org)
+[02:27:24] *** Quits: wonderworld (~ww@example.org) (Remote host closed the connection)
+[02:27:50] *** Joins: toastedmilk (~toastedmi@example.org)
+[02:27:52] *** Joins: philamonster (~philamons@example.org)
+[02:28:03] *** Joins: rababa (~pc@example.org)
+[02:28:54] <rababa> hey :) my icedove keeps freezing after a couple of seconds and sometimes even causes my system to freeze.... is there anybody that could help?
+[02:29:08] *** Quits: sl4v3 (~casey.bil@example.org) (Ping timeout: 268 seconds)
+[02:29:10] *** Quits: LaptopBrain (brain@example.org) (Ping timeout: 258 seconds)
+[02:30:03] *** Joins: philipballew (~philip@example.org)
+[02:30:38] *** Joins: ivo_ (~Ivo@example.org)
+[02:31:04] *** Quits: phila_ (~philamons@example.org) (Ping timeout: 244 seconds)
+[02:31:44] *** Quits: crazyadm (~bao@example.org) (Read error: Connection reset by peer)
+[02:31:45] *** Joins: crazyadm_ (~bao@example.org)
+[02:32:11] *** Joins: Tempesta (Tempesta@example.org)
+[02:32:29] *** Quits: sh00p (~sh00p@example.org) ()
+[02:34:18] *** Quits: fiddlerwoaroof (~fiddlerwo@example.org) (Quit: Gone.)
+[02:34:52] *** Joins: Turner92 (Turner@example.org)
+[02:34:55] *** Quits: frozengeek___ (~frozengee@example.org) (Quit: frozengeek___)
+[02:35:36] *** Joins: lsv (~nn@example.org)
+[02:35:43] *** Quits: stray (~stray@example.org) (Remote host closed the connection)
+[02:36:49] *** Joins: safe (~safe@example.org)
+[02:38:16] *** Quits: andril (~andril@example.org) (Quit: Leaving)
+[02:38:27] *** Quits: mroe (~roe@example.org) (Remote host closed the connection)
+[02:38:34] *** Joins: douzer (~douzer@example.org)
+[02:38:34] *** Quits: douzer (~douzer@example.org) (Changing host)
+[02:38:34] *** Joins: douzer (~douzer@example.org)
+[02:38:43] *** Joins: marcozink2 (~marcozink@example.org)
+[02:39:03] *** Joins: musicnate (~musicnate@example.org)
+[02:39:36] *** Quits: marcozink (~marcozink@example.org) (Ping timeout: 260 seconds)
+[02:42:14] *** Quits: amcorreia (~amcorreia@example.org) (Ping timeout: 246 seconds)
+[02:43:05] *** Joins: bugzc (~1@example.org)
+[02:43:44] *** Quits: rababa (~pc@example.org) (Ping timeout: 250 seconds)
+[02:44:49] *** Quits: ken8521 (4439d163@example.org) (Quit: Page closed)
+[02:44:50] *** Joins: fiddlerwoaroof (~fiddlerwo@example.org)
+[02:47:05] *** Quits: toastedmilk (~toastedmi@example.org) (Ping timeout: 244 seconds)
+[02:47:56] *** Joins: resfirestar (~sam@example.org)
+[02:48:14] *** Joins: gonz0 (~gonz0@example.org)
+[02:49:31] *** Joins: putaoren (~boz@example.org)
+[02:50:58] *** Joins: jak2000 (~jak2000@example.org)
+[02:54:06] *** Quits: freakyy (~uwe@example.org) (Quit: WeeChat 1.7-dev)
+[02:54:25] *** Quits: [Saint] (~sinner@example.org) (Remote host closed the connection)
+[02:55:52] *** Joins: [Saint] (~sinner@example.org)
+[02:56:01] *** Joins: OOXXOO (~OOXXOO@example.org)
+[02:56:03] *** keith_ is now known as CrazyBebop
+[02:56:24] *** Quits: Wizek (~Wizek@example.org) (Ping timeout: 260 seconds)
+[02:59:52] *** Quits: Zzeiss (~wsy@example.org) (Quit: Zzeiss)
+[03:01:02] *** Quits: rosseaux (~BeRo@example.org) (Excess Flood)
+[03:01:34] *** Joins: rosseaux (~BeRo@example.org)
+[03:02:21] *** Joins: toastedmilk (~toastedmi@example.org)
+[03:03:38] *** Quits: bolovanos (~bolovanos@example.org) (Quit: Leaving)
+[03:05:55] *** Quits: webdev007 (~webdev007@example.org) (Quit: Leaving)
+[03:07:20] *** Quits: makimaki` (~makimaki`@example.org) (Quit: Leaving)
+[03:07:45] *** Quits: cyborg-one (~cyborg-on@example.org) (Quit: cyborg-one)
+[03:08:31] *** Quits: cesurasean (~cesurasea@example.org) (Ping timeout: 256 seconds)
+[03:08:53] *** Joins: imunsie (~imunsie@example.org)
+[03:10:49] *** Joins: sl4v3 (~casey.bil@example.org)
+[03:11:37] *** Joins: idts (~lxuser@example.org)
+[03:12:27] *** Joins: SpacePenguin (~SpacePeng@example.org)
+[03:12:33] *** Parts: anuxivm (~anuxi@example.org)
+[03:13:20] *** Joins: sidmo_ (~sidmo@example.org)
+[03:13:51] *** Quits: kisk (~kisk@example.org) (Remote host closed the connection)
+[03:14:44] *** Quits: t0aster0ven (~iaeofjgsk@example.org) (Ping timeout: 245 seconds)
+[03:15:05] *** Quits: Scourje (uid63311@example.org) (Quit: Connection closed for inactivity)
+[03:15:07] *** Quits: n4dir (~user@example.org) (Quit: Leaving.)
+[03:17:19] *** Quits: bDreadz (~bDreadz@example.org) (Quit: zzzz)
+[03:17:32] *** Quits: Dracunos (~Dracunos@example.org) (Ping timeout: 250 seconds)
+[03:17:40] *** Joins: Dracunos_ (~Dracunos@example.org)
+[03:17:41] *** Joins: t0aster0ven (~iaeofjgsk@example.org)
+[03:17:51] *** Quits: sidmo (~sidmo@example.org) (Ping timeout: 268 seconds)
+[03:17:53] *** Joins: johefernan (~joheferna@example.org)
+[03:18:00] *** debhelper sets mode: +l 1714
+[03:18:45] *** Quits: BenderRodriguez (~Foxhoundz@example.org) (Ping timeout: 248 seconds)
+[03:19:17] *** Quits: Mazhive (~Mazhive@example.org) (Ping timeout: 248 seconds)
+[03:19:50] *** Joins: Mazhive (~Mazhive@example.org)
+[03:20:18] *** Quits: lsv (~nn@example.org) (Ping timeout: 256 seconds)
+[03:20:52] *** Joins: hspcd (~hspcd@example.org)
+[03:20:56] *** Joins: tugrik (~username@example.org)
+[03:21:14] *** Quits: pingfloyd (~pingfloyd@example.org) (Ping timeout: 265 seconds)
+[03:21:26] *** Quits: js9600 (~js9600@example.org) (Ping timeout: 256 seconds)
+[03:21:42] *** Quits: toastedmilk (~toastedmi@example.org) (Ping timeout: 244 seconds)
+[03:21:58] *** Joins: hspcd_ (~hspcd@example.org)
+[03:22:43] *** Quits: denisk (~denisk@example.org) (Remote host closed the connection)
+[03:25:24] *** Quits: hspcd (~hspcd@example.org) (Ping timeout: 256 seconds)
+[03:26:17] *** Quits: jayfk (~jayfk@example.org) (Ping timeout: 258 seconds)
+[03:27:28] *** Joins: jayfk (~jayfk@example.org)
+[03:27:33] *** Quits: douzer (~douzer@example.org) (Ping timeout: 245 seconds)
+[03:28:58] *** Joins: lsv (~nn@example.org)
+[03:29:20] *** Joins: fresh_oyster (~andreas@example.org)
+[03:30:06] *** Quits: dvs (~hibbard@example.org) (Quit: Leaving)
+[03:30:24] *** Joins: dvs (~hibbard@example.org)
+[03:31:16] *** Joins: kbdkode (~kbdkode@example.org)
+[03:32:44] *** Quits: fresh_oy1ter (~andreas@example.org) (Ping timeout: 260 seconds)
+[03:33:44] *** Joins: pingfloyd (~pingfloyd@example.org)
+[03:34:24] *** Joins: cesurasean (~cesurasea@example.org)
+[03:34:46] *** Quits: Mahe (~mahe@example.org) (Ping timeout: 265 seconds)
+[03:36:43] *** Quits: faw (~faw@example.org) (Ping timeout: 245 seconds)
+[03:36:48] *** Joins: Mahe (~mahe@example.org)
+[03:38:26] *** Joins: sm00th (~sm00th@example.org)
+[03:38:31] *** Quits: sm00th (~sm00th@example.org) (Client Quit)
+[03:39:58] *** Joins: dqsii (~dqsii@example.org)
+[03:41:03] *** Quits: Nh3xus (~Nh3xus@example.org) (Quit: Leaving)
+[03:41:31] *** Quits: Lowl3v3l (~Lowl3v3l@example.org) (Remote host closed the connection)
+[03:41:37] *** Joins: necrose99 (~necrose99@example.org)
+[03:41:44] *** Quits: yomm (~yomm@example.org) (Quit: Leaving)
+[03:41:44] *** Quits: jak2000 (~jak2000@example.org) (Ping timeout: 246 seconds)
+[03:42:05] *** Joins: toastedmilk (~toastedmi@example.org)
+[03:42:55] *** Quits: hspcd_ (~hspcd@example.org) (Remote host closed the connection)
+[03:43:10] *** Joins: pencilandpaper (~penciland@example.org)
+[03:45:23] *** Joins: netsnail (~netsnail@example.org)
+[03:46:21] *** Joins: Horseleg (~robert@example.org)
+[03:48:35] *** Quits: sandeepkr (~sandeepkr@example.org) (Remote host closed the connection)
+[03:48:35] *** Quits: sandeepkr__ (~sandeepkr@example.org) (Remote host closed the connection)
+[03:48:41] *** Joins: skrb_ (~skrb@example.org)
+[03:49:36] *** Quits: Horseleg_ (~robert@example.org) (Ping timeout: 250 seconds)
+[03:50:19] *** Joins: BenderRodriguez (~Foxhoundz@example.org)
+[03:50:54] *** kbdkode is now known as koffeekbd
+[03:51:58] *** Quits: skrb (~skrb@example.org) (Ping timeout: 258 seconds)
+[03:53:50] *** Parts: putaoren (~boz@example.org)
+[03:55:09] *** Quits: toastedmilk (~toastedmi@example.org) (Ping timeout: 252 seconds)
+[03:56:47] *** Quits: Atm0spher1c (~future@example.org) (Ping timeout: 246 seconds)
+[03:57:17] *** Quits: canopus (~canopus@example.org) (Ping timeout: 240 seconds)
+[03:58:00] *** debhelper sets mode: +l 1707
+[03:59:44] *** Joins: canopus (~canopus@example.org)
+[04:00:01] *** Joins: kisk (~kisk@example.org)
+[04:00:36] *** Quits: sl4v3 (~casey.bil@example.org) (Ping timeout: 240 seconds)
+[04:02:00] *** Quits: CoOolBreeze (~CoOolBree@example.org) (Quit: Closing hailing frequencies...)
+[04:04:09] *** Quits: safe (~safe@example.org) (Quit: Leaving)
+[04:05:28] *** Joins: denisk (~denisk@example.org)
+[04:05:55] *** Quits: idts (~lxuser@example.org) (Quit: "You picked the wrong kite to run away with!")
+[04:06:12] *** Joins: jak2000 (~jak2000@example.org)
+[04:06:43] *** Quits: Ormm (~ard1t@example.org) (Quit: Nettalk6 - www.ntalk.de)
+[04:08:01] *** Quits: OOXXOO (~OOXXOO@example.org) (Ping timeout: 256 seconds)
+[04:10:25] *** Quits: Asoka (~a@example.org) (Quit: *puff*)
+[04:11:23] *** Quits: ToBeCloud (uid51591@example.org) (Quit: Connection closed for inactivity)
+[04:12:02] *** Joins: cerebro_ (~cerebro@example.org)
+[04:12:03] *** Quits: cerebro (~cerebro@example.org) (Read error: Connection reset by peer)
+[04:13:05] *** Quits: roylaprattep (~roylaprat@example.org) (Quit: leaving)
+[04:13:15] *** Joins: roylaprattep (~roylaprat@example.org)
+[04:13:15] *** Quits: roylaprattep (~roylaprat@example.org) (Changing host)
+[04:13:15] *** Joins: roylaprattep (~roylaprat@example.org)
+[04:13:39] *** Quits: roylaprattep (~roylaprat@example.org) (Client Quit)
+[04:14:04] *** Joins: toastedmilk (~toastedmi@example.org)
+[04:14:32] *** Quits: tatalazo (~Icedove@example.org) (Remote host closed the connection)
+[04:14:40] *** Joins: DarinMiller (~darin@example.org)
+[04:15:08] *** Joins: tatalazo (~Icedove@example.org)
+[04:16:14] *** Joins: Asoka (~a@example.org)
+[04:17:44] *** Quits: blueness (~blueness@example.org) (Quit: blueness)
+[04:17:46] *** Joins: password2 (~password@example.org)
+[04:19:03] *** Joins: Alam_Squeeze (quasselcor@example.org)
+[04:20:12] *** Quits: Ricardo__ (~rick@example.org) (Ping timeout: 265 seconds)
+[04:23:48] *** Quits: tinkersh (~TinkerSh@example.org) (Read error: Connection reset by peer)
+[04:23:52] *** Joins: Scourje (uid63311@example.org)
+[04:24:02] *** Quits: hexagoxel (~hexagoxel@example.org) (Ping timeout: 264 seconds)
+[04:24:04] *** Joins: tinkersh (~TinkerSh@example.org)
+[04:25:05] *** Joins: hexagoxel (~hexagoxel@example.org)
+[04:25:21] *** Quits: johefernan (~joheferna@example.org) (Ping timeout: 260 seconds)
+[04:26:01] <OneM_Industries> Ok. Move
+[04:26:05] <OneM_Industries> Sorry!
+[04:26:09] <OneM_Industries> Wrong channel.
+[04:26:53] *** Quits: chachasmooth (~chachasmo@example.org) (Ping timeout: 246 seconds)
+[04:27:47] *** Quits: toastedmilk (~toastedmi@example.org) (Ping timeout: 252 seconds)
+[04:28:58] *** Joins: chachasmooth (~chachasmo@example.org)
+[04:29:37] *** Joins: OOXXOO (~OOXXOO@example.org)
+[04:29:54] *** Quits: _sfiguser (~sfigguser@example.org) (Ping timeout: 244 seconds)
+[04:30:33] *** Joins: barbado (~kvirc@example.org)
+[04:32:35] *** Joins: blueness (~blueness@example.org)
+[04:36:16] *** Joins: johefernan (~joheferna@example.org)
+[04:36:44] *** Joins: TheCoffeMaker (~TheCoffeM@example.org)
+[04:36:45] *** Quits: TheCoffeMaker (~TheCoffeM@example.org) (Changing host)
+[04:36:45] *** Joins: TheCoffeMaker (~TheCoffeM@example.org)
+[04:38:08] *** Quits: murfjr (~ayy@example.org) (Ping timeout: 260 seconds)
+[04:40:56] *** Quits: resfirestar (~sam@example.org) (Quit: Leaving)
+[04:41:53] *** Joins: _sfiguser (~sfigguser@example.org)
+[04:42:26] *** Quits: nathanleclaire (~nathanlec@example.org) (Quit: nathanleclaire)
+[04:42:49] *** Quits: dethos (~dethos@example.org) (Ping timeout: 244 seconds)
+[04:44:52] *** Joins: toastedmilk (~toastedmi@example.org)
+[04:45:03] *** Joins: Sir_Designer (~Sir_Desig@example.org)
+[04:46:59] *** Joins: Sri_Designer (~Sir_Desig@example.org)
+[04:47:14] *** Joins: AlexLikeRock (~AlexLikeR@example.org)
+[04:47:57] <AlexLikeRock> good news,  .deb  at    https://ci.popcorntime.sh/view/All/job/Popcorn-Time-Desktop/
+[04:49:38] *** Quits: Sir_Designer (~Sir_Desig@example.org) (Ping timeout: 245 seconds)
+[04:50:49] *** Quits: gonz0 (~gonz0@example.org) (Quit: fui)
+[04:51:12] *** Quits: nse (~leo@example.org) (Ping timeout: 260 seconds)
+[04:51:55] *** Joins: nickenchuggets (~nicken@example.org)
+[04:52:05] *** Quits: Sri_Designer (~Sir_Desig@example.org) (Read error: Connection reset by peer)
+[04:52:17] *** Joins: Horachi (~Horachi@example.org)
+[04:52:25] *** Joins: Sir_Designer (~Sir_Desig@example.org)
+[04:52:56] <somiaj> AlexLikeRock: this isn't the proper place to advertise 3-rd party .deb packages. Also since the .deb doesn't say which deb based release it is for it may not even work for example.
+[04:53:15] <AlexLikeRock> hi somiaj , nice to see you
+[04:54:41] *** Joins: akukausar (~akukausar@example.org)
+[04:55:47] *** Joins: Sri_Designer (~Sir_Desig@example.org)
+[04:56:20] *** Quits: Sir_Designer (~Sir_Desig@example.org) (Read error: Connection reset by peer)
+[04:58:26] *** Quits: rubas (~rubas@example.org) (Remote host closed the connection)
+[04:58:40] *** Quits: akukausar (~akukausar@example.org) (Client Quit)
+[05:00:28] *** Quits: philipballew (~philip@example.org) (Ping timeout: 260 seconds)
+[05:00:43] *** Quits: Sri_Designer (~Sir_Desig@example.org) (Ping timeout: 256 seconds)
+[05:00:44] *** Quits: fireball``` (~fireball`@example.org) (Quit: Leaving)
+[05:01:56] *** Quits: toastedmilk (~toastedmi@example.org) (Ping timeout: 244 seconds)
+[05:02:37] *** Quits: Dreaman (~one@example.org) (Quit: Leaving)
+[05:03:45] *** Joins: walrider (~walrider@example.org)
+[05:04:12] <walrider> i need help about installing xfce desktop environment on example how to do that via command line ?
+[05:04:25] *** Joins: valeech (~valeech@example.org)
+[05:04:59] *** Joins: P-G (~pg@example.org)
+[05:05:00] <dvs> ,v xfce4
+[05:05:02] <judd> Package: xfce4 on amd64 -- wheezy: 4.8.0.3; jessie: 4.10.1; stretch: 4.12.3; sid: 4.12.3
+[05:05:14] <missmbob> walrider: probably should do apt-get install task-xfce-desktop
+[05:05:31] <somiaj> !xfce4
+[05:05:32] <dpkg> Xfce is a pretty nifty Desktop Environment.  Lightweight, fast, compact.  To install, ask me about <install xfce>.  https://wiki.example.org/Xfce  http://wiki.xfce.org/faq  http://www.xfce.org/  #xfce on irc.freenode.net.
+[05:05:37] <somiaj> !install xfce
+[05:05:37] <dpkg> To install <Xfce> on established systems, ask me about <install x>, then: «apt-get install xfce4 xfce4-goodies».  To install using example-Installer (if not using Xfce CD-1): from the 'Software selection' dialog, choose "Xfce" (use space bar to toggle selections), then "Continue"; an Internet connection may be required to obtain these packages.
+[05:05:40] <walrider> at this moment im not in ubuntu
+[05:05:56] <somiaj> walrider: well that is good, because we won't give advise for people in ubuntu
+[05:05:56] <walrider> im logged in a example security os
+[05:06:09] <missmbob> example security os? kali?
+[05:06:15] <walrider> parrotsec
+[05:06:27] <missmbob> !parrotsec
+[05:06:28] <dpkg> Parrot Security OS is not example and is not supported in #example.  Please use their forums at http://forum.frozenbox.org/ .  Parrot is a security oriented distro based on example stable.  http://www.parrotsec.org/
+[05:06:32] <somiaj> that is not example, so you should probably get advise as to what meta packages they use from parrotsec
+[05:06:50] <walrider> oh im sorry
+[05:07:01] *** Quits: ruind (~ruind@example.org) (Ping timeout: 248 seconds)
+[05:07:10] *** Joins: plasmoduck (~cjg@example.org)
+[05:08:11] *** Parts: walrider (~walrider@example.org)
+[05:09:18] <P-G> Hello, I'm having trouble configuring my laptop's audio. Can someone help me? GUI is XFCE.
+[05:09:40] <somiaj> P-G: in what way? Are you useing pulseaudio (ps fax | grep pulse) or not?
+[05:09:58] <P-G> Well, I don't think I'm using anything right now...
+[05:10:11] <P-G> I tried to configure ALSA but apparently it didn't work.
+[05:10:16] <P-G> Anything is fine really.
+[05:10:21] <somiaj> run the command, ps fax | pulse (do you see any thing running like pulseaudio)
+[05:10:26] <somiaj> I froget if xfce pulls it in or not
+[05:10:50] <P-G> Pulse wasn't found.
+[05:10:58] <somiaj> how did you try to configure alsa?
+[05:11:23] <P-G> Honestly, I forget. Let me try to remember.
+[05:11:41] *** Joins: freakyy (~uwe@example.org)
+[05:11:49] <somiaj> !alsa checklist
+[05:11:49] <dpkg> 1) add yourself to the 'audio' group (log out & in again)  2) unmute and raise channels w/ alsamixer (also try muting some & toggle jack sense if available)  3) <pulseaudio> or other daemon stopped?  4) speakers on?  5) does "aplay /usr/share/sounds/alsa/Noise.wav" work for root?  6) purge any installed <oss4> packages to remove ALSA blacklist.  See also <list alsa users>, <alsa firmware>.
+[05:11:56] <somiaj> some common things to check when debugging alsa
+[05:12:12] <somiaj> also note you could have multiple soundcards, and sometimes all you have to do is point alsa at the one you are trying to use
+[05:12:32] <P-G> Ok, I have tried one and two.
+[05:12:43] <P-G> And probably three but let me double-check that.
+[05:12:45] <freakyy> hi all. why cant i create a raid array here: http://paste.ubuntu.com/23493860/
+[05:12:58] <P-G> Is "speaker-test" a good test or should I use aplay?
+[05:13:24] <somiaj> Unsure there. I use aplay because I can specify exact which card/device to use by looking at aplay -l
+[05:13:41] <P-G> Ok, let me try it. Hold on.
+[05:13:46] *** Quits: Adbray (~Adbtay@example.org) (Quit: Adbray)
+[05:13:47] *** Joins: Atm0spher1c (~future@example.org)
+[05:14:50] <P-G> No on four, confirmed four.
+[05:15:20] <P-G> My speaker mute button L.E.D. does change colour properly for whatever that's worth. Might be firmware, I don't know.
+[05:15:45] <P-G> Somiaj: Do you know how to test point three properly?
+[05:15:53] *** Quits: beencubed (~beencubed@example.org) (Quit: Leaving)
+[05:17:31] *** Joins: badiane (~badiane@example.org)
+[05:17:53] *** Joins: toastedmilk (~toastedmi@example.org)
+[05:18:34] <P-G> I just removed pulseaudio and pulseaudio-utils.
+[05:19:37] *** Quits: TheCoffeMaker (~TheCoffeM@example.org) (Ping timeout: 240 seconds)
+[05:19:55] *** Quits: dvs (~hibbard@example.org) (Remote host closed the connection)
+[05:19:57] <mrrhq> Good for you. c:
+[05:20:08] <P-G> :p
+[05:20:35] <mrrhq> PA is mostly cancerous.
+[05:20:52] <P-G> Yeah, I have heard that before.
+[05:21:01] <P-G> But right now I just want to get this laptop working. >.<
+[05:21:33] <missmbob> so you had pulseaudio? damn. running pavucontrol would've probably been such an easy fix
+[05:21:40] *** Joins: pseudocrat (~sudo@example.org)
+[05:21:48] <somiaj> yea I'm surprised ps fax | grep pulse did not return it was running
+[05:21:55] <missmbob> he probably did Pulse
+[05:22:10] <P-G> "sudo alsactl init" found two devices, one Intel and one Nvidia for HDMI.
+[05:22:28] *** Quits: juantelez (~juantelez@example.org) (Quit: WeeChat 1.0.1)
+[05:22:32] <P-G> aplay prints a bunch of stuff. I'm going to Pastebin it.
+[05:22:54] <missmbob> honestly i'd reinstall pulseaudio pulseaudio-utils and pavucontrol. then just run pavucontrol
+[05:23:13] <somiaj> yea that gives you an interface to nicely control all your cards
+[05:23:32] *** Joins: TheCoffeMaker (~TheCoffeM@example.org)
+[05:23:34] <mrrhq> I still wonder if PA adds any overhead, or if it actually makes any audio-operations work faster?
+[05:23:58] <somiaj> mrrhq: it adds overhead, but most modern systems won't notice it. It has some additional features not avaialble in alsa.
+[05:24:04] <P-G> http://pastebin.com/XgHyrPwR
+[05:24:30] *** Joins: c1pher (~c1pher@example.org)
+[05:24:31] <P-G> Want output from alsactl?
+[05:24:36] <jmcnaught> +1 for pulseaudio. the FUD about it is very outdated.
+[05:25:03] <somiaj> P-G: pulseaudio will probably be a much simpler way to get sound.
+[05:25:24] <somiaj> jmcnaught: yea, I always liked the idea of the sound server, they just kept changing so often, glad to see one stuck around. (:
+[05:25:35] <P-G> Ok, I'll do that unless you have any ideas about ALSA.
+[05:25:54] <P-G> It seems like I might just not know how to use alsa-mixer.
+[05:26:11] <somiaj> maybe because it is called alsamixer?
+[05:26:25] <somiaj> either way, that only controls per sound card setting, it won't control which one apps use by default
+[05:26:35] <Hello71> jmcnaught: for local single-user single-output setups I find it causes more problems than it solves.
+[05:26:48] <Hello71> and at best is cost-benefit neutral.
+[05:26:50] <P-G> Lol.
+[05:27:02] <P-G> Ok, how do I configure default output device?
+[05:27:07] *** Quits: sikun (~David@example.org) (Read error: Connection reset by peer)
+[05:27:11] <P-G> Here's output from alsactl: http://pastebin.com/kAptUMKH
+[05:27:24] <Hello71> I think if you use alisp, you might be able to hook up a control to output selection.
+[05:27:36] *** Joins: gonz0 (~gonz0@example.org)
+[05:27:55] *** Quits: dexta (~D3XTA@example.org) (Ping timeout: 256 seconds)
+[05:27:58] *** Quits: AlexLikeRock (~AlexLikeR@example.org) (Ping timeout: 245 seconds)
+[05:28:15] *** Joins: dexta (~D3XTA@example.org)
+[05:29:15] <mrrhq> I still have hope that someday ALSA will have proper and secure network-transparency with audio capabilities.
+[05:29:41] <P-G> alsa -l output: http://pastebin.com/rFMbZiid
+[05:29:56] <somiaj> My 1998 sblive has made it easy to avoid all sound issues over the years, I'm actually unsure what it is like these days. It must be better as sound issues are far rarer.
+[05:30:07] <somiaj> P-G: why not install pulseaudio and be done with it?
+[05:30:30] <P-G> Well, it just seems like there should be a quick fix here but maybe not.
+[05:30:59] <P-G> http://unix.stackexchange.com/questions/93128/alsa-how-can-i-tell-my-default-audio-output-is-card-2-and-device-0-not-hdmi
+[05:31:01] <somiaj> P-G: it might be just a quick configuration issue, but have you read man aplay, or tried to see what the commands and info we have given you means?
+[05:31:22] *** Quits: pseudocrat (~sudo@example.org) (Quit: Leaving)
+[05:31:30] <P-G> I have read that a while back and I'm trying to figure out the devices now.
+[05:31:42] <P-G> If this takes too long, I'll just try Pulseaudio.
+[05:31:43] *** Joins: pseudocrat (~sudo@example.org)
+[05:31:44] *** Quits: pseudocrat (~sudo@example.org) (Max SendQ exceeded)
+[05:31:49] <mrrhq> P-G: can you at least get to alsamixer (granted you have alsa-utils installed?)
+[05:31:51] <somiaj> that is how I set my default device, but pvaucontrol gives you a nice gui you can use.
+[05:31:56] *** Quits: toastedmilk (~toastedmi@example.org) (Ping timeout: 240 seconds)
+[05:31:59] <missmbob> there's the capital P again. i'm sure that was it :P
+[05:32:06] <missmbob> pavucontrol he means
+[05:32:09] <mrrhq> Maybe something is muted, who knows.
+[05:32:11] *** Joins: pseudocrat (~sudo@example.org)
+[05:32:12] *** Joins: ledeni (~ledeni@example.org)
+[05:32:33] <mrrhq> I've ran into ALSA issues years ago, forgot what I did to fix it...
+[05:32:34] *** Joins: Riyria (~Riyria@example.org)
+[05:33:25] <P-G> "aptitude search alsamixer" only lists alsamixergui, cairo-dock-alsamixer-plug-, and mopidy-alsamixer.
+[05:33:32] <P-G> I thought I had it installed...
+[05:36:03] <somiaj> P-G: you were told what package alsamixer is in.
+[05:36:09] <somiaj> alsa-utils by the way
+[05:37:18] <P-G> Ok, I do have that but I can't seem to run it...
+[05:37:28] <mrrhq> I was gonna say, if alsamixer lauches in the promps, and doesn't show any errors, or shows your audio devices, you're more than half of the way there to fixing the problem.
+[05:37:29] <somiaj> how are you running it?
+[05:37:39] <mrrhq> s/promps/terminal
+[05:37:40] <P-G> Man page says it's ncurses, which is what I remember.
+[05:38:07] <P-G> I run "alsamixer" and bash prints "cannot open mixer: No such file or directory".
+[05:38:07] *** Quits: OOXXOO (~OOXXOO@example.org) (Ping timeout: 256 seconds)
+[05:38:24] <P-G> Sudo?
+[05:38:36] <mrrhq> Shoot. What about groups | grep audio
+[05:38:42] <mrrhq> Does it show anything?
+[05:38:45] <P-G> Sudo didn't help.
+[05:38:55] <P-G> My user is a part of audio group.
+[05:39:10] <Hello71> sounds like you upgraded kernel.
+[05:39:13] *** Quits: kzimmermann (~kzimmerma@example.org) (Ping timeout: 245 seconds)
+[05:39:20] <mrrhq> Jsut wanted to make sure. :)
+[05:39:30] *** Joins: bDreadz (~bDreadz@example.org)
+[05:39:32] <P-G> I don't think I upgraded kernel...
+[05:40:05] *** Quits: pseudocrat (~sudo@example.org) (Quit: Leaving)
+[05:40:27] *** Joins: pseudocrat (~sudo@example.org)
+[05:40:31] <mrrhq> P-G: What version of example are you using?
+[05:40:37] *** Quits: pseudocrat (~sudo@example.org) (Changing host)
+[05:40:37] *** Joins: pseudocrat (~sudo@example.org)
+[05:41:11] <P-G> Let me figure out how to check that again. :p
+[05:41:26] <mrrhq> I've had your type of problems in example testing before. Try "lsb_release" in the terminal.
+[05:41:48] <missmbob> it's lsb_release -a
+[05:41:55] <mrrhq> Right, sorry.
+[05:42:05] *** Quits: sasukeskapa (~sasukeska@example.org) (Quit: Leaving)
+[05:42:11] <missmbob> you can probably do cat /etc/example_version too
+[05:42:12] <P-G> 8.6
+[05:42:14] <Hello71> cat /etc/lsb_release
+[05:42:23] <Hello71> er, os-
+[05:42:35] <zykotick9> missmbob: "lsb_release -sc" is handy
+[05:42:36] <mrrhq> Hmm...
+[05:42:47] *** Joins: Rokixz (~rokas@example.org)
+[05:42:48] <mrrhq> He's on stable.
+[05:42:51] *** Quits: sanjeev_ (~sanjeev@example.org) (Ping timeout: 265 seconds)
+[05:43:24] <Hello71> are you sure you actually still have cards with mixers
+[05:43:43] <P-G> Er.
+[05:43:50] <P-G> What?
+[05:44:17] <P-G> I've been looking at that StackExchange link and I don't seem to have an /etc/asound.conf.
+[05:44:18] *** Quits: gonz0 (~gonz0@example.org) (Quit: fui)
+[05:44:19] <mrrhq> lspci | grep -i audio
+[05:44:24] *** Quits: bDreadz (~bDreadz@example.org) (Ping timeout: 260 seconds)
+[05:44:27] *** Joins: AlexLikeRock (~AlexLikeR@example.org)
+[05:44:30] <mrrhq> What audio device(s) you have?
+[05:44:31] <Hello71> like, they didn't get detached.
+[05:44:39] <P-G> Intel HD Audio Controller.
+[05:44:49] <P-G> Oh, yes.
+[05:44:55] <P-G> It's a pretty normal laptop.
+[05:45:01] <mrrhq> lsmod | grep snd
+[05:45:04] <mrrhq> Anything?
+[05:45:08] <P-G> HP Pavilion.
+[05:45:21] <P-G> Yes, several.
+[05:45:22] *** Quits: musicnate (~musicnate@example.org) (Quit: WeeChat 1.5)
+[05:45:32] *** Joins: robotroll (~robotroll@example.org)
+[05:45:37] <P-G> Want pastebin?
+[05:45:58] <mrrhq> If you want to, but it sounds like most of the modules are loaded.
+[05:46:27] <P-G> http://pastebin.com/2J4K1E71
+[05:46:39] *** Quits: kobain (~kobain@example.org) (Quit: KVIrc 4.2.0 Equilibrium http://www.kvirc.net/)
+[05:46:40] *** Joins: kanotix (~kanotix@example.org)
+[05:46:46] <P-G> Yeah, I even see a toast message in GUI when I toggle sound from the hardware button.
+[05:46:50] <mrrhq> Not really sure at this point. I also have Intel HDA.
+[05:46:51] <P-G> But no output...
+[05:47:19] <P-G> Do you have an /etc/asound.conf?
+[05:47:23] <Hello71> aplay -l
+[05:47:57] <mrrhq> P-G: No, I don't use one.
+[05:48:14] <P-G> Ok, apparently it's not necessary.
+[05:48:24] <P-G> But maybe I should use that to specify output?
+[05:49:40] *** Joins: xormor (~xormor@example.org)
+[05:49:40] *** Quits: xormor (~xormor@example.org) (Changing host)
+[05:49:40] *** Joins: xormor (~xormor@example.org)
+[05:50:04] <mrrhq> P-G: Everything looks good in terms of that output, so the kernel recognises all of it.
+[05:50:31] <mrrhq> userland is having problems figuring it out, somewhat...
+[05:50:57] <P-G> Yeah....
+[05:51:51] <P-G> "aplay -l" shows three devices, two are the same with analogue and digital and one is clearly HDMI, but they all have the same card and device identifiers at 0.
+[05:51:58] <P-G> Seems shady.
+[05:52:02] <P-G> I'll try Pulseaudio.
+[05:52:32] <P-G> Does anyone know what is actually necessary there? Just install pulseaudio and pulseaudio-utils?
+[05:52:54] *** Quits: xar- (~xar@example.org) (Quit: ZNC 1.7.x-git-195-a314d30 - http://znc.in)
+[05:53:01] *** Joins: xar- (~xar@example.org)
+[05:53:13] <P-G> Sound I uninstall all alsa stuff?
+[05:53:16] * zykotick9 doesn't think adding pulse on top of a non-working alsa will help ANYTHING...
+[05:53:30] <P-G> Ok. >.<
+[05:53:32] *** Quits: password2 (~password@example.org) (Ping timeout: 250 seconds)
+[05:53:35] <P-G> What should I try?
+[05:53:41] <Hello71> speaker-test
+[05:54:03] <mrrhq> systemctl restart alsa-restore.service alsa-state.service
+[05:54:20] <Hello71> what
+[05:54:21] <mrrhq> That's one other thing I can think of as I looked up about it.
+[05:54:30] <mrrhq> Needs to be run as root.
+[05:54:37] *** Quits: daltonx (~daltonx@example.org) (Ping timeout: 240 seconds)
+[05:54:41] <P-G> Speaker-test output: http://pastebin.com/KPM8Niup
+[05:55:28] <Hello71> pastebin aplay -l
+[05:55:45] *** Joins: Zorroness (~albert@example.org)
+[05:55:51] <mrrhq> systemctl status alsa-restore.service
+[05:55:55] <P-G> I'll make a pastebin of my pastebins. :p
+[05:55:56] <mrrhq> Should say active.
+[05:56:06] <P-G> I just tried restarting it. Hold on.
+[05:56:29] *** Joins: Adbray (~Adbtay@example.org)
+[05:56:40] <mrrhq> It's not that important, but it does save the state of the sound card.
+[05:57:35] *** Joins: DaleK5whr (~DaleK5whr@example.org)
+[05:58:49] *** Joins: trCody (~trCody@example.org)
+[05:59:27] *** Quits: patterson (~patterson@example.org) (Quit: Going offline, see ya! (www.adiirc.com))
+[05:59:28] *** Joins: Eduard_Munteanu (~Eduard_Mu@example.org)
+[05:59:41] *** Quits: trCody (~trCody@example.org) (Client Quit)
+[06:00:25] *** Joins: nse (~leo@example.org)
+[06:00:26] *** Quits: DaleK5whr (~DaleK5whr@example.org) (Client Quit)
+[06:00:28] *** Quits: fstd (~fstd@example.org) (Read error: Connection reset by peer)
+[06:00:38] *** Joins: fstd (~fstd@example.org)
+[06:01:07] <P-G> Ok, Pastebin of Pastebins: http://pastebin.com/wxwR1H6p
+[06:01:13] *** Joins: Sir_Designer (~Sir_Desig@example.org)
+[06:01:31] *** Joins: jim_carry (~jim_carry@example.org)
+[06:01:31] *** Quits: jim_carry (~jim_carry@example.org) (Changing host)
+[06:01:31] *** Joins: jim_carry (~jim_carry@example.org)
+[06:01:49] <P-G> Same behaviour, hardware button seems to work but no audio output.
+[06:02:14] <P-G> I'm going to look for an XFCE GUI utility.
+[06:02:26] <missmbob> pavucontrol is such utility. that's what i use in xfce
+[06:02:39] <somiaj> back full circle it seems
+[06:02:46] <missmbob> could've been done :P
+[06:03:06] <mrrhq> Hmm, yeah, absolutely nothing userland is working. I don't know what to do at that point. Exepct restart and see if it works. Ahahaha. Sorry man.
+[06:03:17] <kanotix> there are also #alsa and #pulseaudio channels FWIW
+[06:03:21] *** Quits: surfist (~surfist@example.org) (Remote host closed the connection)
+[06:03:35] <P-G> Well, I'm ready to try Pulseaudio but somebody said I shouldn't.
+[06:03:46] *** Joins: surfist (~surfist@example.org)
+[06:03:55] <P-G> Can somebody walk me through it so I don't get lost this time? >.<
+[06:04:18] <somiaj> just install those two packages you removed at the start
+[06:04:29] <missmbob> plus pavucontrol. they dont pull that in
+[06:04:31] <mrrhq> Oh yeah, that's right, you removed them.
+[06:04:33] <P-G> No need to remove Alsa stuff?
+[06:04:38] <somiaj> then isntall pavucontrol and then run that
+[06:04:44] <P-G> Ok, hold on.
+[06:04:46] <somiaj> no need, pulse is on top of alsa.
+[06:04:49] <mrrhq> I think if you rebbot, it'll probably just magically work right.
+[06:05:08] <mrrhq> Disclaimer: Don't just trust me blindly. :p
+[06:05:14] *** Quits: missmbob (~missmbob@example.org) (Quit: leaving)
+[06:06:03] <P-G> On top, huh? ;)
+[06:06:42] <mrrhq> I mean then you could finally celebrate not using Pulseaudio for X amount of years, as nerdy bragging rights.
+[06:06:45] *** Quits: diniwed (~gavron@example.org) (Quit: WeeChat 1.0.1)
+[06:07:14] *** Joins: missmbob (~missmbob@example.org)
+[06:07:16] <P-G> I'll try that another day. :p
+[06:08:02] *** Quits: krazedkat (~krazedkat@example.org) (Ping timeout: 246 seconds)
+[06:08:21] <P-G> Pavucontrol output devices listed are "speakers", "analog output", and "headphones (unplugged)".
+[06:09:13] *** Quits: infernix (nix@example.org) (Ping timeout: 245 seconds)
+[06:09:32] <P-G> They all seem to mute separately.
+[06:09:33] <mrrhq> Of course Pulseaudio shows devices. *sigh*
+[06:09:45] <P-G> Well, ALSA did too.
+[06:09:47] <Hello71> why the hell did you say "they all have the same card and device identifiers at 0"
+[06:09:49] <mrrhq> I wish ALSA didn't have bugs either.
+[06:09:56] <mrrhq> Haha.
+[06:10:04] <Hello71> speaker-test -D hw:1,0
+[06:10:06] <P-G> Hello, did you see the pastebin?
+[06:11:01] *** Quits: jim_carry (~jim_carry@example.org) (Ping timeout: 248 seconds)
+[06:11:10] *** Quits: Putti (~Putti@example.org) (Ping timeout: 244 seconds)
+[06:11:50] <P-G> Hello: "Channels count (1) not available for playbacks: Invalid argument \n Setting of hwparams failed: Invalid argument"
+[06:12:14] <P-G> Speaker-test still not working without arguments either.
+[06:12:40] <P-G> Nothing from aplay either...
+[06:12:55] <mrrhq> It's frustrating that I can't help you solve it, because I ran into the EXACT same problem, but didn't document what I did. I think the ultimate solution is to just install Ubuntu Mate, and give a middle finger to the example folks who couldn't do eveything right all the time. :^)
+[06:12:55] *** Joins: jim_carry (~jim_carry@example.org)
+[06:13:22] <mrrhq> Though I kid, It probably just fixed itself.
+[06:13:29] <Hello71> add -c 2
+[06:13:41] <mrrhq> As everything does...
+[06:13:52] *** Joins: infernix (nix@example.org)
+[06:14:18] <P-G> Hello: No errors but no audio.
+[06:14:36] <P-G> The volume should be pretty high.
+[06:14:47] <Hello71> alsamixer -D hw:1
+[06:15:06] <P-G> Nvidia HDMI.
+[06:15:11] *** Quits: SpaceAce (~SpaceAce@example.org) (Read error: Connection reset by peer)
+[06:15:17] <mrrhq> Protip: make sure your speakers are at least low enough, so that when it does work, you don't blow out your eardrums. c:
+[06:15:31] <P-G> I'm find with blowing out my eardrums at this point. :p
+[06:16:03] <P-G> No entries for hw:2-4.
+[06:16:06] <mrrhq> I wouldn't be surprised if hair-pulling commences already.
+[06:16:21] *** Quits: ledeni (~ledeni@example.org) (Ping timeout: 248 seconds)
+[06:16:27] *** Quits: Cabanossi (~Cabanossi@example.org) (Ping timeout: 246 seconds)
+[06:16:37] *** Joins: gallo_mobile (~elGALLO@example.org)
+[06:16:39] *** Joins: samodid (~vsamodid@example.org)
+[06:16:56] *** Quits: krytarik (~krytarik@example.org) (Quit: Leaving)
+[06:17:01] <gallo_mobile> ok, for th life of me I can't make a damn boot installable USB stick
+[06:17:04] <gallo_mobile> http://hastebin.com/ilemafopag.js
+[06:17:16] <Hello71> press F6.
+[06:17:21] *** gallo_mobile is now known as GALL0
+[06:17:25] <P-G> "alsamixer -D hw:1" shows headphones and speakers even though the chip says it's HDMI.
+[06:17:37] <P-G> Ok.
+[06:17:57] *** Joins: sanjeev_ (~sanjeev@example.org)
+[06:18:03] <P-G> F6 shows "- (default)", "1 HDA Intel", and "enter device name...".
+[06:18:05] <Hello71> GALL0: you can't put it on a *partition*
+[06:18:06] <GALL0> made a standard, netinst and mini.iso with cp and dd on a mac
+[06:18:17] <P-G> "HDA Intel" is selected.
+[06:18:18] <mrrhq> GALL0: You can use dd with the example hybrid ISO, and make it a bootable stick. Your BIOS needs to support booting over USB.
+[06:18:18] * GALL0 facepalm
+[06:18:28] <Hello71> also, consider cp as explained in the documentation.
+[06:18:34] <GALL0> it does allow for a UEFI,
+[06:18:45] <mrrhq> Well, sorry I still like "disk destroyer".
+[06:18:53] <mrrhq> Bad habit.
+[06:19:01] <Hello71> dd requires bs in order to be at all efficient.
+[06:19:12] <GALL0> so cp <file> /dev/disk1 ?
+[06:19:16] *** Joins: freakyyy (~uwe@example.org)
+[06:19:22] *** Joins: Cabanossi (~Cabanossi@example.org)
+[06:19:24] <mrrhq> Yes, but cp doesn't even have an option for bs?
+[06:19:26] <P-G> Oh, it might be working now!
+[06:19:28] <P-G> Maybe.
+[06:19:30] <mrrhq> Or does cp even have a bs?
+[06:19:42] <P-G> Yes. :D
+[06:19:46] <GALL0> in Mac using dd if=file of=dest; bs=4M give me a 'numerical error"
+[06:19:50] <somiaj> GALL0: the live image doesn't support efi
+[06:19:52] <GALL0> something like that, didnt pastebin it
+[06:19:53] <Hello71> lol
+[06:19:56] <mrrhq> P-G: Congrats. :)
+[06:19:58] <Hello71> read the install docs.
+[06:20:13] <GALL0> i've tried a few different ISOs
+[06:20:23] <Hello71> and even if it did support EFI you can't dd a full disk image to a partiton
+[06:20:36] <P-G> But I don't know whether I'm using ALSA or PA so I'm going to try uninstalling PA. :p
+[06:20:38] <somiaj> also cp is easier to use than dd, 'cp example.iso /dev/disk' (and make sure it is the disk not a partiion on it)
+[06:20:59] <mrrhq> Minimal-install master race.
+[06:21:05] <GALL0> install docs only says "cp <file> <device>
+[06:21:07] <GALL0> Alternatively you can also use dd:
+[06:21:09] <GALL0> dd if=<file> of=<device> bs=4M; sync"Y
+[06:21:11] <somiaj> Unsure what the disk would be in osx, My guess would be just /dev/disk1s or something like that
+[06:21:42] <GALL0> disk1s1 is th partition, so i need to use /dev/disk1 for the device
+[06:21:55] <mrrhq> Wouldn't you just manually run "sync" afterwards before unmounting? it's not required to use sync either.
+[06:22:23] <GALL0> bs=4M gives an error, so sync doesnt even run
+[06:22:39] <GALL0> tried 4MB and still an error. i'll try cp see what happens
+[06:22:40] *** Quits: Shentino (~Shentino@example.org) (Ping timeout: 260 seconds)
+[06:22:46] <mrrhq> try bs=4096k
+[06:23:13] <mrrhq> the dd command is different in Mac/FreeBSD-based OSes.
+[06:23:17] *** Quits: sanjeev_ (~sanjeev@example.org) (Read error: Connection reset by peer)
+[06:23:36] *** Quits: SynrGy (~synrg@example.org) (Ping timeout: 260 seconds)
+[06:23:39] *** Quits: cerebro_ (~cerebro@example.org) (Remote host closed the connection)
+[06:24:03] <Hello71> you can't unmount a device
+[06:24:08] *** Quits: SynrG (~synrg@example.org) (Ping timeout: 250 seconds)
+[06:24:21] <Hello71> and if 4M won't work 4096k probably won't either
+[06:24:39] *** Joins: otirc (~fish@example.org)
+[06:25:06] *** Quits: otirc (~fish@example.org) (Client Quit)
+[06:25:09] *** Joins: dreamon_ (~dreamon@example.org)
+[06:25:16] <missmbob> how do you figure? osx man page for dd says it does support bs. http://ss64.com/osx/dd.html
+[06:25:23] <GALL0> dd still works without bs or sync
+[06:25:24] <missmbob> so it probably just is a M vs k thing
+[06:25:46] <P-G> Hello: you were right about "-c 2". I uninstalled PA again and everything seems to work except the default speaker-test channel.
+[06:26:07] *** Quits: pankid (~quassel@example.org) (Read error: Connection reset by peer)
+[06:26:11] <P-G> I can't access "default" from alsamixer but device 1 seems to work fine for Chromium.
+[06:26:14] <Hello71> missmbob: what about that says it supports k suffix
+[06:26:21] *** Joins: overlord_tm (~andraz@example.org)
+[06:26:28] <Hello71> P-G: five bucks says rebooting will fix it
+[06:26:36] *** Quits: kanotix (~kanotix@example.org) (Quit: Konversation terminated!)
+[06:26:41] <P-G> Ok, let me just make sure I've got this log saved...
+[06:26:41] <Hello71> (after uninstalling pulse)
+[06:26:54] <GALL0> 4096k is working, or at least didn't give me an immediate error
+[06:26:57] *** Joins: OS-24695 (~OS-24695@example.org)
+[06:27:00] <missmbob> Hello71: there we go ^
+[06:27:15] <mrrhq> Yeah, I have no idea why FreeBSD doesn't have "M" as a prefix option.
+[06:28:01] *** debhelper sets mode: +l 1701
+[06:28:01] <mrrhq> Traditionally, you'd use count= with blocksize.
+[06:29:17] *** Quits: robotroll (~robotroll@example.org) (Remote host closed the connection)
+[06:29:53] *** Joins: bnw (~bnw@example.org)
+[06:30:08] *** Quits: DarinMiller (~darin@example.org) (Ping timeout: 256 seconds)
+[06:30:26] *** Quits: P-G (~pg@example.org) (Quit: HopingForTheBest)
+[06:30:46] *** Quits: dreamon_ (~dreamon@example.org) (Remote host closed the connection)
+[06:33:20] *** Joins: P-G (~pg@example.org)
+[06:33:32] *** Joins: Specialist (~tg@example.org)
+[06:34:33] *** Joins: pankid (~quassel@example.org)
+[06:34:40] *** Joins: otirc (~fish@example.org)
+[06:34:44] <GALL0> well shit, got dbian-8.6-netinst.iso successfully installed on the USB, got an initialization error on OS X that it can be read, but
+[06:34:46] <GALL0> http://hastebin.com/hopavuviba.vbs
+[06:35:39] <jack_rip_vim> ==
+[06:35:45] *** Joins: ShapeShifter499 (~ShapeShif@example.org)
+[06:35:46] *** Quits: otirc (~fish@example.org) (Client Quit)
+[06:36:12] *** Joins: OOXXOO (~OOXXOO@example.org)
+[06:36:20] *** Joins: poleprogger (~mj@example.org)
+[06:36:25] *** Quits: kiao2938 (~mj@example.org) (Ping timeout: 268 seconds)
+[06:36:52] <P-G> speaker-test * c2
+[06:36:56] <P-G> Oops.
+[06:37:03] *** Joins: krazedkat (~krazedkat@example.org)
+[06:37:22] <GALL0> nevermind
+[06:38:00] *** Joins: ledeni (~ledeni@example.org)
+[06:38:24] *** Quits: altin (~altin@example.org) (Read error: Connection reset by peer)
+[06:38:44] *** Joins: cyan__ (~cyan@example.org)
+[06:39:12] <P-G> Rebooted. Alsamixer looks the same. "speaker-test -D hw:1,0 -c 2" works but "speaker-test -D hw:1,0" and "speakertest" do not. Basically the same behaviour from before but Chromium doesn't work anymore. ;(
+[06:39:35] *** Joins: altin (~altin@example.org)
+[06:40:03] <P-G> I'm guessing PulseAudio got Chromium on the right device somehow and it just didn't stop working after I uninstalled PulseAudio.
+[06:40:38] *** Quits: jack_rip_vim (~mint@example.org) (Remote host closed the connection)
+[06:43:24] *** Joins: dreki (~dreki@example.org)
+[06:44:57] *** Joins: OS-25378 (~OS-25378@example.org)
+[06:44:59] *** Quits: Geom` (~Geom@example.org) (Remote host closed the connection)
+[06:45:05] *** Quits: Scourje (uid63311@example.org) (Quit: Connection closed for inactivity)
+[06:45:18] *** Quits: denisk (~denisk@example.org) (Remote host closed the connection)
+[06:45:53] *** Joins: denisk (~denisk@example.org)
+[06:46:05] *** Quits: OS-24695 (~OS-24695@example.org) (Remote host closed the connection)
+[06:46:53] *** Quits: johefernan (~joheferna@example.org) (Quit: Konversation terminated!)
+[06:47:40] *** Quits: dreki (~dreki@example.org) (Client Quit)
+[06:48:20] *** Quits: overlord_tm (~andraz@example.org) (Ping timeout: 260 seconds)
+[06:48:23] *** Joins: awal1 (~awal1@example.org)
+[06:48:29] *** Quits: OOXXOO (~OOXXOO@example.org) (Quit: 离开)
+[06:48:54] *** Joins: Geom (~Geom@example.org)
+[06:48:56] *** Quits: Zorroness (~albert@example.org) (Remote host closed the connection)
+[06:50:10] *** Quits: talur (~Thunderbi@example.org) (Remote host closed the connection)
+[06:50:18] *** Quits: denisk (~denisk@example.org) (Ping timeout: 250 seconds)
+[06:50:26] *** Joins: talur (~Thunderbi@example.org)
+[06:51:28] <P-G> Alsamixer shows speaker volume with the format "-9.00, -9.00". I assume it is recognised as stereo.
+[06:52:26] <P-G> "speaker-test -D hw:1,0 -c 2" works but requires both arguments.
+[06:52:51] <P-G> "aplay -D hw:1,0 --channels=2 /usr/share/sounds/alsa/Noise.wav" does not work.
+[06:53:28] *** Joins: dreki (~dreki@example.org)
+[06:55:28] <P-G> What is "PCM name" for -D? :S
+[06:56:25] *** Quits: dreki (~dreki@example.org) (Remote host closed the connection)
+[06:56:48] *** Quits: cyan__ (~cyan@example.org) (Quit: For unknown reasons the First International Convention of the Unlucky has not started for the last eight weeks.)
+[06:57:14] <P-G> Answer: http://alsa.opensrc.org/Aplay
+[06:58:03] *** Joins: dayten (~gnoid@example.org)
+[06:58:16] *** Joins: dreki (~dreki@example.org)
+[06:59:30] *** Joins: slicepaperwords (~slicepape@example.org)
+[06:59:50] *** Joins: altinu (~altin@example.org)
+[06:59:51] *** Quits: slicepaperwords (~slicepape@example.org) (Client Quit)
+[06:59:57] *** Joins: n_blownapart (~john@example.org)
+[06:59:57] *** Quits: altin (~altin@example.org) (Read error: Connection reset by peer)
+[07:00:00] *** thursdaylark is now known as thurstylark
+[07:00:10] *** Joins: slicepaperwords (~slicepape@example.org)
+[07:01:01] *** Quits: ledeni (~ledeni@example.org) (Quit: Leaving)
+[07:01:17] *** Joins: WayToDoor (~milk.bott@example.org)
+[07:01:32] <P-G> "aplay -Dplughw:CARD=Intel,DEV=1 --channels=2 /usr/share/sounds/alsa/Noise.wav" seems to work but no output, probably because it's trying to play mono...
+[07:01:43] *** Quits: WinstonSmith (~WinstonSm@example.org) (Ping timeout: 245 seconds)
+[07:02:17] *** Joins: WinstonSmith (~WinstonSm@example.org)
+[07:02:17] *** Quits: WinstonSmith (~WinstonSm@example.org) (Changing host)
+[07:02:17] *** Joins: WinstonSmith (~WinstonSm@example.org)
+[07:02:36] *** Quits: themill (~stuart@example.org) (Ping timeout: 265 seconds)
+[07:03:13] *** Joins: dselect (~dselect@example.org)
+[07:03:41] *** Joins: Warrigal (~tswett@example.org)
+[07:03:48] *** Quits: Geom (~Geom@example.org) (Read error: Connection reset by peer)
+[07:03:54] *** Joins: zippy (~zuppy@example.org)
+[07:04:13] *** Joins: themill (~stuart@example.org)
+[07:04:18] *** zippy is now known as Guest14797
+[07:04:27] *** Quits: Guest14797 (~zuppy@example.org) (Client Quit)
+[07:04:37] *** Joins: zappy (~zuppy@example.org)
+[07:05:42] <jak2000> any network advice?
+[07:05:42] *** Joins: webuser5225 (~webuser52@example.org)
+[07:05:42] <plasmoduck> ?
+[07:05:47] <jak2000> http://postimg.org/image/xtb254wu5/
+[07:05:54] <jak2000> plasmoduck:
+[07:06:02] <jak2000> can you access: www.renypicot.com.mx
+[07:06:04] <jak2000> ?
+[07:06:06] *** Quits: dreki (~dreki@example.org) (Quit: Leaving.)
+[07:06:36] *** Quits: kvm2k (~kvm2k@example.org) (Read error: Connection reset by peer)
+[07:06:43] *** Joins: kvm2k (~kvm2k@example.org)
+[07:06:50] *** Quits: webuser5224 (~webuser52@example.org) (Read error: Connection reset by peer)
+[07:06:50] *** Quits: nathanhi (~nathanhi@example.org) (Ping timeout: 246 seconds)
+[07:07:08] *** Quits: WinstonSmith (~WinstonSm@example.org) (Ping timeout: 245 seconds)
+[07:07:26] *** Quits: luz1 (~luz1@example.org) (Ping timeout: 265 seconds)
+[07:07:45] *** Quits: BlackoutIsHere (Blackout@example.org) (Ping timeout: 260 seconds)
+[07:07:47] *** Joins: WinstonSmith (~WinstonSm@example.org)
+[07:08:14] *** Joins: dreki (~dreki@example.org)
+[07:08:16] *** Quits: TheCoffeMaker (~TheCoffeM@example.org) (Remote host closed the connection)
+[07:08:23] *** Quits: oom8ail (~rottmrei@example.org) (Ping timeout: 245 seconds)
+[07:08:41] *** Quits: unwanted (unwanted@example.org) (Ping timeout: 260 seconds)
+[07:08:48] *** Quits: ariel (~quassel@example.org) (Ping timeout: 245 seconds)
+[07:08:48] *** Quits: Rockj (rockj@example.org) (Ping timeout: 245 seconds)
+[07:09:15] *** Joins: luz1 (~luz1@example.org)
+[07:09:18] *** Joins: Guest174 (~nathanhi@example.org)
+[07:09:36] *** Joins: unwanted (unwanted@example.org)
+[07:10:13] *** Joins: BlackoutIsHere (Blackout@example.org)
+[07:10:14] *** Joins: oom8ail (~rottmrei@example.org)
+[07:10:48] *** Joins: ariel (~quassel@example.org)
+[07:11:49] *** Quits: Specialist (~tg@example.org) (Ping timeout: 248 seconds)
+[07:12:09] *** Joins: Rockj (rockj@example.org)
+[07:12:18] <P-G> Ok, I give up. PulseAudio is working after fiddling with the muting and restarting Chromium a few times.
+[07:12:31] <P-G> ALSA is a project for another day. :p
+[07:12:43] <P-G> Thanks everyone who helped me!
+[07:14:07] *** Quits: OS-25378 (~OS-25378@example.org) (Quit: Leaving)
+[07:14:15] *** Quits: moozer (~moz@example.org) (Ping timeout: 252 seconds)
+[07:15:03] *** Quits: surfist (~surfist@example.org) (Remote host closed the connection)
+[07:15:28] *** Joins: surfist (~surfist@example.org)
+[07:16:05] *** Joins: Pr0metheus (~nezos@example.org)
+[07:16:14] *** Quits: missmbob (~missmbob@example.org) (Quit: leaving)
+[07:17:13] *** Joins: Kyokoexample (4d4da301@example.org)
+[07:17:17] *** Parts: Kyokoexample (4d4da301@example.org)
+[07:18:46] *** Quits: WayToDoor (~milk.bott@example.org) (Quit: Textual IRC Client: www.textualapp.com)
+[07:19:15] *** Joins: ledeni (~ledeni@example.org)
+[07:19:29] *** Quits: bcd (~bcd@example.org) (Quit: ZNC 1.6.3 - http://znc.in)
+[07:19:47] *** Quits: surfist (~surfist@example.org) (Remote host closed the connection)
+[07:20:19] *** Quits: P-G (~pg@example.org) (Quit: quitter)
+[07:20:24] *** Joins: surfist (~surfist@example.org)
+[07:21:17] *** Joins: bcd (~bcd@example.org)
+[07:22:22] *** Quits: samodid (~vsamodid@example.org) (Ping timeout: 250 seconds)
+[07:22:49] *** Joins: samodid (~vsamodid@example.org)
+[07:27:52] *** Joins: NaturalFork (~NaturalFo@example.org)
+[07:28:27] *** Quits: pseudocrat (~sudo@example.org) (Remote host closed the connection)
+[07:28:45] *** Quits: nickenchuggets (~nicken@example.org) (Read error: Connection reset by peer)
+[07:31:14] *** Joins: super_gollum (~ich@example.org)
+[07:31:59] *** Joins: overlord_tm (~andraz@example.org)
+[07:32:47] *** Joins: tvm (~tvm@example.org)
+[07:34:10] *** Quits: NaturalFork (~NaturalFo@example.org) (Ping timeout: 256 seconds)
+[07:36:06] *** Quits: zappy (~zuppy@example.org) (Remote host closed the connection)
+[07:38:10] *** Quits: overlord_tm (~andraz@example.org) (Remote host closed the connection)
+[07:39:20] *** Joins: overlord_tm (~andraz@example.org)
+[07:40:39] *** Joins: gerforce (~gerforce@example.org)
+[07:42:00] *** Joins: toastedmilk (~toastedmi@example.org)
+[07:42:33] *** Quits: benf (~benf2004@example.org) (Ping timeout: 245 seconds)
+[07:42:38] *** Quits: tatalazo (~Icedove@example.org) (Remote host closed the connection)
+[07:44:45] *** Joins: towo^work (~towo@example.org)
+[07:44:52] *** Quits: los (~los@example.org) (Ping timeout: 268 seconds)
+[07:45:57] *** Quits: BenderRodriguez (~Foxhoundz@example.org) (Ping timeout: 248 seconds)
+[07:46:32] *** Quits: samodid (~vsamodid@example.org) (Quit: Konversation terminated!)
+[07:47:08] *** Quits: pingfloyd (~pingfloyd@example.org) (Quit: ☮ out)
+[07:47:27] *** Quits: Alina-malina (~Alina-mal@example.org) (Changing host)
+[07:47:27] *** Joins: Alina-malina (~Alina-mal@example.org)
+[07:50:22] *** Joins: samodid (~vsamodid@example.org)
+[07:51:35] *** Quits: n_blownapart (~john@example.org) (Quit: Leaving)
+[07:52:15] *** Joins: dionysus69 (~Thunderbi@example.org)
+[07:53:03] *** Joins: meta-coder (~meta-code@example.org)
+[07:53:12] *** Quits: dayten (~gnoid@example.org) (Remote host closed the connection)
+[07:53:42] *** Quits: c1pher (~c1pher@example.org) (Remote host closed the connection)
+[07:54:29] *** Joins: c1pher (~c1pher@example.org)
+[07:55:05] *** Quits: c1pher (~c1pher@example.org) (Max SendQ exceeded)
+[07:55:27] *** Joins: c1pher (~c1pher@example.org)
+[07:55:44] *** Joins: iio7 (~iio7@example.org)
+[07:55:54] *** Quits: c1pher (~c1pher@example.org) (Max SendQ exceeded)
+[07:56:07] *** Joins: daniel-s (~daniel-s@example.org)
+[07:56:18] *** Joins: c1pher (~c1pher@example.org)
+[07:56:41] *** Quits: c1pher (~c1pher@example.org) (Max SendQ exceeded)
+[07:57:02] *** Joins: c1pher (~c1pher@example.org)
+[07:57:11] <iio7> I have a box running testing where /etc/resolv.conf keeps being changed. It's a server box so no desktop apps installed. I haven't got any network-manager-* nor resolvconf, what can be changing resolv.conf?
+[07:57:20] <iio7> Is it systemd something?
+[07:57:37] *** Joins: OS-24477 (~OS-24477@example.org)
+[07:58:07] *** Quits: FluidDruid (~FluidDrui@example.org) (Ping timeout: 244 seconds)
+[07:58:57] *** Joins: LucaTM (~LucaTM@example.org)
+[07:59:32] *** Joins: debalance_ (~debalance@example.org)
+[07:59:46] *** Joins: hspcd (~hspcd@example.org)
+[07:59:56] <somiaj> iio7: there are various other tools that modify network and resolv.conf. Could be your dhcp client
+[07:59:59] *** Quits: hspcd (~hspcd@example.org) (Remote host closed the connection)
+[08:00:12] <mrrhq> !testing
+[08:00:13] <dpkg> Testing is a continuously updated release between <stable> and <unstable>, currently codenamed <stretch>. See http://wiki.example.org/exampleTesting . Support in #example-next on irc.oftc.net and ask me about <testing faq> <jessie->stretch> <testing security> <moving target> <apt-listchanges> <apt-listbugs> and <bts>. You need a sound knowledge of example and be prepared for a very bumpy ride. Don't use it on things that are critical!
+[08:00:29] *** Joins: FluidDruid (~FluidDrui@example.org)
+[08:00:39] *** Joins: SlaGTaTs (~bilbo@example.org)
+[08:00:44] *** Joins: kenp (~kenp@example.org)
+[08:01:15] *** toadstar is now known as spacebison
+[08:01:56] *** Quits: NoteOn (~noteon@example.org) (Quit: Leaving...)
+[08:02:36] *** Joins: knidos (~knidos@example.org)
+[08:03:41] *** Quits: iio7 (~iio7@example.org) (Quit: Leaving)
+[08:04:56] *** Quits: clippng (~CHRONIC@example.org) (Ping timeout: 246 seconds)
+[08:05:30] *** Quits: Maxou (~maxou@example.org) (Remote host closed the connection)
+[08:06:02] *** Joins: Maxou (~maxou@example.org)
+[08:08:08] *** Quits: GrimBat (~GrimBat@example.org) (Quit: NO CARRIER)
+[08:08:37] *** Joins: eumel (~eumel@example.org)
+[08:09:46] *** Joins: WayToDoor (~milk.bott@example.org)
+[08:10:26] *** Quits: Maxou (~maxou@example.org) (Ping timeout: 256 seconds)
+[08:12:59] *** Quits: c0mrad3 (uid26809@example.org) (Quit: Connection closed for inactivity)
+[08:13:43] *** Joins: philipballew (~philip@example.org)
+[08:13:57] *** Quits: toastedmilk (~toastedmi@example.org) (Ping timeout: 240 seconds)
+[08:17:39] *** Joins: disposable2 (~Thunderbi@example.org)
+[08:17:58] *** Joins: schu-r (~Thunderbi@example.org)
+[08:18:42] *** Quits: imunsie (~imunsie@example.org) (Ping timeout: 268 seconds)
+[08:20:28] *** Joins: missmbob (~missmbob@example.org)
+[08:21:09] *** Quits: pencilandpaper (~penciland@example.org) (Quit: WeeChat 1.6)
+[08:21:46] *** Joins: chele (~chele@example.org)
+[08:21:54] *** Joins: netzfisch (~Thunderbi@example.org)
+[08:22:34] *** Joins: MaBunny (~MaBunny@example.org)
+[08:23:09] *** Quits: MaBunny (~MaBunny@example.org) (Max SendQ exceeded)
+[08:24:02] *** Joins: Drzacek (~Drzacek@example.org)
+[08:24:52] *** Joins: BlueByte (~walther@example.org)
+[08:25:56] *** Quits: netzfisch (~Thunderbi@example.org) (Ping timeout: 246 seconds)
+[08:26:11] *** Quits: dreki (~dreki@example.org) (Quit: Leaving.)
+[08:26:53] *** Joins: me (~meme@example.org)
+[08:27:00] *** Joins: MaBunny (~MaBunny@example.org)
+[08:27:12] *** Quits: me (~meme@example.org) (Client Quit)
+[08:30:13] *** Quits: Richard_Cavell (~Richard_C@example.org) (Ping timeout: 248 seconds)
+[08:30:37] *** Joins: OS-24749 (~OS-24749@example.org)
+[08:30:55] *** Joins: toastedmilk (~toastedmi@example.org)
+[08:31:39] *** Quits: SlaGTaTs (~bilbo@example.org) (Remote host closed the connection)
+[08:32:11] *** Joins: CapsAdmin (~CapsAdmin@example.org)
+[08:33:14] *** Joins: Jan2 (kvirc@example.org)
+[08:33:16] *** Quits: Jan\ (~kvirc@example.org) (Ping timeout: 250 seconds)
+[08:33:24] *** Joins: bigbrovar (~bigbrovar@example.org)
+[08:33:45] *** Joins: GJ_ (~Thunderbi@example.org)
+[08:35:04] *** Joins: denisk (~denisk@example.org)
+[08:35:39] *** Quits: GJ_ (~Thunderbi@example.org) (Client Quit)
+[08:35:54] *** Joins: bvdk (~bvdkfreen@example.org)
+[08:37:35] *** Quits: cerbere (~cerbere@example.org) (Quit: Leaving)
+[08:37:36] *** Joins: Kyokoexample (4d4da301@example.org)
+[08:38:00] *** debhelper sets mode: +l 1710
+[08:38:29] *** Joins: ransur0t (~ransur0t@example.org)
+[08:39:08] *** Parts: Kyokoexample (4d4da301@example.org)
+[08:39:25] *** Joins: srtu (~hypnotoad@example.org)
+[08:39:42] *** Joins: arturo (~arturo@example.org)
+[08:40:11] *** Joins: Putti (~Putti@example.org)
+[08:41:29] *** Joins: CutMeOwnThroat (~k@example.org)
+[08:41:29] *** Quits: CutMeOwnThroat (~k@example.org) (Changing host)
+[08:41:29] *** Joins: CutMeOwnThroat (~k@example.org)
+[08:41:29] *** Quits: schu-r (~Thunderbi@example.org) (Read error: Connection reset by peer)
+[08:43:32] *** Joins: cerbere (~cerbere@example.org)
+[08:43:57] *** Joins: schu-r (~Thunderbi@example.org)
+[08:43:57] *** Quits: schu-r (~Thunderbi@example.org) (Read error: Connection reset by peer)
+[08:45:15] *** Joins: akwiatkowski (~bobik314@example.org)
+[08:45:36] *** Joins: woshty (~irc@example.org)
+[08:46:11] *** Quits: c1pher (~c1pher@example.org) (Remote host closed the connection)
+[08:46:16] *** Quits: toastedmilk (~toastedmi@example.org) (Ping timeout: 250 seconds)
+[08:46:32] *** Joins: c1pher (~c1pher@example.org)
+[08:46:40] *** Joins: schu-r (~Thunderbi@example.org)
+[08:46:56] *** Quits: c1pher (~c1pher@example.org) (Max SendQ exceeded)
+[08:47:19] *** Joins: c1pher (~c1pher@example.org)
+[08:47:43] *** Quits: c1pher (~c1pher@example.org) (Max SendQ exceeded)
+[08:47:59] *** Quits: arturo (~arturo@example.org) (Ping timeout: 246 seconds)
+[08:48:12] *** Joins: c1pher (~c1pher@example.org)
+[08:48:36] *** Quits: c1pher (~c1pher@example.org) (Max SendQ exceeded)
+[08:49:03] *** Joins: c1pher (~c1pher@example.org)
+[08:49:28] *** Quits: c1pher (~c1pher@example.org) (Max SendQ exceeded)
+[08:49:52] *** Joins: c1pher (~c1pher@example.org)
+[08:50:13] *** Quits: samodid (~vsamodid@example.org) (Ping timeout: 256 seconds)
+[08:50:13] *** Quits: c1pher (~c1pher@example.org) (Max SendQ exceeded)
+[08:50:32] *** Quits: root-x (~root-x@example.org) (Read error: Connection reset by peer)
+[08:51:02] *** Joins: jazz (~jazz@example.org)
+[08:51:56] *** Joins: root-x (~root-x@example.org)
+[08:52:10] *** Joins: giricz81 (~quassel@example.org)
+[08:52:11] *** Joins: moozer (~moz@example.org)
+[08:52:34] *** Quits: AlexLikeRock (~AlexLikeR@example.org) (Remote host closed the connection)
+[08:52:59] *** Joins: arturo (~arturo@example.org)
+[08:54:38] *** Quits: root-x (~root-x@example.org) (Read error: No route to host)
+[08:55:13] *** Quits: Scuttle (~Scuttle@example.org) (Ping timeout: 265 seconds)
+[08:55:43] *** Joins: Scuttle (~Scuttle@example.org)
+[08:57:40] *** Joins: spvkgn (~spvkgn@example.org)
+[08:57:41] *** Quits: spvkgn (~spvkgn@example.org) (Max SendQ exceeded)
+[08:58:09] *** Joins: spvkgn (~spvkgn@example.org)
+[08:58:21] *** Joins: ongolaBoy (~ongolaBoy@example.org)
+[08:59:02] *** Joins: Specialist (tg@example.org)
+[08:59:36] *** Quits: Putti (~Putti@example.org) (Ping timeout: 244 seconds)
+[09:00:34] *** Joins: High_Priest (~hp@example.org)
+[09:01:10] *** Quits: moozer (~moz@example.org) (Ping timeout: 250 seconds)
+[09:02:21] *** Joins: toastedmilk (~toastedmi@example.org)
+[09:02:56] *** Quits: WayToDoor (~milk.bott@example.org) (Quit: My MacBook has gone to sleep. ZZZzzz…)
+[09:03:18] *** Joins: mdkmk (~mdkmk@example.org)
+[09:04:50] *** Quits: dasher00 (~dasher00@example.org) (Ping timeout: 256 seconds)
+[09:06:00] *** Quits: Specialist (tg@example.org) (Remote host closed the connection)
+[09:06:33] *** Joins: rgogunskiy (~rgogunski@example.org)
+[09:07:20] *** Joins: tron_ (~tomm@example.org)
+[09:07:46] *** Quits: tron_ (~tomm@example.org) (Client Quit)
+[09:08:00] *** debhelper sets mode: +l 1717
+[09:09:04] *** Joins: Texou (~Texou@example.org)
+[09:09:14] *** Joins: Maxou (~maxou@example.org)
+[09:09:58] *** Quits: todd_dsm (~todd_dsm@example.org) (Quit: My MacBook has gone to sleep. ZZZzzz…)
+[09:10:34] *** Joins: katyucha (~katyucha@example.org)
+[09:10:42] *** Quits: Maxou (~maxou@example.org) (Remote host closed the connection)
+[09:10:48] *** Joins: Maxou (~maxou@example.org)
+[09:11:28] *** Quits: schu-r (~Thunderbi@example.org) (Read error: Connection reset by peer)
+[09:13:37] *** Quits: gerforce (~gerforce@example.org) (Quit: WeeChat 1.0.1)
+[09:13:40] *** gusnan_ is now known as gusnan
+[09:13:44] *** Quits: gusnan (~gusnan@example.org) (Changing host)
+[09:13:44] *** Joins: gusnan (~gusnan@example.org)
+[09:13:53] *** Joins: samodid (~vsamodid@example.org)
+[09:13:57] *** Joins: schu-r (~Thunderbi@example.org)
+[09:16:51] *** Quits: xet7 (~xet7@example.org) (Quit: Leaving)
+[09:17:56] *** Quits: knidos (~knidos@example.org) (Quit: knidos)
+[09:18:06] *** Joins: l3archos (~Icedove@example.org)
+[09:19:13] *** Quits: DalekSec (unit193@example.org) (Ping timeout: 268 seconds)
+[09:19:50] *** Quits: toastedmilk (~toastedmi@example.org) (Ping timeout: 268 seconds)
+[09:21:28] *** Joins: czesmir (~stefan@example.org)
+[09:22:42] *** Joins: OS-25389 (~OS-25389@example.org)
+[09:22:44] *** Joins: faw (~faw@example.org)
+[09:22:44] *** Quits: faw (~faw@example.org) (Changing host)
+[09:22:44] *** Joins: faw (~faw@example.org)
+[09:22:56] *** Joins: Putti (~Putti@example.org)
+[09:23:14] *** Quits: OS-25389 (~OS-25389@example.org) (Client Quit)
+[09:23:17] *** Joins: Mir4g3 (~Mir4g3@example.org)
+[09:23:23] *** Joins: bocaneri (~bocaneri@example.org)
+[09:24:54] *** Joins: panta_ (~panta@example.org)
+[09:25:54] *** Joins: PseudoNoob (~PseudoNoo@example.org)
+[09:26:13] *** Joins: moozer (~moz@example.org)
+[09:27:07] *** Quits: cosmos (~quassel@example.org) (Ping timeout: 265 seconds)
+[09:28:01] *** debhelper sets mode: +l 1723
+[09:29:09] *** Quits: AimHere (~David@example.org) (Ping timeout: 260 seconds)
+[09:29:29] *** Quits: gigetoo (~gigetoo@example.org) (Read error: Connection reset by peer)
+[09:29:34] *** Quits: panta_ (~panta@example.org) (Ping timeout: 244 seconds)
+[09:29:45] *** Joins: wonderworld (~ww@example.org)
+[09:32:58] *** Joins: frozengeek__ (~frozengee@example.org)
+[09:33:08] *** frozengeek__ is now known as frozengeek___
+[09:33:28] *** Joins: Pjusur (~Pjusur@example.org)
+[09:33:30] *** Joins: AimHere (~David@example.org)
+[09:33:32] *** Joins: InfoTest (~Thunderbi@example.org)
+[09:33:52] *** Quits: PryMar56 (~prymar@example.org) (Quit: Leaving)
+[09:34:05] *** Joins: cicero_tully (~cicero@example.org)
+[09:34:37] *** Quits: dionysus69 (~Thunderbi@example.org) (Ping timeout: 240 seconds)
+[09:34:38] *** Quits: dinoocch (~dinoocch@example.org) (Read error: Connection reset by peer)
+[09:34:42] *** Joins: Jan\ (~kvirc@example.org)
+[09:34:45] <cicero_tully> Hello, I just recently installed example with an Xfce Desktop Environment
+[09:34:51] *** Joins: JagErLessen (~JagErLess@example.org)
+[09:35:13] *** Quits: Jan2 (kvirc@example.org) (Ping timeout: 260 seconds)
+[09:35:44] *** Joins: gigetoo (~gigetoo@example.org)
+[09:35:49] <cicero_tully> I was wondering where on the system backgrounds are stored? I have tried placing all of my previous backgrounds into the 'usr' / share / backgrounds folder, but that doesn't update the list in the applet
+[09:36:06] *** Joins: toastedmilk (~toastedmi@example.org)
+[09:37:22] *** Joins: btf (~btf@example.org)
+[09:37:28] <eumel> for lxde it's /usr/share/wallpapers/
+[09:37:49] <eumel> cicero_tully, you can try to list package contents for your desktop environment with dpkg -L
+[09:38:26] <eumel> dpkg -L my-super-desktop-package |grep -iE wallpaper\|background
+[09:38:27] <dpkg> No packages found matching my-super-desktop-package |grep -iE wallpaper\|background
+[09:38:28] <eumel> for example
+[09:39:18] *** Joins: gebjgd (~stmsgebjg@example.org)
+[09:39:45] *** Joins: Elirips (~Elirips@example.org)
+[09:40:09] *** Joins: maotm (~mao@example.org)
+[09:40:40] *** Joins: nickenchuggets (~nicken@example.org)
+[09:41:09] <eumel> cicero_tully: found you're wallpapers?
+[09:41:25] *** Quits: schu-r (~Thunderbi@example.org) (Read error: Connection reset by peer)
+[09:41:31] <cicero_tully> Ahh, thanks, I'll try that
+[09:41:45] *** Quits: ValodiaDeSeynes (~ValodiaDe@example.org) (Ping timeout: 260 seconds)
+[09:41:53] *** Joins: xet7 (~xet7@example.org)
+[09:42:08] *** Quits: michaelni (~michael@example.org) (Ping timeout: 245 seconds)
+[09:42:36] *** Joins: OOXXOO (~OOXXOO@example.org)
+[09:42:36] *** Quits: ancientninja (~ancientni@example.org) (Quit: WeeChat 1.6)
+[09:43:46] *** Joins: OS-24695 (~OS-24695@example.org)
+[09:43:53] *** Quits: CutMeOwnThroat (~k@example.org) (Remote host closed the connection)
+[09:44:16] *** Joins: CutMeOwnThroat (~k@example.org)
+[09:44:38] *** Quits: XeonSquared (~ShadowKat@example.org) (Ping timeout: 258 seconds)
+[09:45:01] *** Quits: nagarkot (~nagarkot_@example.org) (Ping timeout: 258 seconds)
+[09:45:05] *** Quits: kini (~kini@example.org) (Read error: Connection reset by peer)
+[09:45:57] *** Quits: cicero_tully (~cicero@example.org) (Quit: Leaving)
+[09:46:43] *** Joins: nagarkot (~nagarkot_@example.org)
+[09:48:09] *** Joins: dante (~dante@example.org)
+[09:48:09] *** Quits: talur (~Thunderbi@example.org) (Read error: Connection reset by peer)
+[09:49:08] *** Joins: schu-r (~Thunderbi@example.org)
+[09:49:10] *** Joins: verwilst (~smuxi@example.org)
+[09:49:13] *** Quits: surfist (~surfist@example.org) (Ping timeout: 260 seconds)
+[09:50:14] *** Joins: talur (~Thunderbi@example.org)
+[09:50:36] *** Joins: XeonSquared (~ShadowKat@example.org)
+[09:50:40] *** Quits: frekal (~frekal@example.org) (Ping timeout: 268 seconds)
+[09:50:48] *** Quits: lv_ (~lv@example.org) (Ping timeout: 265 seconds)
+[09:51:39] *** Joins: altin_ (~altin@example.org)
+[09:53:01] *** Joins: js9600 (~js9600@example.org)
+[09:53:18] *** Joins: LorD_n1c0w (~igorhenri@example.org)
+[09:53:55] <cyphase>  /msg dpkg irclog
+[09:54:00] <cyphase> oops
+[09:54:16] *** Joins: ValodiaDeSeynes (~ValodiaDe@example.org)
+[09:54:50] *** Quits: CutMeOwnThroat (~k@example.org) (Ping timeout: 246 seconds)
+[09:54:59] *** Quits: toastedmilk (~toastedmi@example.org) (Ping timeout: 268 seconds)
+[09:57:41] *** Quits: styler2go (~styler2go@example.org) (Read error: Connection reset by peer)
+[09:57:59] *** Quits: faw (~faw@example.org) (Ping timeout: 244 seconds)
+[09:59:38] *** Quits: AimHere (~David@example.org) (Quit: Leaving)
+[09:59:57] *** Quits: GALL0 (~elGALLO@example.org) (Quit: WeeChat 1.4)
+[10:01:19] *** Joins: surfist (~surfist@example.org)
+[10:01:52] *** Joins: Shentino (~Shentino@example.org)
+[10:01:55] *** Quits: tvm (~tvm@example.org) (Read error: Connection reset by peer)
+[10:02:33] *** Quits: fearnothing (~nothing@example.org) (Ping timeout: 252 seconds)
+[10:03:34] *** Joins: SpaceAce (~SpaceAce@example.org)
+[10:05:10] *** Quits: OOXXOO (~OOXXOO@example.org) (Quit: 离开)
+[10:05:29] *** Joins: frekal (~frekal@example.org)
+[10:05:40] *** Quits: puppen (~puppen@example.org) (Disconnected by services)
+[10:05:43] *** Joins: soee (~soee@example.org)
+[10:06:06] *** Joins: puppen (~puppen@example.org)
+[10:06:18] *** Quits: puppen (~puppen@example.org) (Disconnected by services)
+[10:06:47] *** Joins: puppen_ (~puppen@example.org)
+[10:06:48] *** Joins: tvm (~tvm@example.org)
+[10:07:19] *** Quits: bizarro_1 (~bizarro_1@example.org) (Quit: Leaving)
+[10:07:48] *** Joins: maolang (~denis@example.org)
+[10:08:00] *** debhelper sets mode: +l 1729
+[10:08:19] *** Quits: altin_ (~altin@example.org) (Ping timeout: 244 seconds)
+[10:09:44] *** Joins: toastedmilk (~toastedmi@example.org)
+[10:10:50] *** Joins: BWMerlin (~Thunderbi@example.org)
+[10:10:55] *** Joins: sappel (~sappel@example.org)
+[10:10:59] *** Joins: cccc828 (~severin@example.org)
+[10:11:01] *** Joins: n4dir (~user@example.org)
+[10:11:51] *** Joins: stray_ (~stray@example.org)
+[10:11:51] *** Quits: schu-r (~Thunderbi@example.org) (Read error: Connection reset by peer)
+[10:12:16] *** Joins: halbomin (~textual@example.org)
+[10:12:54] *** Quits: maolang (~denis@example.org) (Quit: Konversation terminated!)
+[10:13:08] *** Joins: Slashman (~Slash@example.org)
+[10:13:34] *** Joins: maolang (~denis@example.org)
+[10:13:50] *** Joins: schu-r (~Thunderbi@example.org)
+[10:13:50] *** Quits: schu-r (~Thunderbi@example.org) (Read error: Connection reset by peer)
+[10:15:12] *** Joins: MicroCheapFx (~quassel@example.org)
+[10:16:26] *** Joins: lucad111 (~lucad111@example.org)
+[10:16:30] *** Joins: Makaveli7 (~Makaveli7@example.org)
+[10:16:40] *** Joins: schu-r (~Thunderbi@example.org)
+[10:17:00] *** Quits: xet7 (~xet7@example.org) (Quit: Leaving)
+[10:17:22] *** Joins: rocknrolla (~nrolla@example.org)
+[10:18:01] *** debhelper sets mode: +l 1739
+[10:18:25] *** Quits: lss8 (~lss8@example.org) ()
+[10:18:30] *** Quits: MicroCheapFx_ (~quassel@example.org) (Ping timeout: 256 seconds)
+[10:18:40] *** Joins: lss8 (~lss8@example.org)
+[10:18:40] *** Quits: lss8 (~lss8@example.org) (Changing host)
+[10:18:40] *** Joins: lss8 (~lss8@example.org)
+[10:18:44] *** Joins: xet7 (~xet7@example.org)
+[10:19:21] *** Joins: clmsy (~eoz@example.org)
+[10:20:21] *** Joins: Zathras (~Zzzth@example.org)
+[10:20:21] *** Zathras is now known as od
+[10:20:32] *** Joins: betandr (~betandr@example.org)
+[10:20:59] *** Joins: humblecommitedst (~humblecom@example.org)
+[10:21:06] *** Joins: jubo2 (~juboxi@example.org)
+[10:21:08] *** Quits: bugzc (~1@example.org) (Ping timeout: 260 seconds)
+[10:21:25] *** Joins: killar_vortex (~alex@example.org)
+[10:22:13] *** Parts: killar_vortex (~alex@example.org)
+[10:22:20] *** Joins: altin_ (~altin@example.org)
+[10:22:53] *** kale_ is now known as kale
+[10:23:09] *** Joins: savantgarde (~savantgar@example.org)
+[10:23:20] *** Quits: rocknrolla (~nrolla@example.org) (Ping timeout: 250 seconds)
+[10:23:20] *** Quits: osx (osx@example.org) (Excess Flood)
+[10:23:49] *** Joins: jgxu (~jgxu@example.org)
+[10:24:03] *** Joins: Brigo (~Brigo@example.org)
+[10:24:10] *** Quits: maolang (~denis@example.org) (Quit: Konversation terminated!)
+[10:25:18] *** Quits: philipballew (~philip@example.org) (Ping timeout: 256 seconds)
+[10:25:42] *** Joins: osx (osx@example.org)
+[10:28:07] <jgxu> If the upstream code is licensed under BSD and with a patent grant in README. Does it comply with DFSG?
+[10:28:39] *** Joins: c0le_ (~c0le@example.org)
+[10:28:57] *** Quits: toastedmilk (~toastedmi@example.org) (Ping timeout: 252 seconds)
+[10:29:04] *** Joins: karimb (~karimb@example.org)
+[10:29:49] *** Quits: nickenchuggets (~nicken@example.org) (Read error: Connection reset by peer)
+[10:29:50] *** Joins: philipballew (~philip@example.org)
+[10:30:01] *** Quits: awal1 (~awal1@example.org) (Quit: Leaving)
+[10:30:39] *** Joins: CutMeOwnThroat (~k@example.org)
+[10:30:40] *** Quits: CutMeOwnThroat (~k@example.org) (Changing host)
+[10:30:40] *** Joins: CutMeOwnThroat (~k@example.org)
+[10:31:56] *** Quits: OS-24695 (~OS-24695@example.org) (Ping timeout: 246 seconds)
+[10:32:17] *** Joins: OS-24695 (~OS-24695@example.org)
+[10:35:01] *** Quits: c0le_ (~c0le@example.org) (Quit: Will be back)
+[10:37:55] *** Joins: WayToDoor (~milk.bott@example.org)
+[10:37:56] *** Joins: maolang (~denis@example.org)
+[10:38:00] *** debhelper sets mode: +l 1746
+[10:39:01] *** Quits: Texou (~Texou@example.org) (Ping timeout: 256 seconds)
+[10:39:02] *** Quits: jubo2 (~juboxi@example.org) (Quit: Konversation terminated!)
+[10:39:25] *** Joins: rocknrolla (~nrolla@example.org)
+[10:39:33] *** Quits: arch_ (~interki@example.org) (Quit: WeeChat 1.6)
+[10:39:34] *** Quits: ShapeShifter499 (~ShapeShif@example.org) (Remote host closed the connection)
+[10:39:52] *** Joins: Texou (~Texou@example.org)
+[10:40:48] *** Joins: ocbtec (~ocbtec@example.org)
+[10:41:22] *** Quits: schu-r (~Thunderbi@example.org) (Read error: Connection reset by peer)
+[10:41:33] *** Quits: Nnavd (~Nnavd@example.org) (Ping timeout: 265 seconds)
+[10:42:45] *** Quits: soee (~soee@example.org) (Excess Flood)
+[10:43:11] *** Joins: soee (~soee@example.org)
+[10:45:13] *** Joins: toastedmilk (~toastedmi@example.org)
+[10:45:14] *** Joins: sasukeskapa (~sasukeska@example.org)
+[10:45:30] *** Joins: jubo2 (~juboxi@example.org)
+[10:45:30] *** Quits: jubo2 (~juboxi@example.org) (Changing host)
+[10:45:30] *** Joins: jubo2 (~juboxi@example.org)
+[10:45:35] *** Joins: MrBy (~MrBy@example.org)
+[10:46:32] *** Joins: _Nox (~Nox@example.org)
+[10:48:08] *** Joins: g_zen (~g_zen@example.org)
+[10:49:12] *** Joins: schu-r (~Thunderbi@example.org)
+[10:49:39] *** Joins: soee_ (~soee@example.org)
+[10:49:57] *** Quits: Putti (~Putti@example.org) (Ping timeout: 248 seconds)
+[10:50:32] *** Quits: soee (~soee@example.org) (Ping timeout: 260 seconds)
+[10:51:42] *** Quits: crazyadm_ (~bao@example.org) (Quit: leaving)
+[10:51:50] *** Quits: savantgarde (~savantgar@example.org) (Remote host closed the connection)
+[10:52:08] *** Joins: Gnomethrower (~B@example.org)
+[10:52:11] *** Joins: savantgarde (~savantgar@example.org)
+[10:52:39] *** Quits: savantgarde (~savantgar@example.org) (Remote host closed the connection)
+[10:52:54] *** Joins: savantgarde (~savantgar@example.org)
+[10:53:27] *** Quits: savantgarde (~savantgar@example.org) (Remote host closed the connection)
+[10:53:46] *** Joins: savantgarde (~savantgar@example.org)
+[10:54:15] *** Quits: savantgarde (~savantgar@example.org) (Remote host closed the connection)
+[10:54:31] *** Joins: savantgarde (~savantgar@example.org)
+[10:54:56] *** Joins: GJ_ (~Thunderbi@example.org)
+[10:55:00] *** Joins: MaxFrames (~MaxFrames@example.org)
+[10:55:03] <MaxFrames> hello
+[10:55:03] *** Quits: savantgarde (~savantgar@example.org) (Remote host closed the connection)
+[10:55:24] *** Joins: savantgarde (~savantgar@example.org)
+[10:55:40] *** Quits: Pr0metheus (~nezos@example.org) (Quit: Pr0metheus)
+[10:55:41] <MaxFrames> I'm trying "modinfo rt2800pci" and I get "command not found", but "man modinfo" shows that the command is correct!
+[10:55:49] *** Joins: Asenar (~michael@example.org)
+[10:55:52] *** Quits: savantgarde (~savantgar@example.org) (Remote host closed the connection)
+[10:56:44] *** Quits: High_Priest (~hp@example.org) (Remote host closed the connection)
+[10:56:44] <dante> hello
+[10:57:07] <dante> I have some issues trying to connect a bluetooth headset to my example jessie distro
+[10:57:07] <eumel> hi
+[10:57:26] *** Joins: daltonx (~daltonx@example.org)
+[10:57:29] <dante> I get the error: Failed to connect: org.bluez.Error.Failed
+[10:57:53] <dante> I also get the some error is i try to connect to my phone
+[10:58:10] <eumel> do you have the pulseaudio-bluetooth-module installed?
+[10:58:17] <dante> yes
+[10:58:22] *** Joins: ssaturos (~saturos@example.org)
+[10:59:13] *** Quits: gigetoo (~gigetoo@example.org) (Ping timeout: 260 seconds)
+[10:59:15] <eumel> maybe you're missing some drivers, did you have a look into dmesg? any complains there?
+[10:59:33] *** Quits: toastedmilk (~toastedmi@example.org) (Ping timeout: 248 seconds)
+[10:59:43] <dante> I don't know how to do that :D
+[10:59:48] <dante> can you help me?
+[10:59:58] *** Joins: Darcidride (~Darcidrid@example.org)
+[11:00:02] <dante> I see a lot of information when I hit dmesg
+[11:00:05] <eumel> just run dmesg on the commandline
+[11:00:18] <eumel> you can pipe the output to grep
+[11:00:27] *** Quits: wonderworld (~ww@example.org) (Remote host closed the connection)
+[11:00:31] <dante> okay, now I see
+[11:00:32] <dante> [157987.803667] bluetooth hci0: firmware: brcm/BCM20702A0-0a5c-21e6.hcd will not be loaded
+[11:00:37] <eumel> okay
+[11:00:48] *** Joins: gigetoo (~gigetoo@example.org)
+[11:00:48] *** Quits: Sir_Designer (~Sir_Desig@example.org) (Quit: 15 minutes with you / oh, I wouldn't say no... I wear black on the outside because black is how I feel on the inside... Uso negro por fuera porque negro me siento por dentro...    http://youtu.be/xldmXca0kvg   ...The Smiths - "Unloveable")
+[11:01:03] <eumel> you've got a Broadcom Module that's not loaded by the kernel
+[11:01:57] *** Quits: koffeekbd (~kbdkode@example.org) (Ping timeout: 240 seconds)
+[11:02:07] *** Quits: btf (~btf@example.org) (Remote host closed the connection)
+[11:02:08] *** Quits: saturos (~saturos@example.org) (Ping timeout: 260 seconds)
+[11:02:08] *** ssaturos is now known as saturos
+[11:02:08] *** Quits: neurot (~neurosis@example.org) (Ping timeout: 256 seconds)
+[11:02:14] <dante> how I will fix it ?
+[11:02:29] *** Quits: donofrio_ (~donofrio@example.org) (Ping timeout: 260 seconds)
+[11:03:16] *** Quits: Darcidride (~Darcidrid@example.org) (Remote host closed the connection)
+[11:03:18] <eumel> can you check lsmod output? is there a bluetooth module loaded?
+[11:03:19] *** Quits: Hunterkll (~Hunterkll@example.org) (Read error: Connection reset by peer)
+[11:03:30] *** Joins: Darcidride (~Darcidrid@example.org)
+[11:03:59] <eumel> do you have bluez / bluez-firmware installed?
+[11:04:04] *** Joins: arch_ (~interki@example.org)
+[11:04:24] *** Joins: sorin-mihai (~sorin-mih@example.org)
+[11:04:30] <dante> I'm checking right now
+[11:04:53] <dante> bluetooth             374429  21 bnep,btusb
+[11:05:36] *** Joins: Quatroking (~Quatrokin@example.org)
+[11:06:30] <eumel> try rmmod bluetooth and modprobe bluetooth
+[11:06:41] *** Quits: OS-24695 (~OS-24695@example.org) (Ping timeout: 265 seconds)
+[11:06:41] *** Quits: Makaveli7 (~Makaveli7@example.org) (Ping timeout: 265 seconds)
+[11:06:42] *** Quits: Zyferus (Zyferus@example.org) (Ping timeout: 244 seconds)
+[11:06:55] <dante> rmmod: ERROR: Module bluetooth is in use by: bnep btusb
+[11:07:16] <dante> whit modprobe nothing to show
+[11:07:17] <eumel> dante: you'll have to unload btusb / bnep first
+[11:07:20] *** Quits: InfoTest (~Thunderbi@example.org) (Ping timeout: 260 seconds)
+[11:07:26] <eumel> rmmod disables kernel modules
+[11:07:31] <eumel> modprobe enables kernel modules
+[11:07:33] *** Quits: stenrose (~stenrose@example.org) (Quit: Leaving)
+[11:07:43] *** Joins: stenrose (~stenrose@example.org)
+[11:07:48] *** Joins: TsukiRa (~fpob@example.org)
+[11:07:54] <eumel> if you rmmod btusb, bnep, bluetooth the'yll be missing in lsmod output
+[11:08:11] <eumel> afterwards you reload the modules one after each other with  modprobe
+[11:08:27] <eumel> sometimes this can help
+[11:09:10] *** Joins: Gryllida (~svetlana@example.org)
+[11:09:11] <eumel> dante: .. a reboot would do all that for you too just by typing reboot
+[11:09:30] *** Joins: prav_ (~prav@example.org)
+[11:09:45] <dante> I will try first the hard way and if I don't get resoults I will reboot the computer :D
+[11:10:20] <dante> I think I will reboot :D
+[11:10:20] *** Quits: Gryllida (~svetlana@example.org) (Quit: до свидания, товарищи)
+[11:10:50] *** Quits: jubo2 (~juboxi@example.org) (Quit: Konversation terminated!)
+[11:10:57] *** Joins: Sir_Designer (~Sir_Desig@example.org)
+[11:11:05] *** Joins: jubo2 (~juboxi@example.org)
+[11:11:10] <eumel> are you using gnome as you're desktop environment? found a post via google that mentions uninstalling gnome-bluetooth and reinstalling it could help
+[11:11:21] *** Quits: dante (~dante@example.org) (Read error: Connection reset by peer)
+[11:11:21] *** Quits: schu-r (~Thunderbi@example.org) (Read error: Connection reset by peer)
+[11:12:04] *** Joins: Zzeiss (~wsy@example.org)
+[11:13:45] *** Joins: amcorreia (~amcorreia@example.org)
+[11:14:31] *** Quits: Maxou (~maxou@example.org) ()
+[11:15:01] *** Joins: Putti (~Putti@example.org)
+[11:15:11] *** Joins: toastedmilk (~toastedmi@example.org)
+[11:15:13] *** Joins: ssaturos (~saturos@example.org)
+[11:15:49] *** Quits: jgxu (~jgxu@example.org) (Quit: Leaving)
+[11:16:58] *** Quits: netsnail (~netsnail@example.org) (Quit: Lost terminal)
+[11:18:04] *** Quits: effbiai (~effbiai@example.org) (Ping timeout: 244 seconds)
+[11:18:13] *** Joins: dante (~dante@example.org)
+[11:19:03] *** Quits: Zzeiss (~wsy@example.org) (Quit: Zzeiss)
+[11:19:10] *** Joins: schu-r (~Thunderbi@example.org)
+[11:19:15] *** Quits: saturos (~saturos@example.org) (Ping timeout: 265 seconds)
+[11:19:18] *** ssaturos is now known as saturos
+[11:19:30] *** Joins: gica (~cris@example.org)
+[11:19:41] *** Parts: gica (~cris@example.org)
+[11:19:57] *** Joins: Makaveli7 (~Makaveli7@example.org)
+[11:20:09] *** Joins: effbiai (~effbiai@example.org)
+[11:20:37] *** Quits: CutMeOwnThroat (~k@example.org) (Ping timeout: 240 seconds)
+[11:21:20] *** Joins: CutMeOwnThroat (~k@example.org)
+[11:21:26] <MaxFrames> can you tell me if the wireless adapter rt2800pci is compatible with hostapd?
+[11:21:31] <MaxFrames> I can't make it work
+[11:21:38] *** Joins: monsune (~monsune@example.org)
+[11:21:43] *** Quits: Elirips (~Elirips@example.org) (Ping timeout: 245 seconds)
+[11:22:03] <MaxFrames> how do I determine what "driver" to specify in hostapd.conf?
+[11:22:16] *** Joins: Zyferus (Zyferus@example.org)
+[11:22:20] <MaxFrames> how can I tell for sure if the adapter is compatible with hostapd?
+[11:22:46] <MaxFrames> I asked in #linux yesterday and they told me "if it works in linux, it works in hostapd" which appears to be bullshit
+[11:23:01] *** Quits: dante (~dante@example.org) (Read error: Connection reset by peer)
+[11:23:02] <MaxFrames> the card is working in linux, but not in hostapd...
+[11:23:21] <MaxFrames> http://w1.fi/hostapd/
+[11:23:22] *** Quits: sasukeskapa (~sasukeska@example.org) (Quit: Leaving)
+[11:23:31] <MaxFrames> I don't know what to make of that "list"...
+[11:23:40] <MaxFrames> "supported wireless cards/drivers"
+[11:23:49] *** Quits: blueness (~blueness@example.org) (Quit: blueness)
+[11:24:02] <MaxFrames> how do I know if mine falls into one of those 5?
+[11:24:21] *** Quits: CharlieBrown (~calher@example.org) (Ping timeout: 256 seconds)
+[11:24:51] *** Joins: blueness (~blueness@example.org)
+[11:24:56] <Iridos> The list are authentication methods, they have nothing to do with your specific wifi adapter
+[11:25:32] *** Quits: ectospasm (~ectospasm@example.org) (Quit: WeeChat 1.6)
+[11:25:36] *** Quits: CutMeOwnThroat (~k@example.org) (Ping timeout: 240 seconds)
+[11:25:51] <MaxFrames> so how do I tell if the adapter is not compatible or if I'm doing something wrong?
+[11:26:32] <eumel> MaxFrames: have you checked the package maintainers website?
+[11:27:44] <MaxFrames> isn't it the one I linked?
+[11:28:29] *** Joins: flugger (~flugger@example.org)
+[11:28:47] <Iridos> oh, you mean "Supported wireless cards/drivers"
+[11:28:49] *** Quits: puppen_ (~puppen@example.org) (Read error: Connection reset by peer)
+[11:28:57] <Iridos> well, look what kernel module is loaded with "lsmod"
+[11:30:30] *** Quits: toastedmilk (~toastedmi@example.org) (Ping timeout: 250 seconds)
+[11:30:32] <MaxFrames> lspci -k | grep -A 3 -i "network"
+[11:30:36] *** Joins: ocZio (~ocZio@example.org)
+[11:30:37] <MaxFrames> result:
+[11:30:39] <ocZio> Hi, I am trying to run a SSH tunnel (socks5), all works fine apart from it does show my IPv6 rather than just IPv4, is it possible to limit this to only IPv4 when going through the SOCKS
+[11:30:43] <MaxFrames> kernel driver in use: rt2800pci
+[11:30:44] <ocZio> tunnel ?
+[11:30:45] *** Joins: ssaturos (~saturos@example.org)
+[11:31:22] *** Quits: maotm (~mao@example.org) (Ping timeout: 250 seconds)
+[11:32:58] *** Quits: Howdy (~billy@example.org) (Ping timeout: 245 seconds)
+[11:33:11] <MaxFrames> I google and I see people using rt2800pci with hostapd so what gives???
+[11:33:32] *** Quits: saturos (~saturos@example.org) (Ping timeout: 250 seconds)
+[11:33:33] *** ssaturos is now known as saturos
+[11:33:48] *** Quits: ocZio (~ocZio@example.org) (Quit: leaving)
+[11:34:18] *** Joins: btf (~btf@example.org)
+[11:35:12] *** Joins: julius_ (~jason4@example.org)
+[11:35:39] <MaxFrames> if I put driver=nl80211 I get "could not configure driver mode"
+[11:35:53] <MaxFrames> and "driver initialization failed"
+[11:36:08] <MaxFrames> if I put driver=rt2800pci I get driver not found
+[11:36:24] *** Joins: Zzeiss (~wsy@example.org)
+[11:36:25] <MaxFrames> does anyone here use hostapd?
+[11:36:40] *** Quits: bigbrovar (~bigbrovar@example.org) (Ping timeout: 244 seconds)
+[11:36:57] *** Joins: Titanro (~textual@example.org)
+[11:37:34] *** Joins: fmerges (~fmerges@example.org)
+[11:38:07] *** Joins: rocknrolla_ (~nrolla@example.org)
+[11:38:46] *** Joins: gil1 (~gil@example.org)
+[11:39:15] *** Quits: daltonx (~daltonx@example.org) (Ping timeout: 244 seconds)
+[11:39:44] *** Quits: blueness (~blueness@example.org) (Quit: blueness)
+[11:40:06] *** Quits: rocknrolla (~nrolla@example.org) (Ping timeout: 256 seconds)
+[11:40:26] *** Quits: Putti (~Putti@example.org) (Ping timeout: 268 seconds)
+[11:40:38] *** Quits: xixs (~xixs@example.org) (Ping timeout: 250 seconds)
+[11:41:08] *** Joins: CharlieBrown (~calher@example.org)
+[11:41:24] *** Quits: schu-r (~Thunderbi@example.org) (Read error: Connection reset by peer)
+[11:41:26] <MaxFrames> ok, no one knows
+[11:42:12] *** Quits: rocknrolla_ (~nrolla@example.org) (Client Quit)
+[11:42:52] *** Quits: stenrose (~stenrose@example.org) (Quit: Leaving)
+[11:43:04] *** Joins: _ADN_ (~Test@example.org)
+[11:43:28] *** Quits: PAV (~pav@example.org) (Quit: t's now time to walk the dog.)
+[11:44:15] *** Quits: freakyyy (~uwe@example.org) (Quit: WeeChat 1.6)
+[11:44:38] *** Quits: MaxFrames (~MaxFrames@example.org) (Quit: When two people dream the same dream, it ceases to be an illusion. KVIrc KVIrc Equilibrium 4.2.0, revision: 6190, sources date: 20120701, built on: 2012-07-04 14:48:08 UTC 6190 http://www.kvirc.net)
+[11:44:40] *** Joins: freakyyy (~uwe@example.org)
+[11:44:58] *** Quits: Makaveli7 (~Makaveli7@example.org) (Ping timeout: 250 seconds)
+[11:45:11] *** Joins: PAV (~pav@example.org)
+[11:46:33] *** Joins: toastedmilk (~toastedmi@example.org)
+[11:46:54] *** Joins: ssaturos (~saturos@example.org)
+[11:47:48] *** Joins: undertuga (~undertuga@example.org)
+[11:48:00] *** debhelper sets mode: +l 1740
+[11:48:10] *** Joins: stenrose (~stenrose@example.org)
+[11:49:11] *** Joins: schu-r (~Thunderbi@example.org)
+[11:49:28] *** Joins: Sia- (~Sia@example.org)
+[11:49:37] *** Quits: moozer (~moz@example.org) (Ping timeout: 252 seconds)
+[11:49:53] <Sia-> hi, i which package can install TUN adapter?
+[11:50:11] *** Quits: saturos (~saturos@example.org) (Ping timeout: 265 seconds)
+[11:50:12] *** ssaturos is now known as saturos
+[11:50:39] *** Joins: [ADN] (~Test@example.org)
+[11:51:02] *** Joins: sigdk (~sigdk@example.org)
+[11:51:02] *** Quits: koltrast (06c2dc16@example.org) (Ping timeout: 246 seconds)
+[11:51:56] <sigdk> Hello, why do I need to update all these: https://paste.example.net/896539/  ?
+[11:51:57] *** Quits: mrrhq (~mrrhq@example.org) (Ping timeout: 260 seconds)
+[11:52:46] *** Quits: badiane (~badiane@example.org) (Ping timeout: 250 seconds)
+[11:53:30] <ksk> sigdk: eh, what is your actual question? you are trying to install something, that package (virtualbox) has other packages that it needs to function, so it pull them in (you could go --without-recommends if you wanted..)
+[11:53:39] *** Quits: nighty (~nighty@example.org) (Quit: Disappears in a puff of smoke)
+[11:53:48] *** Joins: bigbrovar (~bigbrovar@example.org)
+[11:53:58] *** Quits: verwilst (~smuxi@example.org) (Remote host closed the connection)
+[11:53:59] <ksk> as to why "will be upgraded" not sure if this is normal behaviour, are you mixing relases in your sources.list?
+[11:54:05] <sigdk> ksk, what are all those libreoffice dependences?
+[11:54:36] *** Joins: michaelni (~michael@example.org)
+[11:54:37] <eumel> sigdk: strange that it's requiring those office packages
+[11:54:42] *** Quits: _ADN_ (~Test@example.org) (Quit: Leaving)
+[11:54:42] *** Quits: [ADN] (~Test@example.org) (Client Quit)
+[11:54:52] *** Joins: Putti (~Putti@example.org)
+[11:55:09] *** Quits: toastedmilk (~toastedmi@example.org) (Quit: WeeChat 1.6)
+[11:55:12] <jelly> Sia-: what do you mean?  tuntap devices can be managed with the "ip" tool
+[11:55:16] *** Joins: _ADN_ (~Test@example.org)
+[11:55:18] <eumel> sigdk: guess we need more information, sources.list entries etc
+[11:55:23] <eumel> clear
+[11:55:53] *** Joins: panta (~chatzilla@example.org)
+[11:57:01] <Sia-> jelly just tried to run openvpn on my samll box with example i got this error http://pastebin.com/raw/3P2Qm81r
+[11:57:23] <sigdk> eumel, ksk https://paste.example.net/896544/
+[11:57:32] *** Quits: frekal (~frekal@example.org) (Ping timeout: 250 seconds)
+[11:57:48] *** Quits: gl-prout (~gl-prout@example.org) (Read error: No route to host)
+[11:58:07] <ksk> Sia-: running inside an openvz/parallels container? either a) enable tun/tap on the HardwareNode b) ask your provider to do so
+[11:58:11] *** Joins: Makaveli7 (~Makaveli7@example.org)
+[11:58:12] <jelly> Sia-: example's kernel or some custom thing?  You'll have to make sure tuntap driver is available, either compiled in or "modprobe tun"
+[11:58:13] <ksk> if not inside openvz: create the device
+[11:58:29] <jelly> ksk: wow, does openvz work on arm?
+[11:58:37] <Sia-> ok jelly thanks
+[11:58:52] <eumel> sigdk: can you comment the backports list ?
+[11:59:41] <ksk> jelly: dont think so, but dont really know.
+[12:00:13] *** Joins: ssaturos (~saturos@example.org)
+[12:00:25] <sigdk> eumel, still the same, I get a whole bunch of libreoffice dependencies
+[12:00:28] <ksk> sigdk: yap, mixing strech with wheezy-backports probalby not so good.
+[12:00:40] <n4dir> python is in version 3.4 in example-stable or -backports? sigdk
+[12:00:45] <ksk> sigdk: you did run apt-get update after commenting out the backports line?
+[12:00:57] <sigdk> ksk, yes
+[12:01:22] <jelly> ksk: (because their paste shows an arm machine)
+[12:01:31] <n4dir> ah, stretch.
+[12:01:34] <sigdk> n4dir, python?
+[12:01:44] <jelly> ,v python3
+[12:01:45] <judd> Package: python3 on amd64 -- wheezy: 3.2.3-6; jessie: 3.4.2-2; stretch: 3.5.1-4; sid: 3.5.1-4
+[12:02:03] *** Quits: Drzacek (~Drzacek@example.org) (Quit: Leaving)
+[12:02:22] *** Joins: daltonx (~daltonx@example.org)
+[12:02:25] <n4dir> sigdk: "The following packages were automatically installed and are no longer required", right at the top of the paste
+[12:02:27] <jelly> n4dir: jessie, not backports.  It's unlikely there will ever be a backport for python interpreter(s)
+[12:03:34] *** Joins: kriger_ (~norge@example.org)
+[12:03:54] <n4dir> i didn't see that he is using stretch, as this is #example. my fault.
+[12:04:12] *** Quits: saturos (~saturos@example.org) (Ping timeout: 265 seconds)
+[12:04:13] *** ssaturos is now known as saturos
+[12:04:14] *** Joins: mrrhq (~mrrhq@example.org)
+[12:04:26] <jelly> sigdk: your system looks rather outdated, and testing moves quickly these days, just before the freeze
+[12:04:58] *** Joins: koltrast (3583e1c2@example.org)
+[12:05:06] *** Quits: towo^work (~towo@example.org) (Quit: Leaving)
+[12:05:17] *** Quits: Sia- (~Sia@example.org) (Quit: Gone to sleep. ZZZzzz…)
+[12:06:08] *** Quits: undertuga (~undertuga@example.org) (Ping timeout: 260 seconds)
+[12:06:40] <sigdk> jelly, you mean soon stretch will become stable?
+[12:07:06] *** Joins: toastedmilk (~toastedmi@example.org)
+[12:07:18] *** Quits: kriger (~norge@example.org) (Ping timeout: 256 seconds)
+[12:07:57] *** Quits: Rokixz (~rokas@example.org) (Ping timeout: 240 seconds)
+[12:08:58] <eumel> sigdk: https://wiki.example.org/exampleStretch
+[12:09:15] <eumel> sigdk: 2017/02/05 is planned for Full freeze
+[12:09:56] *** Joins: frekal (~frekal@example.org)
+[12:10:03] *** Quits: dselect (~dselect@example.org) (Quit: ouch... that hurt)
+[12:10:15] *** Quits: boudiccas (~boudiccas@example.org) (Quit: Leaving)
+[12:10:26] *** Quits: WayToDoor (~milk.bott@example.org) (Quit: My MacBook has gone to sleep. ZZZzzz…)
+[12:10:44] *** Quits: bnw (~bnw@example.org) (Quit: Leaving)
+[12:11:08] *** Joins: dselect (~dselect@example.org)
+[12:11:33] *** Quits: schu-r (~Thunderbi@example.org) (Read error: Connection reset by peer)
+[12:12:07] *** Joins: InfoTest (~Thunderbi@example.org)
+[12:13:05] *** Joins: cyborg-one (~cyborg-on@example.org)
+[12:13:07] *** Joins: moozer (~moz@example.org)
+[12:13:07] *** Parts: th0r (~Thor@example.org)
+[12:14:02] *** Joins: schu-r (~Thunderbi@example.org)
+[12:14:08] *** Quits: Titanro (~textual@example.org) (Quit: My MacBook has gone to sleep. ZZZzzz…)
+[12:14:19] *** Joins: savantgarde (~savantgar@example.org)
+[12:14:22] *** Quits: JagErLessen (~JagErLess@example.org) (Remote host closed the connection)
+[12:14:29] *** Joins: blueness (~blueness@example.org)
+[12:14:48] *** Joins: JagErLessen (~JagErLess@example.org)
+[12:16:43] *** Quits: gigetoo (~gigetoo@example.org) (Ping timeout: 245 seconds)
+[12:18:32] *** Joins: ectospasm (~ectospasm@example.org)
+[12:19:12] *** Quits: JagErLessen (~JagErLess@example.org) (Ping timeout: 250 seconds)
+[12:19:41] *** Quits: Eduard_Munteanu (~Eduard_Mu@example.org) (Remote host closed the connection)
+[12:19:55] *** Joins: gigetoo (~gigetoo@example.org)
+[12:20:01] *** Quits: Zzeiss (~wsy@example.org) (Quit: Zzeiss)
+[12:23:01] *** Joins: Maxou (~maxou@example.org)
+[12:23:37] *** Joins: gl-prout (~gl-prout@example.org)
+[12:23:42] *** Joins: Elirips (~Elirips@example.org)
+[12:24:04] *** Joins: TomTomTo1 (~henryk@example.org)
+[12:24:38] *** Quits: mrrhq (~mrrhq@example.org) (Ping timeout: 245 seconds)
+[12:26:57] *** Quits: TomTomTosch (~henryk@example.org) (Ping timeout: 260 seconds)
+[12:27:54] *** Joins: B[]rG (~tuptidup@example.org)
+[12:28:05] *** Joins: olegfusion (~olegfusio@example.org)
+[12:28:21] *** Quits: altin_ (~altin@example.org) (Ping timeout: 260 seconds)
+[12:29:03] *** Joins: dreamon (~dreamon@example.org)
+[12:29:53] *** Joins: turfal (~Icedove@example.org)
+[12:29:54] *** Joins: Dante (~dante@example.org)
+[12:29:58] *** Joins: Rokixz (~rokas@example.org)
+[12:30:14] *** Joins: Drzacek (~Drzacek@example.org)
+[12:30:27] *** Quits: maolang (~denis@example.org) (Remote host closed the connection)
+[12:31:08] *** Quits: Maxou (~maxou@example.org) (Remote host closed the connection)
+[12:31:47] *** Quits: chaology (~James5979@example.org) (Quit: WeeChat 1.4)
+[12:32:20] *** Joins: 7YUAANAEP (~undertuga@example.org)
+[12:33:01] *** Quits: _sfiguser (~sfigguser@example.org) (Ping timeout: 260 seconds)
+[12:33:14] *** Joins: maolang (~denis@example.org)
+[12:33:22] *** Joins: chaology (~James5979@example.org)
+[12:34:04] *** Quits: blueness (~blueness@example.org) (Quit: blueness)
+[12:34:26] *** Joins: Maxou (~maxou@example.org)
+[12:34:36] *** Quits: toastedmilk (~toastedmi@example.org) (Ping timeout: 260 seconds)
+[12:36:03] *** Joins: sasukeskapa (~sasukeska@example.org)
+[12:36:09] *** Quits: chaology (~James5979@example.org) (Client Quit)
+[12:37:46] *** Joins: chaology (~James5979@example.org)
+[12:38:13] *** Quits: danieli (~duniel@example.org) (Ping timeout: 248 seconds)
+[12:38:40] *** Quits: Smither (~Callum@example.org) (Ping timeout: 258 seconds)
+[12:38:44] *** Quits: flugger (~flugger@example.org) (Quit: ( www.nnscript.com :: NoNameScript 4.22 :: www.esnation.com ))
+[12:38:48] *** Quits: Maxou (~maxou@example.org) (Ping timeout: 245 seconds)
+[12:38:48] *** Quits: maolang (~denis@example.org) (Quit: Konversation terminated!)
+[12:39:32] *** Joins: maolang (~denis@example.org)
+[12:39:38] *** Quits: llucenic (~Thunderbi@example.org) (Read error: Connection reset by peer)
+[12:39:42] *** Quits: Brigo (~Brigo@example.org) (Ping timeout: 244 seconds)
+[12:40:03] *** Quits: savantgarde (~savantgar@example.org) (Remote host closed the connection)
+[12:40:03] *** Joins: llucenic (~Thunderbi@example.org)
+[12:40:44] *** Joins: Brigo (~Brigo@example.org)
+[12:41:23] *** Joins: savantgarde (~savantgar@example.org)
+[12:41:23] *** Quits: schu-r (~Thunderbi@example.org) (Read error: Connection reset by peer)
+[12:42:22] *** Joins: High_Priest (~hp@example.org)
+[12:42:26] *** Quits: maolang (~denis@example.org) (Client Quit)
+[12:42:36] *** Joins: dogbait (~dogbait@example.org)
+[12:42:41] *** Joins: chcl3 (~chcl3@example.org)
+[12:42:44] *** Joins: nighty (~nighty@example.org)
+[12:43:50] *** Joins: Maxou (~maxou@example.org)
+[12:43:57] *** Quits: bigbrovar (~bigbrovar@example.org) (Ping timeout: 268 seconds)
+[12:44:25] *** Quits: jim_carry (~jim_carry@example.org) (Quit: leaving)
+[12:45:11] *** Joins: boudiccas (~boudiccas@example.org)
+[12:45:19] *** Joins: _sfiguser (~sfigguser@example.org)
+[12:45:31] *** Quits: chaology (~James5979@example.org) (Quit: WeeChat 1.4)
+[12:45:54] *** Joins: BlaBlur (~BlaBlur@example.org)
+[12:45:55] *** Quits: BlaBlur (~BlaBlur@example.org) (Max SendQ exceeded)
+[12:45:57] *** Joins: chaology (~James5979@example.org)
+[12:46:21] *** Joins: BlaBlur (~BlaBlur@example.org)
+[12:48:53] *** Quits: Maxou (~maxou@example.org) (Ping timeout: 260 seconds)
+[12:49:33] *** Joins: zoolook (~zoolook@example.org)
+[12:51:09] *** Joins: toastedmilk (~toastedmi@example.org)
+[12:52:50] *** Joins: Tiffon (~name@example.org)
+[12:52:56] *** Joins: Maxou (~maxou@example.org)
+[12:54:13] *** Quits: effbiai (~effbiai@example.org) (Quit: leaving)
+[12:54:34] *** Quits: chcl3 (~chcl3@example.org) (Quit: Lost terminal)
+[12:54:40] *** Quits: gl-prout (~gl-prout@example.org) (Quit: Leaving)
+[12:55:43] *** Joins: blueness (~blueness@example.org)
+[12:56:56] *** Joins: JagErLessen (~JagErLess@example.org)
+[12:57:52] *** Quits: Maxou (~maxou@example.org) (Ping timeout: 260 seconds)
+[12:57:55] *** Dracunos_ is now known as Dracunos
+[12:58:24] *** Joins: lv_ (~lv@example.org)
+[13:00:45] *** Quits: rosten (~rosten@example.org) (Ping timeout: 265 seconds)
+[13:01:21] *** Joins: knidos (~knidos@example.org)
+[13:01:58] *** Joins: neurot (~neurosis@example.org)
+[13:02:00] *** Joins: Maxou (~maxou@example.org)
+[13:02:46] *** Joins: alowinz (~lnx@example.org)
+[13:03:21] *** Quits: Dante (~dante@example.org) (Ping timeout: 260 seconds)
+[13:04:45] *** Joins: eumel__ (~eumel@example.org)
+[13:05:01] *** Quits: dpkg (~dpkg@example.org) (Quit: buh bye!)
+[13:05:03] *** Quits: eumel__ (~eumel@example.org) (Client Quit)
+[13:05:41] *** Joins: dpkg (~dpkg@example.org)
+[13:05:58] <happy_hacker> when "apt-get dist-upgrade" is running and stops after a message with a :
+[13:06:09] <happy_hacker> how do you contine? just press enter?
+[13:06:16] *** Quits: eumel (~eumel@example.org) (Ping timeout: 250 seconds)
+[13:06:23] <happy_hacker> man apt-get hasn't helped just yet
+[13:06:30] <OpenTokix> happy_hacker: Depends on the message
+[13:06:38] *** Quits: Maxou (~maxou@example.org) (Ping timeout: 246 seconds)
+[13:06:55] <bezaban> likely a less prompt. If it is just displaying a doc, hit q
+[13:07:02] <bezaban> after reading it :P
+[13:07:23] *** Joins: eumel (~eumel@example.org)
+[13:07:53] *** Joins: guardianJ (~javaserve@example.org)
+[13:08:01] *** debhelper sets mode: +l 1748
+[13:08:19] <happy_hacker> apt (1.1~exp9) experimental; urgency=medium
+[13:08:37] <happy_hacker> ending with     -- Julian Andres Klode <jak@example.org  Mon, 17 Aug 2015 14:45:17 +0200  then the :
+[13:08:46] <happy_hacker> thanks
+[13:08:53] *** Joins: sh00p (~sh00p@example.org)
+[13:09:45] *** Quits: toastedmilk (~toastedmi@example.org) (Ping timeout: 256 seconds)
+[13:10:16] *** Joins: Dante (~dante@example.org)
+[13:10:59] *** Quits: blueness (~blueness@example.org) (Quit: blueness)
+[13:11:06] *** Joins: Maxou (~maxou@example.org)
+[13:11:11] <themill> the "(q to quit)" in the message might be a hint
+[13:11:29] *** Joins: sl4v3 (~casey.bil@example.org)
+[13:11:56] *** Quits: philipballew (~philip@example.org) (Ping timeout: 260 seconds)
+[13:12:18] *** Joins: WayToDoor (~milk.bott@example.org)
+[13:12:19] *** Quits: czesmir (~stefan@example.org) (Ping timeout: 268 seconds)
+[13:12:58] *** Quits: moozer (~moz@example.org) (Ping timeout: 245 seconds)
+[13:13:28] *** Joins: Wizek (~Wizek@example.org)
+[13:13:40] *** Joins: earthundead (~earthunde@example.org)
+[13:13:56] *** Joins: czesmir (~stefan@example.org)
+[13:14:37] *** Quits: earthundead (~earthunde@example.org) (Remote host closed the connection)
+[13:14:38] <happy_hacker> moved on but don't recall seeing that
+[13:14:56] *** Joins: biberu (~biberu@example.org)
+[13:15:48] *** Quits: Maxou (~maxou@example.org) (Ping timeout: 250 seconds)
+[13:16:24] *** Quits: luckman212 (~luckman21@example.org) (Ping timeout: 250 seconds)
+[13:16:42] <themill> I wrote the patch for that. You did.
+[13:16:43] *** MaBunny is now known as OtakuSenpai
+[13:18:15] *** Joins: Prokofiev (~Sergei@example.org)
+[13:18:26] *** Joins: mrrhq (~mrrhq@example.org)
+[13:18:29] *** Quits: guardianJ (~javaserve@example.org) (Remote host closed the connection)
+[13:18:58] *** Quits: btf (~btf@example.org) (Remote host closed the connection)
+[13:19:17] *** Joins: effbiai (~effbiai@example.org)
+[13:20:16] *** Joins: Maxou (~maxou@example.org)
+[13:21:40] *** Joins: guardianJ (~javaserve@example.org)
+[13:22:28] *** Quits: _sfiguser (~sfigguser@example.org) (Remote host closed the connection)
+[13:22:34] *** Joins: jediraster (~jediraste@example.org)
+[13:23:13] *** Quits: od (~Zzzth@example.org) (Quit: Leaving)
+[13:24:21] *** Quits: lok0 (~jediraste@example.org) (Ping timeout: 260 seconds)
+[13:24:27] *** Joins: luckman212 (~luckman21@example.org)
+[13:24:56] *** Quits: Maxou (~maxou@example.org) (Ping timeout: 256 seconds)
+[13:25:58] *** Joins: toastedmilk (~toastedmi@example.org)
+[13:27:30] *** Quits: aaro (~aaro@example.org) (Ping timeout: 250 seconds)
+[13:27:33] *** Quits: Dante (~dante@example.org) (Ping timeout: 245 seconds)
+[13:28:02] *** Quits: PseudoNoob (~PseudoNoo@example.org) (Remote host closed the connection)
+[13:28:16] *** Quits: WayToDoor (~milk.bott@example.org) (Quit: My MacBook has gone to sleep. ZZZzzz…)
+[13:28:21] *** Quits: krazedkat (~krazedkat@example.org) (Ping timeout: 268 seconds)
+[13:28:55] *** Joins: CeBe_ (~cebe@example.org)
+[13:29:14] *** Joins: Maxou (~maxou@example.org)
+[13:29:17] <happy_hacker> my login manager has gone beserk
+[13:29:38] *** Quits: surfist (~surfist@example.org) (Remote host closed the connection)
+[13:30:01] *** Joins: surfist (~surfist@example.org)
+[13:30:04] <happy_hacker> when I returned the screen was locked; pressing Enter brought up the login screen
+[13:30:24] <happy_hacker> it continually outputs "Authentication error"
+[13:30:39] *** Joins: OS-24669 (~OS-24669@example.org)
+[13:31:03] <happy_hacker> Type of message, '(ssssssssb)', does not match ex..
+[13:31:46] *** Joins: Bonn333 (~Bonn333@example.org)
+[13:32:04] <happy_hacker> finding bug reports
+[13:33:34] *** Quits: giricz81 (~quassel@example.org) (Remote host closed the connection)
+[13:34:06] *** Quits: Maxou (~maxou@example.org) (Ping timeout: 265 seconds)
+[13:34:10] *** Joins: careta (~botto@example.org)
+[13:35:21] *** Quits: dogbait (~dogbait@example.org) (Quit: dogbait)
+[13:35:44] *** Quits: ojoa (~zetagi@example.org) (Ping timeout: 260 seconds)
+[13:36:42] *** Quits: torjeh (~Torje@example.org) (Quit: Textual IRC Client: www.textualapp.com)
+[13:36:53] *** Joins: torjeh (~Torje@example.org)
+[13:37:25] *** Quits: debalance_ (~debalance@example.org) (Remote host closed the connection)
+[13:37:25] *** Joins: mariusp (~mpana@example.org)
+[13:37:28] *** Joins: ojoa (~zetagi@example.org)
+[13:38:40] *** Joins: Maxou (~maxou@example.org)
+[13:38:46] *** Quits: sl4v3 (~casey.bil@example.org) (Ping timeout: 250 seconds)
+[13:38:58] *** Joins: philipballew (~philip@example.org)
+[13:40:05] *** Quits: sigdk (~sigdk@example.org) (Quit: Leaving)
+[13:41:01] *** Joins: dionysus69 (~Thunderbi@example.org)
+[13:41:42] *** Quits: mdkmk (~mdkmk@example.org) (Quit: Textual IRC Client: www.textualapp.com)
+[13:41:58] *** Quits: ar1el (~undergr0u@example.org) (Ping timeout: 250 seconds)
+[13:42:02] *** Quits: turfal (~Icedove@example.org) (Quit: turfal)
+[13:42:13] *** Quits: nse (~leo@example.org) (Ping timeout: 244 seconds)
+[13:42:30] *** Quits: toastedmilk (~toastedmi@example.org) (Ping timeout: 256 seconds)
+[13:42:33] *** Quits: dreamon (~dreamon@example.org) (Remote host closed the connection)
+[13:42:47] *** Joins: WayToDoor (~milk.bott@example.org)
+[13:42:51] *** Quits: lucad111 (~lucad111@example.org) (Quit: Leaving)
+[13:42:55] *** Quits: Maxou (~maxou@example.org) (Ping timeout: 252 seconds)
+[13:43:21] *** Quits: guardianJ (~javaserve@example.org) (Remote host closed the connection)
+[13:43:26] *** Quits: plasmoduck (~cjg@example.org) (Quit: Lost terminal)
+[13:44:43] *** Quits: eumel (~eumel@example.org) (Quit: leaving)
+[13:45:45] *** Quits: lss8 (~lss8@example.org) ()
+[13:46:11] *** Joins: guardianJ (~javaserve@example.org)
+[13:46:19] *** Joins: lucad111 (~lucad111@example.org)
+[13:46:33] *** Joins: ee2455 (~ee2455@example.org)
+[13:46:55] *** Joins: Maxou (~maxou@example.org)
+[13:47:52] *** Joins: kzimmermann (~kzimmerma@example.org)
+[13:47:57] *** Joins: chcl3 (~chcl3@example.org)
+[13:48:17] *** Quits: mrrhq (~mrrhq@example.org) (Quit: WeeChat 1.6)
+[13:49:14] *** Joins: dethos (~dethos@example.org)
+[13:49:25] *** Joins: plasmoduck (~cjg@example.org)
+[13:49:58] *** Quits: philipballew (~philip@example.org) (Ping timeout: 244 seconds)
+[13:50:07] *** Joins: maolang (~denis@example.org)
+[13:50:50] *** Quits: guardianJ (~javaserve@example.org) (Read error: Connection reset by peer)
+[13:51:21] *** Quits: surfist (~surfist@example.org) (Remote host closed the connection)
+[13:51:56] *** Joins: surfist (~surfist@example.org)
+[13:52:00] *** Joins: tehfeels (c2ab47d5@example.org)
+[13:52:04] *** Quits: gigetoo (~gigetoo@example.org) (Ping timeout: 260 seconds)
+[13:52:12] <tehfeels> when i want to install compiz in example Jessie i get this error unable to install new version of '/usr/lib/x86_64-linux-gnu/libpng12.so.0': No such file or directory
+[13:53:07] *** Joins: gigetoo (~gigetoo@example.org)
+[13:53:09] *** hawken_ is now known as hawken
+[13:53:34] *** Joins: makimaki (~makimaki`@example.org)
+[13:53:56] *** Quits: js9600 (~js9600@example.org) (Ping timeout: 250 seconds)
+[13:55:08] *** Quits: Prokofiev (~Sergei@example.org) (Ping timeout: 244 seconds)
+[13:55:38] *** Joins: krazedkat (~krazedkat@example.org)
+[13:56:06] <themill> tehfeels: that's a sign you're trying to install packages not designed for system. compiz isn't anywhere in example
+[13:56:49] *** Quits: tinkersh (~TinkerSh@example.org) (Read error: Connection reset by peer)
+[13:57:08] *** Joins: tinkersh (~TinkerSh@example.org)
+[13:57:33] *** Joins: nse (~leo@example.org)
+[13:58:14] *** Quits: maolang (~denis@example.org) (Remote host closed the connection)
+[13:58:25] *** Quits: plasmoduck (~cjg@example.org) (Quit: leaving)
+[13:58:55] <tehfeels> themill: but libpng16.so.16 is installed in the same directory
+[13:59:35] *** Quits: OS-24477 (~OS-24477@example.org) (Remote host closed the connection)
+[13:59:41] *** Quits: soee_ (~soee@example.org) (Quit: Konversation terminated!)
+[14:00:05] <themill> that's not particularly relevant
+[14:00:17] *** Quits: BWMerlin (~Thunderbi@example.org) (Ping timeout: 260 seconds)
+[14:00:29] *** Quits: freakyy (~uwe@example.org) (Remote host closed the connection)
+[14:01:15] *** Joins: soee (~soee@example.org)
+[14:01:18] *** Quits: cydrobolt (~cydrobolt@example.org) (Ping timeout: 245 seconds)
+[14:01:43] *** Quits: Maxxe_ (Maxxe@example.org) (Ping timeout: 245 seconds)
+[14:02:27] *** Quits: wyre (wyre@example.org) (Ping timeout: 256 seconds)
+[14:02:32] *** Joins: wokedame (~sfgsfdsad@example.org)
+[14:02:56] *** Quits: nse (~leo@example.org) (Ping timeout: 240 seconds)
+[14:03:28] *** Quits: alvarezp (~alvarezp@example.org) (Ping timeout: 250 seconds)
+[14:03:39] *** Quits: subhead (~subhead@example.org) ()
+[14:03:44] *** Quits: clmsy (~eoz@example.org) (Ping timeout: 260 seconds)
+[14:03:45] *** Joins: cydrobolt (~cydrobolt@example.org)
+[14:03:46] *** Quits: cydrobolt (~cydrobolt@example.org) (Changing host)
+[14:03:46] *** Joins: cydrobolt (~cydrobolt@example.org)
+[14:03:54] *** Joins: subhead (~subhead@example.org)
+[14:04:13] *** Joins: mag009 (~mag@example.org)
+[14:04:13] *** Parts: mag009 (~mag@example.org)
+[14:04:20] *** Joins: alvarezp (~alvarezp@example.org)
+[14:04:44] *** Quits: 7YUAANAEP (~undertuga@example.org) (Ping timeout: 268 seconds)
+[14:05:22] *** Joins: wyre (wyre@example.org)
+[14:06:20] *** Joins: Maxxe (Maxxe@example.org)
+[14:06:23] *** Joins: cdown (~cdown@example.org)
+[14:06:43] *** Maxxe is now known as Guest41486
+[14:06:53] *** Quits: SpaceAce (~SpaceAce@example.org) (Quit: Leaving)
+[14:07:40] *** Joins: th0r (~Thor@example.org)
+[14:07:46] *** Quits: th0r (~Thor@example.org) (Max SendQ exceeded)
+[14:07:52] *** Joins: denis_k (~denisk@example.org)
+[14:08:01] *** debhelper sets mode: +l 1740
+[14:08:09] *** Joins: Guest7324 (~Thor@example.org)
+[14:08:23] *** Joins: schu-r (~Thunderbi@example.org)
+[14:08:40] *** Quits: Guest7324 (~Thor@example.org) (Client Quit)
+[14:09:05] *** Joins: th0r_ (~Thor@example.org)
+[14:09:13] *** Quits: denisk (~denisk@example.org) (Ping timeout: 245 seconds)
+[14:09:52] *** Quits: th0r_ (~Thor@example.org) (Client Quit)
+[14:10:34] *** Joins: th0r_ (~Thor@example.org)
+[14:10:38] *** Quits: Texou (~Texou@example.org) (Ping timeout: 244 seconds)
+[14:10:45] *** Quits: fmerges (~fmerges@example.org) (Quit: leaving)
+[14:11:00] *** Quits: Putti (~Putti@example.org) (Ping timeout: 250 seconds)
+[14:11:01] *** th0r_ is now known as th0r
+[14:11:18] *** Quits: karimb (~karimb@example.org) (Quit: Karim has gone to sleep. ZZZzzz…)
+[14:15:03] *** Quits: julius_ (~jason4@example.org) (Ping timeout: 245 seconds)
+[14:15:29] *** Quits: chcl3 (~chcl3@example.org) (Remote host closed the connection)
+[14:16:29] *** Joins: nse (~leo@example.org)
+[14:16:45] *** Joins: Hollywood (~|@example.org)
+[14:16:46] *** Joins: DammitJim (~DammitJim@example.org)
+[14:17:10] *** Quits: savantgarde (~savantgar@example.org) (Remote host closed the connection)
+[14:17:25] *** Quits: surfist (~surfist@example.org) (Remote host closed the connection)
+[14:17:28] *** Quits: jpastore (~jpastore@example.org) (Remote host closed the connection)
+[14:17:44] *** Joins: pav4211 (~pav@example.org)
+[14:17:49] *** Joins: surfist (~surfist@example.org)
+[14:17:54] *** Joins: wdwef (~b@example.org)
+[14:18:16] <wdwef> hello, where I can download example 8.5?
+[14:19:46] <TomTomTo1> http://cdimage.example.org/mirror/cdimage/archive/8.5.0/
+[14:20:11] <jelly> tehfeels: compiled binaries require libs with the exact same "soname" (basically, same ABI/API) they were built with
+[14:20:43] <wdwef> thx!!!
+[14:21:09] *** Quits: PAV (~pav@example.org) (Ping timeout: 256 seconds)
+[14:21:41] <petn-randall> wdwef: You might want to take the most recent release instead, though.
+[14:21:50] <wdwef> I want 8.5
+[14:22:10] <petn-randall> wdwef: I see. Is there a reason you want 8.5 over 8.6?
+[14:22:15] <wdwef> yep
+[14:22:24] <petn-randall> which is?
+[14:22:56] *** Quits: poleprogger (~mj@example.org) (Ping timeout: 258 seconds)
+[14:23:23] *** Joins: cybiko123 (~cybiko123@example.org)
+[14:24:22] *** Quits: srtu (~hypnotoad@example.org) (Remote host closed the connection)
+[14:24:35] *** Quits: Maxou (~maxou@example.org) (Remote host closed the connection)
+[14:24:49] *** Joins: clippythepinhead (~user@example.org)
+[14:25:02] *** Joins: plasmoduck (~cjg@example.org)
+[14:25:08] *** Quits: GJ_ (~Thunderbi@example.org) (Ping timeout: 250 seconds)
+[14:25:37] *** Quits: stray_ (~stray@example.org) (Quit: Konversation terminated!)
+[14:25:40] *** Joins: Maxou (~maxou@example.org)
+[14:27:04] *** Quits: magnulu (~magnulu@example.org) (Ping timeout: 260 seconds)
+[14:27:09] *** Quits: luckman212 (~luckman21@example.org) (Ping timeout: 258 seconds)
+[14:27:11] *** Joins: ssaturos (~saturos@example.org)
+[14:27:26] *** Quits: WayToDoor (~milk.bott@example.org) (Quit: My MacBook has gone to sleep. ZZZzzz…)
+[14:27:59] *** Joins: maziar (~textual@example.org)
+[14:28:23] *** Quits: maziar (~textual@example.org) (Changing host)
+[14:28:23] *** Joins: maziar (~textual@example.org)
+[14:28:45] *** Quits: Makaveli7 (~Makaveli7@example.org) (Ping timeout: 260 seconds)
+[14:29:04] *** Joins: magnulu (~magnulu@example.org)
+[14:29:42] *** Joins: idts (~lxuser@example.org)
+[14:30:51] *** Joins: noroot (~noroot@example.org)
+[14:31:05] *** Quits: saturos (~saturos@example.org) (Ping timeout: 260 seconds)
+[14:31:06] *** ssaturos is now known as saturos
+[14:31:45] *** Quits: DrOwl (~drowl@example.org) (Quit: ZNC - http://znc.in)
+[14:31:57] *** Quits: schu-r (~Thunderbi@example.org) (Read error: Connection reset by peer)
+[14:32:02] <maziar> I'm setup a DNS server on example jessie and when i change my DNS to it on client it's work fine for me, (it's address is NS1.site.com) when i want to set my NS Servers on godaddy.com for my site.com, (set NS to ns1.site.com) godaddy.com  tis telling me "the data provided cannot be used, please correct it and resubmit your resuest"
+[14:32:06] *** Joins: luckman212 (~luckman21@example.org)
+[14:32:09] <maziar> how cam i fix it ?
+[14:33:36] *** Quits: zanshin_ (~textual@example.org) (Quit: My MacBook has gone to sleep. ZZZzzz…)
+[14:33:43] <jelly> maziar: pastebin the output of "dig yourdomain.here SOA @example.org and same for NS record type instead of SOA.  Please do not munge the domain name.
+[14:33:53] *** Quits: noroot_ (~noroot@example.org) (Ping timeout: 244 seconds)
+[14:33:56] *** Quits: Maxou (~maxou@example.org) (Remote host closed the connection)
+[14:33:58] *** Quits: ransur0t (~ransur0t@example.org) (Remote host closed the connection)
+[14:34:02] *** Joins: Maxou (~maxou@example.org)
+[14:34:08] *** Joins: m8 (~m8@example.org)
+[14:34:09] *** Joins: hspcd (~hspcd@example.org)
+[14:34:18] <jelly> maziar: which authoritative dns server software are you using?
+[14:34:45] <maziar> jelly last version of bind in example repository
+[14:36:41] *** Joins: Starky (~Starky@example.org)
+[14:36:50] *** Joins: DrOwl (~drowl@example.org)
+[14:36:54] *** Quits: dka (~dka@example.org) (Quit: Leaving)
+[14:36:57] *** Quits: d0nn1e (~d0nn1e@example.org) (Ping timeout: 240 seconds)
+[14:37:27] *** Joins: dka (~dka@example.org)
+[14:37:44] *** Quits: n4dir (~user@example.org) (Quit: Leaving.)
+[14:37:56] *** Joins: ichimonji (~matsu@example.org)
+[14:38:59] *** Joins: d0nn1e (~d0nn1e@example.org)
+[14:39:29] <maziar> jelly  http://pastebin.com/XtCpGDgE
+[14:39:41] *** Joins: schu-r (~Thunderbi@example.org)
+[14:39:50] *** Quits: wdwef (~b@example.org) (Ping timeout: 265 seconds)
+[14:40:03] *** Joins: _foldLeft (~foldleft@example.org)
+[14:40:08] *** Quits: plasmoduck (~cjg@example.org) (Quit: Lost terminal)
+[14:40:30] *** Quits: pkv1 (~pkv@example.org) (Ping timeout: 268 seconds)
+[14:40:34] *** Quits: hspcd (~hspcd@example.org) ()
+[14:40:34] *** Quits: mzf (~mzf@example.org) (Read error: Connection reset by peer)
+[14:40:46] *** Joins: Makaveli7 (~Makaveli7@example.org)
+[14:41:01] *** Joins: mzf (~mzf@example.org)
+[14:41:23] *** Joins: cenysor (~cenysor@example.org)
+[14:41:57] *** Joins: cosmos (~quassel@example.org)
+[14:42:33] *** Joins: ssaturos (~saturos@example.org)
+[14:43:21] *** cosmos is now known as ShalokShalom
+[14:43:37] *** Joins: btf (~btf@example.org)
+[14:44:17] *** Quits: tvm (~tvm@example.org) (Quit: Leaving)
+[14:44:22] <jelly> looks about right, but I'm not willing to spend time analyzing munged data
+[14:44:52] *** Joins: netadmin (~ozgur@example.org)
+[14:45:11] *** Joins: bluenemo (~bluenemo@example.org)
+[14:45:29] *** Quits: monsune (~monsune@example.org) (Read error: Connection reset by peer)
+[14:46:13] *** Quits: saturos (~saturos@example.org) (Ping timeout: 248 seconds)
+[14:46:13] *** ssaturos is now known as saturos
+[14:46:32] *** Quits: surfist (~surfist@example.org) (Remote host closed the connection)
+[14:46:53] *** Joins: surfist (~surfist@example.org)
+[14:47:05] *** Quits: Al3xG0 (~unix@example.org) (Ping timeout: 265 seconds)
+[14:47:21] *** Joins: Al3xG0 (~unix@example.org)
+[14:47:22] *** Quits: Al3xG0 (~unix@example.org) (Changing host)
+[14:47:22] *** Joins: Al3xG0 (~unix@example.org)
+[14:47:47] *** Quits: rgogunskiy (~rgogunski@example.org) (Quit: rgogunskiy)
+[14:47:50] *** Quits: Gnomethrower (~B@example.org) (Excess Flood)
+[14:48:21] *** Quits: Starky (~Starky@example.org) (Read error: Connection reset by peer)
+[14:48:41] *** Joins: Starky (~Starky@example.org)
+[14:49:04] *** Joins: gchristensen (~ident@example.org)
+[14:49:44] *** Joins: badiane (~badiane@example.org)
+[14:49:54] <gchristensen> Hi, does example have automated testing to make sure packages build and functionality continues working? I'm sure there must be, and I'd love to see the tooling and tests.
+[14:50:57] *** Quits: kzimmermann (~kzimmerma@example.org) (Ping timeout: 240 seconds)
+[14:51:01] *** Quits: frekal (~frekal@example.org) (Ping timeout: 248 seconds)
+[14:52:22] <dondelelcaro> gchristensen: mostly; we do archive-wide rebuilds quite often, and if a package has a testing framework, it is run during the build process
+[14:52:50] *** Quits: _foldLeft (~foldleft@example.org) (Read error: Connection reset by peer)
+[14:53:03] *** Joins: _foldLeft (~foldleft@example.org)
+[14:53:10] <gchristensen> I see. Is there any integration testing where you do a boot and test the booted system works?
+[14:53:19] *** Quits: halbomin (~textual@example.org) (Quit: Textual IRC Client: www.textualapp.com)
+[14:53:21] *** Quits: Makaveli7 (~Makaveli7@example.org) (Quit: Leaving)
+[14:53:23] *** Quits: sappel (~sappel@example.org) (Ping timeout: 245 seconds)
+[14:53:26] *** Quits: arturo (~arturo@example.org) (Remote host closed the connection)
+[14:53:38] <dondelelcaro> gchristensen: the d-i group does some of that, but it's mostly based on virtual machines
+[14:53:59] <dondelelcaro> gchristensen: and there it's mainly geared towards making sure the installer works
+[14:54:20] *** Joins: savantgarde (~savantgar@example.org)
+[14:54:51] <gchristensen> I see, can I see that code somewhere?
+[14:55:00] <dondelelcaro> gchristensen: more complicated integration tests get pretty difficult, because there are so many possible endpoints and package combinations; AFAIK, the project doesn't have a systematic set up for it
+[14:55:10] <gchristensen> right right, I can understand that
+[14:55:15] *** Quits: InfoTest (~Thunderbi@example.org) (Quit: InfoTest)
+[14:55:17] *** Quits: APexil (~you@example.org) (Ping timeout: 240 seconds)
+[14:55:27] *** Joins: OS-24598 (~OS-24598@example.org)
+[14:55:28] <dondelelcaro> gchristensen: https://wiki.example.org/exampleInstaller#Development
+[14:55:47] *** Quits: cdown (~cdown@example.org) (Remote host closed the connection)
+[14:55:53] *** Joins: pkv1 (~pkv@example.org)
+[14:56:02] *** Joins: zanshin_ (~textual@example.org)
+[14:56:04] *** Joins: cdown (~cdown@example.org)
+[14:56:07] <dondelelcaro> gchristensen: I think some of the actual deployment testing is manual, but I'm not certain
+[14:56:12] <gchristensen> I'm a maintainer of NixOS, and find our full boot integration tests frequently fail with false negatives, so I'm polling other distros in hopes of finding gems to improve stability and reproducibility
+[14:56:15] <gchristensen> ahh ok
+[14:56:20] *** Joins: jpgepetto (~jean-phil@example.org)
+[14:56:22] *** Quits: Starky (~Starky@example.org) (Read error: Connection reset by peer)
+[14:56:37] *** Quits: bluenemo (~bluenemo@example.org) (Ping timeout: 240 seconds)
+[14:56:41] *** Joins: Starky (~Starky@example.org)
+[14:56:41] *** Joins: bgardner (~bgardner@example.org)
+[14:56:43] <gchristensen> (they pass more often than not, but the false negatives are frustrating still)
+[14:56:50] <dondelelcaro> gchristensen: ah; yeah, that's not that unusual, unfortunately. Are you all booting on raw hardware? or a virtual machine?
+[14:57:22] *** Joins: ssaturos (~saturos@example.org)
+[14:57:26] <dondelelcaro> I'm not really the expert in this area, though; you might want to ask in #example-devel on irc.oftc.net
+[14:57:28] <gchristensen> we're using QEMU for those tests, and  I _suspect_ whatever else is running on the box at the time has a big hand in how it goes
+[14:57:32] *** Joins: Jan2 (kvirc@example.org)
+[14:57:36] <dondelelcaro> gchristensen: yeah, makes sense
+[14:57:54] <gchristensen> cool, thank you for the link and the pointer to #example-devel -- I've got to take the dog out, but will head that way later today. Thank you!
+[14:57:56] <dondelelcaro> (example is so large that there's no way to keep on top of everything that people are working on)
+[14:57:59] *** Quits: Jan\ (~kvirc@example.org) (Ping timeout: 256 seconds)
+[14:58:05] <gchristensen> hah, yeah :)
+[14:58:06] *** lethu_ is now known as lethu
+[14:58:10] *** Quits: daltonx (~daltonx@example.org) (Ping timeout: 244 seconds)
+[14:58:14] <dondelelcaro> gchristensen: no problem! good luck!
+[14:58:15] *** Quits: idts (~lxuser@example.org) (Quit: "You picked the wrong kite to run away with!")
+[14:58:41] *** Quits: _foldLeft (~foldleft@example.org) (Remote host closed the connection)
+[14:59:17] *** Joins: _foldLeft (~foldleft@example.org)
+[14:59:27] *** Joins: otyugh_II (~otyugh_V@example.org)
+[14:59:37] *** Quits: jero- (~ID100T@example.org) (Ping timeout: 268 seconds)
+[14:59:37] *** Quits: OtakuSenpai (~MaBunny@example.org) (Read error: Connection reset by peer)
+[14:59:45] *** Joins: sappel (~sappel@example.org)
+[14:59:59] *** Quits: betandr (~betandr@example.org) (Remote host closed the connection)
+[15:00:09] *** Joins: betandr (~betandr@example.org)
+[15:00:17] *** Quits: electro33 (uid613@example.org) (Quit: Connection closed for inactivity)
+[15:00:44] *** Quits: saturos (~saturos@example.org) (Ping timeout: 246 seconds)
+[15:00:46] *** ssaturos is now known as saturos
+[15:01:09] *** Joins: undertug9 (~undertuga@example.org)
+[15:02:14] *** Quits: schu-r (~Thunderbi@example.org) (Read error: Connection reset by peer)
+[15:04:35] *** Quits: pipeep (~pipeep@example.org) (Ping timeout: 246 seconds)
+[15:04:40] *** Quits: fcharton (~fca@example.org) (Ping timeout: 256 seconds)
+[15:05:22] *** Joins: edoardo (~edoardo@example.org)
+[15:05:57] *** Quits: undertug9 (~undertuga@example.org) (Ping timeout: 240 seconds)
+[15:06:09] *** Quits: Riyria (~Riyria@example.org) (Quit: The most interesting network tech in the world... Stay adjacent, my friends.)
+[15:07:15] *** Quits: th0r (~Thor@example.org) (Quit: Leaving)
+[15:07:53] *** Quits: btf (~btf@example.org) (Remote host closed the connection)
+[15:07:58] *** Joins: yeats (~chris@example.org)
+[15:08:00] *** debhelper sets mode: +l 1728
+[15:08:02] *** Quits: Brigo (~Brigo@example.org) (Ping timeout: 250 seconds)
+[15:08:10] *** Joins: MaBunny (~MaBunny@example.org)
+[15:08:17] *** Joins: fcharton (~fca@example.org)
+[15:08:22] *** Quits: Starky (~Starky@example.org) (Read error: Connection reset by peer)
+[15:08:25] *** Quits: MaBunny (~MaBunny@example.org) (Max SendQ exceeded)
+[15:08:40] *** Joins: Starky (~Starky@example.org)
+[15:09:11] *** Joins: Nh3xus (~Nh3xus@example.org)
+[15:09:19] *** Quits: Horachi (~Horachi@example.org) (Quit: Leaving)
+[15:09:35] *** Joins: bluenemo (~bluenemo@example.org)
+[15:09:44] *** Joins: schu-r (~Thunderbi@example.org)
+[15:11:16] *** Joins: MaBunny (~MaBunny@example.org)
+[15:11:42] *** Joins: Putti (~Putti@example.org)
+[15:11:51] *** Joins: pipeep (~pipeep@example.org)
+[15:12:29] *** Joins: rrehbein (~rrehbein@example.org)
+[15:12:33] *** Quits: denis_k (~denisk@example.org) (Remote host closed the connection)
+[15:12:44] *** Quits: savantgarde (~savantgar@example.org) (Remote host closed the connection)
+[15:12:58] *** MaBunny is now known as ByteStorm
+[15:13:09] *** Joins: denisk (~denisk@example.org)
+[15:13:14] *** Quits: denisk (~denisk@example.org) (Read error: Connection reset by peer)
+[15:13:51] *** Joins: denisk (~denisk@example.org)
+[15:14:28] *** Joins: btf (~btf@example.org)
+[15:16:03] *** Quits: Putti (~Putti@example.org) (Ping timeout: 252 seconds)
+[15:16:10] *** Joins: grafdiffuzor (~vic@example.org)
+[15:16:47] *** fionnan_ is now known as fionnan
+[15:18:00] *** debhelper sets mode: +l 1734
+[15:18:30] *** Quits: denisk (~denisk@example.org) (Ping timeout: 265 seconds)
+[15:18:35] *** Joins: SynrG (~synrg@example.org)
+[15:19:37] *** Quits: daniel-s (~daniel-s@example.org) (Ping timeout: 240 seconds)
+[15:19:58] *** Quits: jak2000 (~jak2000@example.org) (Ping timeout: 256 seconds)
+[15:20:12] *** Joins: Yuzi (~Yuzi@example.org)
+[15:20:21] *** Joins: Brigo (~Brigo@example.org)
+[15:20:48] *** Quits: hramrach (michal@example.org) (Quit: WeeChat 1.5)
+[15:21:09] *** Joins: savantgarde (~savantgar@example.org)
+[15:21:13] *** Joins: ExoUNX (~ExoUNX@example.org)
+[15:21:14] *** Joins: CutMeOwnThroat (~k@example.org)
+[15:21:19] *** Joins: poleprogger (~mj@example.org)
+[15:21:20] *** Quits: N1N97 (~falken@example.org) (Quit: WeeChat 1.4)
+[15:21:39] *** Quits: surfist (~surfist@example.org) (Remote host closed the connection)
+[15:21:47] *** Joins: SynrGy (~synrg@example.org)
+[15:22:03] *** Joins: surfist (~surfist@example.org)
+[15:22:31] *** Joins: De_julio (~m267@example.org)
+[15:23:25] *** Quits: super_gollum (~ich@example.org) (Quit: Ex-Chat)
+[15:24:58] *** Joins: plasmoduck (~fsociety@example.org)
+[15:25:10] *** Joins: Lowl3v3l (~Lowl3v3l@example.org)
+[15:25:49] *** Joins: Richard_Cavell (~Richard_C@example.org)
+[15:26:08] *** Joins: ongy (~ongy@example.org)
+[15:26:14] <ongy> what happened to netperf on example stretch?
+[15:27:55] *** Joins: karimb (~karimb@example.org)
+[15:28:00] *** debhelper sets mode: +l 1742
+[15:28:38] <Iridos> dpkg, why is netperf not in testing
+[15:28:38] <dpkg> netperf is not in testing for the reasons listed in https://qa.example.org/excuses.php?package=netperf
+[15:29:21] *** Joins: N1N047 (~falken@example.org)
+[15:29:33] *** Joins: nullbyte_ (~ghost@example.org)
+[15:29:48] *** Joins: toastedmilk (~toastedmi@example.org)
+[15:30:15] <Iridos> guess bugs #798789 and #793895
+[15:30:16] <judd> Bug http://bugs.example.org/798789 in netperf (open, patch, sid, stretch): «netperf: FTBFS with GCC 5: undefined reference to `demo_interval_tick'»; severity: serious; opened: 2015-09-12; last modified: 2016-04-05.
+[15:30:36] <Iridos> and #793895 !
+[15:30:37] <judd> Bug http://bugs.example.org/793895 in src:netperf (open, wheezy): «netperf: FTBFS with -Werror=format-security»; severity: serious; opened: 2015-07-28; last modified: 2015-07-28.
+[15:30:44] *** Quits: luckman212 (~luckman21@example.org) (Ping timeout: 250 seconds)
+[15:31:37] *** Quits: lsv (~nn@example.org) (Read error: Connection reset by peer)
+[15:31:43] *** Joins: todd_dsm (~todd_dsm@example.org)
+[15:32:13] *** Quits: schu-r (~Thunderbi@example.org) (Read error: Connection reset by peer)
+[15:33:16] *** Quits: stooj (~stooj@example.org) (Ping timeout: 260 seconds)
+[15:33:20] *** Quits: alowinz (~lnx@example.org) (Ping timeout: 250 seconds)
+[15:34:15] *** Joins: password2 (~password@example.org)
+[15:34:15] *** Quits: password2 (~password@example.org) (Changing host)
+[15:34:15] *** Joins: password2 (~password@example.org)
+[15:34:17] *** Joins: stooj (~stooj@example.org)
+[15:34:30] *** Joins: schu-r (~Thunderbi@example.org)
+[15:34:57] *** Quits: CutMeOwnThroat (~k@example.org) (Ping timeout: 240 seconds)
+[15:35:29] *** Joins: khupwd (~mike@example.org)
+[15:35:33] *** Joins: DalekSec (unit193@example.org)
+[15:36:01] *** Quits: Maxou (~maxou@example.org) (Remote host closed the connection)
+[15:36:04] *** Quits: toastedmilk (~toastedmi@example.org) (Ping timeout: 260 seconds)
+[15:36:31] *** Quits: panta (~chatzilla@example.org) (Quit: ChatZilla 0.9.93 [Firefox 50.0/20161104212021])
+[15:36:49] *** Joins: deeb (~dee@example.org)
+[15:36:50] *** Joins: InfoTest (~Thunderbi@example.org)
+[15:37:04] *** Parts: thrym (~thrym@example.org)
+[15:37:36] *** Quits: savantgarde (~savantgar@example.org) (Remote host closed the connection)
+[15:37:41] *** Quits: angerman (~m@example.org) (Quit: Gone)
+[15:39:52] *** Joins: NoteOn (~noteon@example.org)
+[15:40:19] *** Quits: paw (~afong@example.org) (Ping timeout: 268 seconds)
+[15:40:28] *** Joins: WayToDoor (~milk.bott@example.org)
+[15:40:54] *** Joins: luckman212 (~luckman21@example.org)
+[15:41:29] *** Joins: Maxou (~maxou@example.org)
+[15:42:10] *** Quits: woose (~root@example.org) (Ping timeout: 268 seconds)
+[15:42:13] *** Quits: grafdiffuzor (~vic@example.org) (Ping timeout: 248 seconds)
+[15:42:54] *** Quits: DammitJim (~DammitJim@example.org) (Quit: Leaving)
+[15:43:07] *** Quits: stooj (~stooj@example.org) (Ping timeout: 244 seconds)
+[15:43:20] *** Quits: dethos (~dethos@example.org) (Quit: Time to Go!)
+[15:43:24] *** Quits: Yuzi (~Yuzi@example.org) (Remote host closed the connection)
+[15:43:43] *** Joins: daniel-s (~daniel-s@example.org)
+[15:43:49] *** Quits: ValodiaDeSeynes (~ValodiaDe@example.org) (Ping timeout: 248 seconds)
+[15:43:56] *** Quits: Maxou (~maxou@example.org) (Remote host closed the connection)
+[15:43:58] *** Quits: High_Priest (~hp@example.org) (Quit: Leaving)
+[15:44:03] *** Joins: Maxou (~maxou@example.org)
+[15:44:41] *** Joins: savantgarde (~savantgar@example.org)
+[15:45:34] *** Joins: woose (~root@example.org)
+[15:45:43] *** Joins: Cypouz (~Cypouz@example.org)
+[15:45:58] *** woose is now known as Guest17147
+[15:46:18] *** Joins: stooj (~stooj@example.org)
+[15:47:54] *** Quits: disposable2 (~Thunderbi@example.org) (Ping timeout: 250 seconds)
+[15:48:16] *** Quits: bvdk (~bvdkfreen@example.org) (Ping timeout: 260 seconds)
+[15:49:47] *** Quits: De_julio (~m267@example.org) (Ping timeout: 252 seconds)
+[15:49:54] *** Joins: maucar (~maurizioc@example.org)
+[15:50:06] *** Joins: KlausedSource (~KlausedSo@example.org)
+[15:50:46] *** Quits: maucar (~maurizioc@example.org) (Remote host closed the connection)
+[15:50:49] *** Joins: hspcd (~hspcd@example.org)
+[15:51:24] *** Joins: maucar (~maurizioc@example.org)
+[15:51:40] *** Joins: paradx (~paradx@example.org)
+[15:51:50] *** Parts: Bonn333 (~Bonn333@example.org)
+[15:51:51] *** Quits: paradx (~paradx@example.org) (Read error: Connection reset by peer)
+[15:52:05] *** Joins: toastedmilk (~toastedmi@example.org)
+[15:52:15] *** Quits: daniel-s (~daniel-s@example.org) (Ping timeout: 258 seconds)
+[15:52:53] *** Quits: Guest17147 (~root@example.org) (Ping timeout: 248 seconds)
+[15:53:15] *** Joins: AbigailBuccaneer (~AbigailBu@example.org)
+[15:53:42] *** Quits: karimb (~karimb@example.org) (Quit: Karim has gone to sleep. ZZZzzz…)
+[15:54:28] *** Joins: alex1a (~alex1a@example.org)
+[15:54:42] *** Joins: Tom01 (~tom@example.org)
+[15:55:00] *** Quits: stooj (~stooj@example.org) (Ping timeout: 244 seconds)
+[15:55:01] *** Joins: Guest17147 (~root@example.org)
+[15:55:42] *** Joins: hualet (~hualet@example.org)
+[15:55:44] *** Quits: maucar (~maurizioc@example.org) (Remote host closed the connection)
+[15:55:53] *** Quits: alex1a_ (~alex1a@example.org) (Ping timeout: 245 seconds)
+[15:56:19] *** Joins: stooj (~stooj@example.org)
+[15:56:57] *** Joins: ben_roose (~roose@example.org)
+[15:57:04] *** Quits: marcozink2 (~marcozink@example.org) (Ping timeout: 244 seconds)
+[15:57:09] *** Quits: HeOS (~heos@example.org) (Ping timeout: 248 seconds)
+[15:58:11] *** Joins: marcozink (~marcozink@example.org)
+[15:58:28] *** Quits: gump (~gump___@example.org) (Ping timeout: 260 seconds)
+[15:59:30] *** Joins: ValodiaDeSeynes (~ValodiaDe@example.org)
+[16:00:03] *** Joins: Peterzen (~Peterzen@example.org)
+[16:00:15] *** Joins: Ricardo__ (~rick@example.org)
+[16:00:30] *** Quits: _Nox (~Nox@example.org) (Quit: brb)
+[16:00:49] *** Joins: daniel-s (~daniel-s@example.org)
+[16:01:55] *** Quits: schu-r (~Thunderbi@example.org) (Read error: Connection reset by peer)
+[16:02:18] *** Joins: gump (~gump___@example.org)
+[16:02:23] *** Joins: undertu18 (~undertuga@example.org)
+[16:02:41] *** Quits: canopus (~canopus@example.org) (Ping timeout: 246 seconds)
+[16:02:53] *** Quits: nullbyte_ (~ghost@example.org) (Quit: quit.)
+[16:03:02] *** Joins: rage (~rage@example.org)
+[16:03:03] *** Joins: makimaki` (~makimaki`@example.org)
+[16:04:02] *** Joins: karimb (~karimb@example.org)
+[16:04:28] *** Joins: schu-r (~Thunderbi@example.org)
+[16:04:39] *** Quits: schu-r (~Thunderbi@example.org) (Client Quit)
+[16:05:08] *** Quits: Pjusur (~Pjusur@example.org) (Quit: Leaving)
+[16:06:00] *** Quits: makimaki (~makimaki`@example.org) (Ping timeout: 260 seconds)
+[16:06:12] *** Joins: debalance_ (~debalance@example.org)
+[16:07:20] *** Quits: undertu18 (~undertuga@example.org) (Ping timeout: 260 seconds)
+[16:07:21] *** Quits: Starky (~Starky@example.org) (Read error: Connection reset by peer)
+[16:07:42] *** Joins: Starky (~Starky@example.org)
+[16:08:00] *** Quits: tinkersh (~TinkerSh@example.org) (Ping timeout: 250 seconds)
+[16:08:00] *** Joins: ki0 (~ki0@example.org)
+[16:08:02] *** Joins: denisk (~denisk@example.org)
+[16:08:08] <hfp> Hi, I have a system running example, and I have a tar backup of the whole system. I want to restore that backup, can I boot into the system and just extract the archive at /? i.e. can I overwrite the system while it's running? This is for an embedded system, for which I can't boot from a USB flashdrive or LiveCD. If it makes any difference, the system is this one: https://getchip.com/pages/chip
+[16:08:13] *** Quits: swatti (~memory@example.org) (Remote host closed the connection)
+[16:09:03] *** Joins: paradx (~paradx@example.org)
+[16:09:08] *** Joins: undertu19 (~undertuga@example.org)
+[16:09:25] *** Quits: dionysus69 (~Thunderbi@example.org) (Ping timeout: 248 seconds)
+[16:10:16] *** Joins: canopus (~canopus@example.org)
+[16:11:32] *** Quits: shootbird (~quassel@example.org) (Ping timeout: 256 seconds)
+[16:11:33] *** Quits: cccc828 (~severin@example.org) (Quit: Leaving)
+[16:11:42] *** Joins: De_julio (~m267@example.org)
+[16:12:00] *** Joins: Borginjo (~tuptidup@example.org)
+[16:12:20] *** Quits: denisk (~denisk@example.org) (Ping timeout: 250 seconds)
+[16:12:23] *** Quits: toastedmilk (~toastedmi@example.org) (Ping timeout: 268 seconds)
+[16:12:36] *** Joins: shinnya (~shinnya@example.org)
+[16:13:07] *** Quits: Darcidride (~Darcidrid@example.org) (Remote host closed the connection)
+[16:13:25] *** Joins: jzvf (~jzvf@example.org)
+[16:13:36] *** Quits: B[]rG (~tuptidup@example.org) (Ping timeout: 265 seconds)
+[16:14:07] *** Quits: warsoul (warsoul@example.org) (Ping timeout: 244 seconds)
+[16:14:26] <hfp> It's running example 8
+[16:14:44] *** Joins: GunshipPenguin (~GunshipPe@example.org)
+[16:14:44] *** Joins: warsoul (warsoul@example.org)
+[16:14:44] *** Quits: warsoul (warsoul@example.org) (Changing host)
+[16:14:44] *** Joins: warsoul (warsoul@example.org)
+[16:14:44] *** Quits: warsoul (warsoul@example.org) (Changing host)
+[16:14:44] *** Joins: warsoul (warsoul@example.org)
+[16:14:55] *** Quits: GunshipPenguin (~GunshipPe@example.org) (Client Quit)
+[16:15:05] *** Quits: sappel (~sappel@example.org) (Ping timeout: 252 seconds)
+[16:15:09] *** Joins: Mazhive_one (~Mazhive@example.org)
+[16:15:26] <petn-randall> hfp: In general that not a good approach since any files present on the system but not in the tar will still remain.
+[16:15:36] <colo-work> hfp, you _probably_ can, but you should make sure to extract the tarball with --one-file-system and --numeric-owner in effect (and also keep permissions)
+[16:15:39] *** Quits: LorD_n1c0w (~igorhenri@example.org) (Ping timeout: 246 seconds)
+[16:15:41] <colo-work> also, what petn-randall said
+[16:16:01] *** Quits: KlausedSource (~KlausedSo@example.org) (Quit: https://www.sadtrombone.com/?autoplay=true)
+[16:16:04] *** Joins: LorD_n1c0w (~igorhenri@example.org)
+[16:16:04] *** Quits: Mazhive (~Mazhive@example.org) (Ping timeout: 250 seconds)
+[16:16:15] <petn-randall> s/that/that's/
+[16:16:37] *** Quits: hualet (~hualet@example.org) (Remote host closed the connection)
+[16:16:49] *** Joins: JordiGH (~jordi@example.org)
+[16:17:08] *** Joins: SlaGTaTs (~bilbo@example.org)
+[16:17:08] *** Quits: Borginjo (~tuptidup@example.org) (Ping timeout: 245 seconds)
+[16:17:19] *** Quits: zykotick9 (~zykotick9@example.org) (Ping timeout: 268 seconds)
+[16:17:34] *** Joins: paw (~afong@example.org)
+[16:17:39] *** Quits: jzvf (~jzvf@example.org) (Remote host closed the connection)
+[16:18:06] <JordiGH> Man, I was perfectly happy with my Linux, but then some CVE came along, I upgraded to the latest backported Linux, and now I have graphical glitches and occasional suspend glitches. I have decided that I don't care about a local priv escalation on my laptop. How can I install Linux 4.4.6 again?
+[16:18:08] *** Parts: dasgeek (~dasdgeek@example.org)
+[16:18:32] *** Joins: huwjr (~huwjr@example.org)
+[16:18:59] *** Quits: badiane (~badiane@example.org) (Ping timeout: 260 seconds)
+[16:19:03] *** Joins: shootbird (~quassel@example.org)
+[16:19:22] *** Parts: gchristensen (~ident@example.org)
+[16:19:53] *** Joins: tinkersh (~TinkerSh@example.org)
+[16:19:57] <jelly> JordiGH: did you get this old kernel from a example repo at that time?  Which example release are you using?
+[16:20:17] *** Quits: daniel-s (~daniel-s@example.org) (Ping timeout: 260 seconds)
+[16:20:28] <JordiGH> I'm on stable. I got it from backports. Maybe two or three months ago.
+[16:20:42] *** Joins: juantelez (~juantelez@example.org)
+[16:20:43] *** Quits: gump (~gump___@example.org) (Ping timeout: 256 seconds)
+[16:21:10] <petn-randall> ,kernels
+[16:21:11] <judd> Available kernel versions are: experimental: 4.8.0-rc8-686-pae (4.8~rc8-1~exp1); sid: 4.8.0-1-686-pae (4.8.7-1); stretch: 4.8.0-1-686-pae (4.8.5-1); jessie-backports: 4.7.0-0.bpo.1-686-pae (4.7.8-1~bpo8+1); jessie: 3.16.0-4-686-pae (3.16.36-1+deb8u2); wheezy-backports: 3.16.0-0.bpo.4-686-pae (3.16.36-1+deb8u2~bpo70+1); wheezy: 3.2.0-4-686-pae (3.2.82-1)
+[16:21:49] <JordiGH> 4.7.0 is I think what's causing me unhappiness.
+[16:21:55] <petn-randall> JordiGH: ^^^ those are the ones you get to pick from. You can probably use something like http://snapshot.example.org/ to grab an earlier, unsupported kernel.
+[16:21:57] *** Quits: Mir4g3 (~Mir4g3@example.org) (Ping timeout: 240 seconds)
+[16:22:26] <JordiGH> Is it just a matter of grabbing the deb from snapshot.example.org? I probably need to manually trace its deps, right?
+[16:22:32] <petn-randall> JordiGH: But if you upgraded your system from 3 months ago, it could also be a few other things that changed since then.
+[16:22:51] <petn-randall> JordiGH: It's explained on the link I gave you.
+[16:23:11] *** Joins: bit1 (~joseanton@example.org)
+[16:23:36] *** Quits: surfist (~surfist@example.org) (Remote host closed the connection)
+[16:23:44] *** Joins: dionysus69 (~Thunderbi@example.org)
+[16:23:59] <JordiGH> Aha, thanks.
+[16:24:02] *** Joins: surfist (~surfist@example.org)
